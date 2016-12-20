@@ -6,14 +6,19 @@ class m161220_031146_employee extends Migration
 {
     public function up()
     {
-
+        $this->createTable ('employee', [
+            'id'=>$this->primaryKey(),
+            'employee_number'=>$this->string(20)->notNull()->unique(),
+            'first_name'=>$this->string(255),
+            'midle_name'=>$this->string(255),
+            'last_name'=>$this->string(255), 
+            'nick_name'=>$this->string(255),
+        ]);
     }
 
     public function down()
     {
-        echo "m161220_031146_employee cannot be reverted.\n";
-
-        return false;
+        $this->dropTable('employee');
     }
 
     /*

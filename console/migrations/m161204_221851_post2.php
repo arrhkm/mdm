@@ -12,6 +12,7 @@ class m161204_221851_post2 extends Migration
             'id' =>$this->primaryKey(),
             'author_id'=>$this->integer()->notNull(),
             'comment'=>$this->text(),
+            'title'=>$this->text(),
         ], $tableOptions);
               
     }
