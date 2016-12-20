@@ -1,0 +1,2583 @@
+2016-11-28 23:55:49 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: mdm\admin\models\User::identityClass' in /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/BaseActiveRecord.php(306): yii\base\Component->__set('identityClass', 'mdm\admin\model...')
+#1 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(521): yii\db\BaseActiveRecord->__set('identityClass', 'mdm\admin\model...')
+#2 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(mdm\admin\models\User), Array)
+#3 [internal function]: yii\base\Object->__construct(Array)
+#4 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#5 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('mdm\admin\model...', Array, Array)
+#6 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('mdm\admin\model...', Array, Array)
+#7 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#8 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Instance.php(155): yii\di\ServiceLocator->get('user')
+#9 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Instance.php(131): yii\di\Instance->get(NULL)
+#10 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php(98): yii\di\Instance::ensure('user', 'yii\web\User')
+#11 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php(107): yii\filters\AccessControl->init()
+#12 [internal function]: yii\base\Object->__construct(Array)
+#13 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#14 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\filters\Acc...', Array, Array)
+#15 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\filters\Acc...', Array, Array)
+#16 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(662): yii\BaseYii::createObject(Array)
+#17 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(646): yii\base\Component->attachBehaviorInternal('access', Array)
+#18 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(528): yii\base\Component->ensureBehaviors()
+#19 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#20 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#21 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#22 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#23 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('', Array)
+#24 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#26 {main}
+2016-11-28 23:55:49 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => 'fagrgmvp2n8hrvndcs31lkthj2'
+    '_csrf-backend' => '6c92afcbe9aaa18513291f1a90bb1ba8a7e90c58f401bbbebc523020fbe923c4a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Aj7e0uAFHdihu3WYHmOHtx2lZxfS8cvh\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=fagrgmvp2n8hrvndcs31lkthj2; _csrf-backend=6c92afcbe9aaa18513291f1a90bb1ba8a7e90c58f401bbbebc523020fbe923c4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Aj7e0uAFHdihu3WYHmOHtx2lZxfS8cvh%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '39208'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480352149.734
+    'REQUEST_TIME' => 1480352149
+]
+2016-11-29 00:10:18 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: mdm\admin\models\User::profile' in /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('profile')
+#1 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/models/Assignment.php(118): yii\db\BaseActiveRecord->__get('profile')
+#2 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(210): mdm\admin\models\Assignment->__get('profile')
+#3 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(203): yii\helpers\BaseArrayHelper::getValue(Object(mdm\admin\models\Assignment), 'profile', NULL)
+#4 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/views/assignment/view.php(15): yii\helpers\BaseArrayHelper::getValue(Object(mdm\admin\models\Assignment), 'profile.full_na...')
+#5 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/htdocs/yi...')
+#6 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/htdocs/yi...', Array)
+#7 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/home/htdocs/yi...', Array, Object(mdm\admin\controllers\AssignmentController))
+#8 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('view', Array, Object(mdm\admin\controllers\AssignmentController))
+#9 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/controllers/AssignmentController.php(95): yii\base\Controller->render('view', Array)
+#10 [internal function]: mdm\admin\controllers\AssignmentController->actionView('1')
+#11 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#13 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('view', Array)
+#14 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin/assignmen...', Array)
+#15 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2016-11-29 00:10:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/assignment/view'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => 'q1khvnes19mg88j3b101ujreq6'
+    '_csrf-backend' => '008c3b3e2c712e1d5f8f08419926d84f79b827808df32e41574be9623d1ba0f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u1XACE8OVyvFJaqda1NkKkUubq2wZQR\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fassignment'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=q1khvnes19mg88j3b101ujreq6; _csrf-backend=008c3b3e2c712e1d5f8f08419926d84f79b827808df32e41574be9623d1ba0f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u1XACE8OVyvFJaqda1NkKkUubq2wZQR%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '39286'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fassignment%2Fview&id=1'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fassignment%2Fview&id=1'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480353018.654
+    'REQUEST_TIME' => 1480353018
+]
+2016-11-29 00:37:51 [127.0.0.1][-][2egn2jcoo5ol4dqotfln3rf617][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000] [1049] Unknown database 'yii2advanced'' in /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/Connection.php:602
+Stack trace:
+#0 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/Connection.php(602): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/Connection.php(544): yii\db\Connection->createPdoInstance()
+#2 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/Connection.php(863): yii\db\Connection->open()
+#3 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/Connection.php(850): yii\db\Connection->getMasterPdo()
+#4 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#6 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/Schema.php(147): yii\db\mysql\Schema->loadTableSchema('<span class="st...')
+#10 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/Module.php(127): yii\db\Schema->getTableSchema('<span class="st...')
+#11 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(130): mdm\admin\Module->getMenus()
+#12 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/ServiceLocator.php(73): yii\base\Component->__get('<span class="st...')
+#13 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/views/layouts/left-menu.php(9): yii\di\ServiceLocator->__get('<span class="st...')
+#14 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/htdocs/yi...')
+#15 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#16 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(mdm\admin\controllers\UserController))
+#17 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<span class="st...')
+#18 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/controllers/UserController.php(144): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#19 [internal function]: mdm\admin\controllers\UserController->actionLogin()
+#20 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#21 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#22 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#23 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#24 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#26 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1049] Unknown database 'yii2advanced'' in /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/Connection.php:549
+Stack trace:
+#0 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/Connection.php(863): yii\db\Connection->open()
+#1 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/Connection.php(850): yii\db\Connection->getMasterPdo()
+#2 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#4 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/Schema.php(147): yii\db\mysql\Schema->loadTableSchema('<span class="st...')
+#8 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/Module.php(127): yii\db\Schema->getTableSchema('<span class="st...')
+#9 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(130): mdm\admin\Module->getMenus()
+#10 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/ServiceLocator.php(73): yii\base\Component->__get('<span class="st...')
+#11 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/views/layouts/left-menu.php(9): yii\di\ServiceLocator->__get('<span class="st...')
+#12 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/htdocs/yi...')
+#13 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#14 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(mdm\admin\controllers\UserController))
+#15 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<span class="st...')
+#16 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/controllers/UserController.php(144): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#17 [internal function]: mdm\admin\controllers\UserController->actionLogin()
+#18 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#19 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#20 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#21 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#22 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#24 {main}
+Additional Information:
+
+2016-11-29 00:37:51 [127.0.0.1][-][2egn2jcoo5ol4dqotfln3rf617][info][application] $_GET = [
+    'r' => 'admin/user/login'
+    1 => 'admin/user/login'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => '2egn2jcoo5ol4dqotfln3rf617'
+    '_csrf-backend' => '008c3b3e2c712e1d5f8f08419926d84f79b827808df32e41574be9623d1ba0f6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u1XACE8OVyvFJaqda1NkKkUubq2wZQR\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin&1=admin%2Fuser%2Flogin'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=2egn2jcoo5ol4dqotfln3rf617; _csrf-backend=008c3b3e2c712e1d5f8f08419926d84f79b827808df32e41574be9623d1ba0f6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u1XACE8OVyvFJaqda1NkKkUubq2wZQR%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '39448'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Flogin&1=admin%2Fuser%2Flogin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin&1=admin%2Fuser%2Flogin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480354671.705
+    'REQUEST_TIME' => 1480354671
+]
+2016-11-29 00:43:17 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: mdm\admin\models\User::loginUrl' in /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/BaseActiveRecord.php(306): yii\base\Component->__set('loginUrl', Array)
+#1 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(521): yii\db\BaseActiveRecord->__set('loginUrl', Array)
+#2 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(mdm\admin\models\User), Array)
+#3 [internal function]: yii\base\Object->__construct(Array)
+#4 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#5 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('mdm\admin\model...', Array, Array)
+#6 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('mdm\admin\model...', Array, Array)
+#7 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#8 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(184): yii\di\ServiceLocator->get('user')
+#9 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/controllers/UserController.php(134): yii\web\Application->getUser()
+#10 [internal function]: mdm\admin\controllers\UserController->actionLogin()
+#11 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#13 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#14 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin/user/logi...', Array)
+#15 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2016-11-29 00:43:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/user/login'
+    1 => 'admin/user/login'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => '2egn2jcoo5ol4dqotfln3rf617'
+    '_csrf-backend' => '86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d6XBxlivEAxPIddf1kiagoZJdczYGA7N\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin&1=admin%2Fuser%2Flogin'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=2egn2jcoo5ol4dqotfln3rf617; _csrf-backend=86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d6XBxlivEAxPIddf1kiagoZJdczYGA7N%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '39466'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Flogin&1=admin%2Fuser%2Flogin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin&1=admin%2Fuser%2Flogin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480354997.634
+    'REQUEST_TIME' => 1480354997
+]
+2016-11-29 00:57:07 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'User::identityClass must be set.' in /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/User.php:163
+Stack trace:
+#0 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php(107): yii\web\User->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(373): ReflectionClass->newInstanceArgs(Array)
+#3 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\web\User', Array, Array)
+#4 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\web\User', Array, Array)
+#5 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#6 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(184): yii\di\ServiceLocator->get('user')
+#7 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/Module.php(128): yii\web\Application->getUser()
+#8 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(130): mdm\admin\Module->getMenus()
+#9 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/ServiceLocator.php(73): yii\base\Component->__get('menus')
+#10 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/views/layouts/left-menu.php(9): yii\di\ServiceLocator->__get('menus')
+#11 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/htdocs/yi...')
+#12 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/htdocs/yi...', Array)
+#13 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/home/htdocs/yi...', Array, Object(mdm\admin\controllers\PermissionController))
+#14 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="rol...')
+#15 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/components/ItemController.php(55): yii\base\Controller->render('index', Array)
+#16 [internal function]: mdm\admin\components\ItemController->actionIndex()
+#17 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#18 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#19 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#20 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin/permissio...', Array)
+#21 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#23 {main}
+2016-11-29 00:57:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/permission'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => '2egn2jcoo5ol4dqotfln3rf617'
+    '_csrf-backend' => '86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d6XBxlivEAxPIddf1kiagoZJdczYGA7N\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Frole'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=2egn2jcoo5ol4dqotfln3rf617; _csrf-backend=86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d6XBxlivEAxPIddf1kiagoZJdczYGA7N%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '39506'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fpermission'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fpermission'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480355827.421
+    'REQUEST_TIME' => 1480355827
+]
+2016-11-29 02:19:05 [127.0.0.1][2][a3q3nhepj970cmb47l3o9rtrk7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "auth/post".' in /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('auth/post', Array)
+#1 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2016-11-29 02:19:05 [127.0.0.1][2][a3q3nhepj970cmb47l3o9rtrk7][info][application] $_GET = [
+    'r' => 'auth/post'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => 'a3q3nhepj970cmb47l3o9rtrk7'
+    '_csrf-backend' => '86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d6XBxlivEAxPIddf1kiagoZJdczYGA7N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=a3q3nhepj970cmb47l3o9rtrk7; _csrf-backend=86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d6XBxlivEAxPIddf1kiagoZJdczYGA7N%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '40201'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=auth/post'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=auth/post'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480360745.648
+    'REQUEST_TIME' => 1480360745
+]
+2016-11-29 02:19:11 [127.0.0.1][2][a3q3nhepj970cmb47l3o9rtrk7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "auth".' in /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('auth', Array)
+#1 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2016-11-29 02:19:11 [127.0.0.1][2][a3q3nhepj970cmb47l3o9rtrk7][info][application] $_GET = [
+    'r' => 'auth'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => 'a3q3nhepj970cmb47l3o9rtrk7'
+    '_csrf-backend' => '86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d6XBxlivEAxPIddf1kiagoZJdczYGA7N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=a3q3nhepj970cmb47l3o9rtrk7; _csrf-backend=86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d6XBxlivEAxPIddf1kiagoZJdczYGA7N%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '40202'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=auth'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=auth'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480360751.033
+    'REQUEST_TIME' => 1480360751
+]
+2016-11-29 07:08:24 [127.0.0.1][-][a3q3nhepj970cmb47l3o9rtrk7][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'' in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:44
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-29 07:08:23 [127.0.0.1][-][a3q3nhepj970cmb47l3o9rtrk7][info][application] $_GET = [
+    'r' => 'admin/user/login'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => 'a3q3nhepj970cmb47l3o9rtrk7'
+    '_csrf-backend' => '86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d6XBxlivEAxPIddf1kiagoZJdczYGA7N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Froute'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=a3q3nhepj970cmb47l3o9rtrk7; _csrf-backend=86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d6XBxlivEAxPIddf1kiagoZJdczYGA7N%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '50831'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Flogin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480378103.934
+    'REQUEST_TIME' => 1480378103
+]
+2016-11-29 07:09:36 [127.0.0.1][2][qfhq64a0pdqmsn7aljtq8k9l36][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:45
+Stack trace:
+#0 /home/htdocs/yii2/mdm/backend/views/layouts/main.php(45): yii\base\ErrorHandler->handleError(8, 'Array to string...', '/home/htdocs/yi...', 45, Array)
+#1 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/htdocs/yi...')
+#2 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/htdocs/yi...', Array)
+#3 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/home/htdocs/yi...', Array, Object(backend\controllers\SiteController))
+#4 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#5 /home/htdocs/yii2/mdm/backend/controllers/SiteController.php(63): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\SiteController->actionIndex()
+#7 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#10 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('', Array)
+#11 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+2016-11-29 07:09:36 [127.0.0.1][2][qfhq64a0pdqmsn7aljtq8k9l36][info][application] $_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => 'qfhq64a0pdqmsn7aljtq8k9l36'
+    '_csrf-backend' => '86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d6XBxlivEAxPIddf1kiagoZJdczYGA7N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=qfhq64a0pdqmsn7aljtq8k9l36; _csrf-backend=86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d6XBxlivEAxPIddf1kiagoZJdczYGA7N%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '50840'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480378176.386
+    'REQUEST_TIME' => 1480378176
+]
+2016-11-29 07:11:21 [127.0.0.1][2][qfhq64a0pdqmsn7aljtq8k9l36][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ','' in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:42
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-29 07:11:21 [127.0.0.1][2][qfhq64a0pdqmsn7aljtq8k9l36][info][application] $_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => 'qfhq64a0pdqmsn7aljtq8k9l36'
+    '_csrf-backend' => '86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d6XBxlivEAxPIddf1kiagoZJdczYGA7N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=qfhq64a0pdqmsn7aljtq8k9l36; _csrf-backend=86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d6XBxlivEAxPIddf1kiagoZJdczYGA7N%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '50843'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480378281.037
+    'REQUEST_TIME' => 1480378281
+]
+2016-11-29 07:14:02 [127.0.0.1][-][dubab5rhftadtpm7q3icho3if2][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The 'label' option is required.' in /home/htdocs/yii2/mdm/vendor/yiisoft/yii2-bootstrap/Nav.php:165
+Stack trace:
+#0 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2-bootstrap/Nav.php(147): yii\bootstrap\Nav->renderItem(Array)
+#1 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2-bootstrap/Nav.php(134): yii\bootstrap\Nav->renderItems()
+#2 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Widget.php(102): yii\bootstrap\Nav->run()
+#3 /home/htdocs/yii2/mdm/backend/views/layouts/main.php(59): yii\base\Widget::widget(Array)
+#4 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/htdocs/yi...')
+#5 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/htdocs/yi...', Array)
+#6 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/widgets/ContentDecorator.php(77): yii\base\View->renderFile('@app/views/layo...', Array)
+#7 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Widget.php(77): yii\widgets\ContentDecorator->run()
+#8 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(434): yii\base\Widget::end()
+#9 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/views/layouts/left-menu.php(41): yii\base\View->endContent()
+#10 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/htdocs/yi...')
+#11 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/htdocs/yi...', Array)
+#12 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/home/htdocs/yi...', Array, Object(mdm\admin\controllers\UserController))
+#13 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#14 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/controllers/UserController.php(144): yii\base\Controller->render('login', Array)
+#15 [internal function]: mdm\admin\controllers\UserController->actionLogin()
+#16 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#19 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin/user/logi...', Array)
+#20 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#22 {main}
+2016-11-29 07:14:02 [127.0.0.1][-][dubab5rhftadtpm7q3icho3if2][info][application] $_GET = [
+    'r' => 'admin/user/login'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => 'dubab5rhftadtpm7q3icho3if2'
+    '_csrf-backend' => '86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d6XBxlivEAxPIddf1kiagoZJdczYGA7N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=dubab5rhftadtpm7q3icho3if2; _csrf-backend=86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d6XBxlivEAxPIddf1kiagoZJdczYGA7N%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '50849'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Flogin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480378442.571
+    'REQUEST_TIME' => 1480378442
+]
+2016-11-29 07:14:39 [127.0.0.1][-][dubab5rhftadtpm7q3icho3if2][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}', expecting ']'' in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:45
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-29 07:14:39 [127.0.0.1][-][dubab5rhftadtpm7q3icho3if2][info][application] $_GET = [
+    'r' => 'admin/user/login'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => 'dubab5rhftadtpm7q3icho3if2'
+    '_csrf-backend' => '86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d6XBxlivEAxPIddf1kiagoZJdczYGA7N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=dubab5rhftadtpm7q3icho3if2; _csrf-backend=86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d6XBxlivEAxPIddf1kiagoZJdczYGA7N%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '50853'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Flogin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480378479.428
+    'REQUEST_TIME' => 1480378479
+]
+2016-11-29 07:14:56 [127.0.0.1][-][dubab5rhftadtpm7q3icho3if2][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ','' in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:42
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-29 07:14:56 [127.0.0.1][-][dubab5rhftadtpm7q3icho3if2][info][application] $_GET = [
+    'r' => 'admin/user/login'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => 'dubab5rhftadtpm7q3icho3if2'
+    '_csrf-backend' => '86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d6XBxlivEAxPIddf1kiagoZJdczYGA7N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=dubab5rhftadtpm7q3icho3if2; _csrf-backend=86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d6XBxlivEAxPIddf1kiagoZJdczYGA7N%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '50855'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Flogin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480378496.227
+    'REQUEST_TIME' => 1480378496
+]
+2016-11-29 07:15:13 [127.0.0.1][-][dubab5rhftadtpm7q3icho3if2][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ','' in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:42
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-29 07:15:13 [127.0.0.1][-][dubab5rhftadtpm7q3icho3if2][info][application] $_GET = [
+    'r' => 'admin/user/login'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => 'dubab5rhftadtpm7q3icho3if2'
+    '_csrf-backend' => '86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d6XBxlivEAxPIddf1kiagoZJdczYGA7N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=dubab5rhftadtpm7q3icho3if2; _csrf-backend=86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d6XBxlivEAxPIddf1kiagoZJdczYGA7N%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '50857'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Flogin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480378513.826
+    'REQUEST_TIME' => 1480378513
+]
+2016-11-29 07:16:33 [127.0.0.1][2][ab8oi67tlivo7k2rp8udv6v675][error][yii\base\ErrorException:64] exception 'yii\base\ErrorException' with message 'Cannot use [] for reading' in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:41
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-29 07:16:33 [127.0.0.1][2][ab8oi67tlivo7k2rp8udv6v675][info][application] $_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => 'ab8oi67tlivo7k2rp8udv6v675'
+    '_csrf-backend' => '86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d6XBxlivEAxPIddf1kiagoZJdczYGA7N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=ab8oi67tlivo7k2rp8udv6v675; _csrf-backend=86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d6XBxlivEAxPIddf1kiagoZJdczYGA7N%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '50867'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480378593.005
+    'REQUEST_TIME' => 1480378593
+]
+2016-11-29 07:21:06 [127.0.0.1][-][a18vf7646jr5uh0su6cd6rmm64][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The 'label' option is required.' in /home/htdocs/yii2/mdm/vendor/yiisoft/yii2-bootstrap/Nav.php:165
+Stack trace:
+#0 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2-bootstrap/Nav.php(147): yii\bootstrap\Nav->renderItem(Array)
+#1 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2-bootstrap/Nav.php(134): yii\bootstrap\Nav->renderItems()
+#2 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Widget.php(102): yii\bootstrap\Nav->run()
+#3 /home/htdocs/yii2/mdm/backend/views/layouts/main.php(61): yii\base\Widget::widget(Array)
+#4 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/htdocs/yi...')
+#5 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/htdocs/yi...', Array)
+#6 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/widgets/ContentDecorator.php(77): yii\base\View->renderFile('@app/views/layo...', Array)
+#7 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Widget.php(77): yii\widgets\ContentDecorator->run()
+#8 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(434): yii\base\Widget::end()
+#9 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/views/layouts/left-menu.php(41): yii\base\View->endContent()
+#10 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/htdocs/yi...')
+#11 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/htdocs/yi...', Array)
+#12 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/home/htdocs/yi...', Array, Object(mdm\admin\controllers\UserController))
+#13 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#14 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/controllers/UserController.php(144): yii\base\Controller->render('login', Array)
+#15 [internal function]: mdm\admin\controllers\UserController->actionLogin()
+#16 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#19 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin/user/logi...', Array)
+#20 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#22 {main}
+2016-11-29 07:21:06 [127.0.0.1][-][a18vf7646jr5uh0su6cd6rmm64][info][application] $_GET = [
+    'r' => 'admin/user/login'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => 'a18vf7646jr5uh0su6cd6rmm64'
+    '_csrf-backend' => '86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d6XBxlivEAxPIddf1kiagoZJdczYGA7N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=post'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=a18vf7646jr5uh0su6cd6rmm64; _csrf-backend=86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d6XBxlivEAxPIddf1kiagoZJdczYGA7N%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '50885'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Flogin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480378866.785
+    'REQUEST_TIME' => 1480378866
+]
+2016-11-29 07:21:29 [127.0.0.1][-][a18vf7646jr5uh0su6cd6rmm64][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The 'label' option is required.' in /home/htdocs/yii2/mdm/vendor/yiisoft/yii2-bootstrap/Nav.php:165
+Stack trace:
+#0 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2-bootstrap/Nav.php(147): yii\bootstrap\Nav->renderItem(Array)
+#1 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2-bootstrap/Nav.php(134): yii\bootstrap\Nav->renderItems()
+#2 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Widget.php(102): yii\bootstrap\Nav->run()
+#3 /home/htdocs/yii2/mdm/backend/views/layouts/main.php(61): yii\base\Widget::widget(Array)
+#4 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/htdocs/yi...')
+#5 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/htdocs/yi...', Array)
+#6 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/widgets/ContentDecorator.php(77): yii\base\View->renderFile('@app/views/layo...', Array)
+#7 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Widget.php(77): yii\widgets\ContentDecorator->run()
+#8 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(434): yii\base\Widget::end()
+#9 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/views/layouts/left-menu.php(41): yii\base\View->endContent()
+#10 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/htdocs/yi...')
+#11 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/htdocs/yi...', Array)
+#12 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/home/htdocs/yi...', Array, Object(mdm\admin\controllers\UserController))
+#13 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#14 /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/controllers/UserController.php(144): yii\base\Controller->render('login', Array)
+#15 [internal function]: mdm\admin\controllers\UserController->actionLogin()
+#16 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#19 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin/user/logi...', Array)
+#20 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#22 {main}
+2016-11-29 07:21:29 [127.0.0.1][-][a18vf7646jr5uh0su6cd6rmm64][info][application] $_GET = [
+    'r' => 'admin/user/login'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-backend' => 'a18vf7646jr5uh0su6cd6rmm64'
+    '_csrf-backend' => '86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d6XBxlivEAxPIddf1kiagoZJdczYGA7N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=post'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-backend=a18vf7646jr5uh0su6cd6rmm64; _csrf-backend=86eac914c958dfdb75e4cf98d134dacd1977304a4903eaa60cbe1d7f99270ddaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d6XBxlivEAxPIddf1kiagoZJdczYGA7N%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '50889'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Flogin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480378889.042
+    'REQUEST_TIME' => 1480378889
+]
+2016-11-29 12:05:36 [127.0.0.1][2][mpd3bmnnl6qevv14j8ue3ekac5][error][yii\web\HttpException:404] exception 'yii\web\HttpException' with message 'The requested Item could not be found.' in /home/htdocs/yii2/mdm/backend/controllers/PostController.php:71
+Stack trace:
+#0 [internal function]: backend\controllers\PostController->actionCreate()
+#1 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#2 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#4 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('post/create', Array)
+#5 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2016-11-29 12:05:36 [127.0.0.1][2][mpd3bmnnl6qevv14j8ue3ekac5][info][application] $_GET = [
+    'r' => 'post/create'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-frontend' => 'jq21p798rdprlhqqr1asusmf21'
+    '_csrf-frontend' => 'f29790c38de1418f7b29a7aa6df595be122a0680543560b10281f7c073ee3f83a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"A7LS-U1zhd7Es0C5XiSQP5fTi6JHmFsY\";}'
+    'advanced-backend' => 'mpd3bmnnl6qevv14j8ue3ekac5'
+    '_csrf-backend' => 'b5e5265678bcc9ce5b123d5df658228760e093bf00bddea1362b01c4f30b55f1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_B-awUOtf-AMv0KfJCZzkY0CwHc5GXXV\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=post'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-frontend=jq21p798rdprlhqqr1asusmf21; _csrf-frontend=f29790c38de1418f7b29a7aa6df595be122a0680543560b10281f7c073ee3f83a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22A7LS-U1zhd7Es0C5XiSQP5fTi6JHmFsY%22%3B%7D; advanced-backend=mpd3bmnnl6qevv14j8ue3ekac5; _csrf-backend=b5e5265678bcc9ce5b123d5df658228760e093bf00bddea1362b01c4f30b55f1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_B-awUOtf-AMv0KfJCZzkY0CwHc5GXXV%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '44156'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fcreate'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post%2Fcreate'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480395936.937
+    'REQUEST_TIME' => 1480395936
+]
+2016-11-29 13:33:23 [192.168.100.21][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:33:23 [192.168.100.21][-][-][info][application] $_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56800'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/mdm/backend/web/'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401203.19
+    'REQUEST_TIME' => 1480401203
+]
+2016-11-29 13:33:23 [192.168.100.21][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+    in /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/views/layouts/left-menu.php:41
+    in /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/controllers/UserController.php:144
+2016-11-29 13:33:23 [192.168.100.21][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:33:23 [192.168.100.21][-][-][info][application] $_GET = [
+    'r' => 'admin/user/login'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'paro0fqs4ptlm79jd10orbtvo3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/'
+    'HTTP_COOKIE' => 'advanced-backend=paro0fqs4ptlm79jd10orbtvo3'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56800'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Flogin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401203.225
+    'REQUEST_TIME' => 1480401203
+]
+2016-11-29 13:33:31 [192.168.100.21][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+    in /home/htdocs/yii2/mdm/backend/controllers/SiteController.php:83
+2016-11-29 13:33:31 [192.168.100.21][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:33:31 [192.168.100.21][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'paro0fqs4ptlm79jd10orbtvo3'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'HTTP_COOKIE' => 'advanced-backend=paro0fqs4ptlm79jd10orbtvo3; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56808'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401211.335
+    'REQUEST_TIME' => 1480401211
+]
+2016-11-29 13:33:41 [192.168.100.21][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:33:40 [192.168.100.21][2][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-backend' => 'SVRpX0lYNVoqGy1ucG4NbX4BHRI/HAYFeBkoaDpgAAgRGB8beG1WPA=='
+    'LoginForm' => [
+        'username' => 'user'
+        'password' => 'user1234'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'paro0fqs4ptlm79jd10orbtvo3'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'advanced-backend=paro0fqs4ptlm79jd10orbtvo3; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '222'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56809'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401220.399
+    'REQUEST_TIME' => 1480401220
+]
+2016-11-29 13:33:41 [192.168.100.21][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+    in /home/htdocs/yii2/mdm/backend/controllers/SiteController.php:63
+2016-11-29 13:33:41 [192.168.100.21][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:33:41 [192.168.100.21][2][-][info][application] $_COOKIE = [
+    'advanced-backend' => 'anmbeqn32251kf1o156lqjod65'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'advanced-backend=anmbeqn32251kf1o156lqjod65; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56809'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/mdm/backend/web/'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401221.615
+    'REQUEST_TIME' => 1480401221
+]
+2016-11-29 13:33:43 [192.168.100.21][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+    in /home/htdocs/yii2/mdm/backend/controllers/PostController.php:46
+2016-11-29 13:33:43 [192.168.100.21][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:33:43 [192.168.100.21][2][-][info][application] $_GET = [
+    'r' => 'post'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'anmbeqn32251kf1o156lqjod65'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/'
+    'HTTP_COOKIE' => 'advanced-backend=anmbeqn32251kf1o156lqjod65; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56809'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401223.849
+    'REQUEST_TIME' => 1480401223
+]
+2016-11-29 13:33:45 [192.168.100.21][2][anmbeqn32251kf1o156lqjod65][error][yii\web\HttpException:404] exception 'yii\web\HttpException' with message 'The requested Item could not be found.' in /home/htdocs/yii2/mdm/backend/controllers/PostController.php:71
+Stack trace:
+#0 [internal function]: backend\controllers\PostController->actionCreate()
+#1 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#2 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#4 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('post/create', Array)
+#5 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2016-11-29 13:33:45 [192.168.100.21][2][anmbeqn32251kf1o156lqjod65][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+2016-11-29 13:33:45 [192.168.100.21][2][anmbeqn32251kf1o156lqjod65][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:33:45 [192.168.100.21][2][anmbeqn32251kf1o156lqjod65][info][application] $_GET = [
+    'r' => 'post/create'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'anmbeqn32251kf1o156lqjod65'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=post'
+    'HTTP_COOKIE' => 'advanced-backend=anmbeqn32251kf1o156lqjod65; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56810'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fcreate'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post%2Fcreate'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401225.76
+    'REQUEST_TIME' => 1480401225
+]
+2016-11-29 13:33:49 [192.168.100.21][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+    in /home/htdocs/yii2/mdm/backend/controllers/PostController.php:46
+2016-11-29 13:33:49 [192.168.100.21][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:33:49 [192.168.100.21][2][-][info][application] $_GET = [
+    'r' => 'post'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'anmbeqn32251kf1o156lqjod65'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=post%2Fcreate'
+    'HTTP_COOKIE' => 'advanced-backend=anmbeqn32251kf1o156lqjod65; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56810'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401229.731
+    'REQUEST_TIME' => 1480401229
+]
+2016-11-29 13:33:55 [192.168.100.21][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+    in /home/htdocs/yii2/mdm/backend/controllers/PostController.php:58
+2016-11-29 13:33:55 [192.168.100.21][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:33:55 [192.168.100.21][2][-][info][application] $_GET = [
+    'r' => 'post/view'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'anmbeqn32251kf1o156lqjod65'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=post'
+    'HTTP_COOKIE' => 'advanced-backend=anmbeqn32251kf1o156lqjod65; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56811'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fview&id=1'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post%2Fview&id=1'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401235.732
+    'REQUEST_TIME' => 1480401235
+]
+2016-11-29 13:33:57 [192.168.100.21][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+    in /home/htdocs/yii2/mdm/backend/controllers/PostController.php:101
+2016-11-29 13:33:57 [192.168.100.21][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:33:57 [192.168.100.21][2][-][info][application] $_GET = [
+    'r' => 'post/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'anmbeqn32251kf1o156lqjod65'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=post%2Fview&id=1'
+    'HTTP_COOKIE' => 'advanced-backend=anmbeqn32251kf1o156lqjod65; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56811'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fupdate&id=1'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401237.918
+    'REQUEST_TIME' => 1480401237
+]
+2016-11-29 13:34:07 [192.168.100.21][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:34:07 [192.168.100.21][2][-][info][application] $_GET = [
+    'r' => 'post/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'TUh2eFVzLkEuBzJJbEUWdnodAjUjNx0efAU3TyZLGxMVBAA8ZEZNJw=='
+    'Post' => [
+        'title' => 'Ini bekas di edit user'
+        'author_id' => '2'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'anmbeqn32251kf1o156lqjod65'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=post%2Fupdate&id=1'
+    'HTTP_COOKIE' => 'advanced-backend=anmbeqn32251kf1o156lqjod65; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '135'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56813'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=post%2Fupdate&id=1'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401247.735
+    'REQUEST_TIME' => 1480401247
+]
+2016-11-29 13:34:08 [192.168.100.21][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+    in /home/htdocs/yii2/mdm/backend/controllers/PostController.php:58
+2016-11-29 13:34:08 [192.168.100.21][2][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:34:08 [192.168.100.21][2][-][info][application] $_GET = [
+    'r' => 'post/view'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'anmbeqn32251kf1o156lqjod65'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=post%2Fupdate&id=1'
+    'HTTP_COOKIE' => 'advanced-backend=anmbeqn32251kf1o156lqjod65; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56813'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fview&id=1'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post%2Fview&id=1'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401248.039
+    'REQUEST_TIME' => 1480401248
+]
+2016-11-29 13:34:10 [192.168.100.21][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:34:10 [192.168.100.21][-][-][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = [
+    '_csrf-backend' => 'N244NDZNZWJUIXwFD3tdVQA7THlACVY9BiN5A0V1UDBvIk5wB3gGBA=='
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'anmbeqn32251kf1o156lqjod65'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=post%2Fview&id=1'
+    'HTTP_COOKIE' => 'advanced-backend=anmbeqn32251kf1o156lqjod65; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '74'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56813'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401250.807
+    'REQUEST_TIME' => 1480401250
+]
+2016-11-29 13:34:10 [192.168.100.21][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:34:10 [192.168.100.21][-][-][info][application] $_COOKIE = [
+    'advanced-backend' => 'p5t9datngp1hl2n3pnb6cv2443'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=post%2Fview&id=1'
+    'HTTP_COOKIE' => 'advanced-backend=p5t9datngp1hl2n3pnb6cv2443; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56813'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401250.873
+    'REQUEST_TIME' => 1480401250
+]
+2016-11-29 13:34:10 [192.168.100.21][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+    in /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/views/layouts/left-menu.php:41
+    in /home/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/controllers/UserController.php:144
+2016-11-29 13:34:10 [192.168.100.21][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:34:10 [192.168.100.21][-][-][info][application] $_GET = [
+    'r' => 'admin/user/login'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'p5t9datngp1hl2n3pnb6cv2443'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=post%2Fview&id=1'
+    'HTTP_COOKIE' => 'advanced-backend=p5t9datngp1hl2n3pnb6cv2443; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56813'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Flogin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401250.912
+    'REQUEST_TIME' => 1480401250
+]
+2016-11-29 13:34:19 [192.168.100.21][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:34:18 [192.168.100.21][1][-][info][application] $_GET = [
+    'r' => 'admin/user/login'
+]
+
+$_POST = [
+    '_csrf-backend' => 'eG5oTUZUWlIbISx8f2JiZU87HAAwEGkNSSMpejVsbwAgIh4Jd2E5NA=='
+    'Login' => [
+        'username' => 'admin'
+        'password' => 'admin1234'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'p5t9datngp1hl2n3pnb6cv2443'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'HTTP_COOKIE' => 'advanced-backend=p5t9datngp1hl2n3pnb6cv2443; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '206'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56814'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Flogin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401258.635
+    'REQUEST_TIME' => 1480401258
+]
+2016-11-29 13:34:19 [192.168.100.21][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+    in /home/htdocs/yii2/mdm/backend/controllers/SiteController.php:63
+2016-11-29 13:34:19 [192.168.100.21][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:34:19 [192.168.100.21][1][-][info][application] $_COOKIE = [
+    'advanced-backend' => 'je7q6o18qa7lks66t4ia8rr3a5'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'HTTP_COOKIE' => 'advanced-backend=je7q6o18qa7lks66t4ia8rr3a5; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56814'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401259.864
+    'REQUEST_TIME' => 1480401259
+]
+2016-11-29 13:34:22 [192.168.100.21][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+    in /home/htdocs/yii2/mdm/backend/controllers/PostController.php:46
+2016-11-29 13:34:22 [192.168.100.21][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:34:22 [192.168.100.21][1][-][info][application] $_GET = [
+    'r' => 'post'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'je7q6o18qa7lks66t4ia8rr3a5'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php'
+    'HTTP_COOKIE' => 'advanced-backend=je7q6o18qa7lks66t4ia8rr3a5; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56814'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401262.1
+    'REQUEST_TIME' => 1480401262
+]
+2016-11-29 13:34:25 [192.168.100.21][1][je7q6o18qa7lks66t4ia8rr3a5][error][yii\web\HttpException:404] exception 'yii\web\HttpException' with message 'The requested Item could not be found.' in /home/htdocs/yii2/mdm/backend/controllers/PostController.php:94
+Stack trace:
+#0 [internal function]: backend\controllers\PostController->actionUpdate('1')
+#1 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#2 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#4 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('post/update', Array)
+#5 /home/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2016-11-29 13:34:25 [192.168.100.21][1][je7q6o18qa7lks66t4ia8rr3a5][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+2016-11-29 13:34:25 [192.168.100.21][1][je7q6o18qa7lks66t4ia8rr3a5][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:34:25 [192.168.100.21][1][je7q6o18qa7lks66t4ia8rr3a5][info][application] $_GET = [
+    'r' => 'post/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'je7q6o18qa7lks66t4ia8rr3a5'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=post'
+    'HTTP_COOKIE' => 'advanced-backend=je7q6o18qa7lks66t4ia8rr3a5; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56814'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fupdate&id=1'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401265.932
+    'REQUEST_TIME' => 1480401265
+]
+2016-11-29 13:34:27 [192.168.100.21][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+    in /home/htdocs/yii2/mdm/backend/controllers/PostController.php:46
+2016-11-29 13:34:27 [192.168.100.21][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:34:27 [192.168.100.21][1][-][info][application] $_GET = [
+    'r' => 'post'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'je7q6o18qa7lks66t4ia8rr3a5'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=post%2Fupdate&id=1'
+    'HTTP_COOKIE' => 'advanced-backend=je7q6o18qa7lks66t4ia8rr3a5; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56814'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401267.855
+    'REQUEST_TIME' => 1480401267
+]
+2016-11-29 13:34:32 [192.168.100.21][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+    in /home/htdocs/yii2/mdm/backend/controllers/PostController.php:79
+2016-11-29 13:34:32 [192.168.100.21][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:34:32 [192.168.100.21][1][-][info][application] $_GET = [
+    'r' => 'post/create'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'je7q6o18qa7lks66t4ia8rr3a5'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=post'
+    'HTTP_COOKIE' => 'advanced-backend=je7q6o18qa7lks66t4ia8rr3a5; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56814'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fcreate'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post%2Fcreate'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401272.875
+    'REQUEST_TIME' => 1480401272
+]
+2016-11-29 13:34:46 [192.168.100.21][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:34:46 [192.168.100.21][1][-][info][application] $_GET = [
+    'r' => 'post/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'WVJIRTBxWDc6HQx0CUdgAG4HPAhGNWtoaB8JckNJbWUBHj4BAUQ7UQ=='
+    'Post' => [
+        'title' => 'Bocah tua nakal'
+        'author_id' => '1'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'je7q6o18qa7lks66t4ia8rr3a5'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=post%2Fcreate'
+    'HTTP_COOKIE' => 'advanced-backend=je7q6o18qa7lks66t4ia8rr3a5; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '128'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56815'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=post%2Fcreate'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post%2Fcreate'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401286.126
+    'REQUEST_TIME' => 1480401286
+]
+2016-11-29 13:34:46 [192.168.100.21][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+    in /home/htdocs/yii2/mdm/backend/controllers/PostController.php:58
+2016-11-29 13:34:46 [192.168.100.21][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:34:46 [192.168.100.21][1][-][info][application] $_GET = [
+    'r' => 'post/view'
+    'id' => '8'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'je7q6o18qa7lks66t4ia8rr3a5'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=post%2Fcreate'
+    'HTTP_COOKIE' => 'advanced-backend=je7q6o18qa7lks66t4ia8rr3a5; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56815'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fview&id=8'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post%2Fview&id=8'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401286.207
+    'REQUEST_TIME' => 1480401286
+]
+2016-11-29 13:34:48 [192.168.100.21][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+    in /home/htdocs/yii2/mdm/backend/views/layouts/main.php:82
+    in /home/htdocs/yii2/mdm/backend/controllers/PostController.php:46
+2016-11-29 13:34:48 [192.168.100.21][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.100.21
+2016-11-29 13:34:48 [192.168.100.21][1][-][info][application] $_GET = [
+    'r' => 'post/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'je7q6o18qa7lks66t4ia8rr3a5'
+    '_csrf-backend' => '2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"cOD196877UtMvD3_1MA7s85RXLvD15cf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.100.222'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.100.222/yii2/mdm/backend/web/index.php?r=post%2Fview&id=8'
+    'HTTP_COOKIE' => 'advanced-backend=je7q6o18qa7lks66t4ia8rr3a5; _csrf-backend=2e14432778c320418d575bbc440d5dcc3a3826aa73ace00850b2d85fa95ece0aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22cOD196877UtMvD3_1MA7s85RXLvD15cf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.100.222 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.100.222'
+    'SERVER_ADDR' => '192.168.100.222'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.100.21'
+    'DOCUMENT_ROOT' => '/home/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '56815'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Findex'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post%2Findex'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480401288.247
+    'REQUEST_TIME' => 1480401288
+]
+2016-12-05 04:41:01 [127.0.0.1][-][10unaoeb65pgqklckh1ijqhj51][error][yii\web\HttpException:404] exception 'yii\web\HttpException' with message 'The requested Item could not be found.' in /home/acer/app/htdocs/yii2/mdm/backend/controllers/PostController.php:71
+Stack trace:
+#0 [internal function]: backend\controllers\PostController->actionCreate()
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('post/create', Array)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2016-12-05 04:41:01 [127.0.0.1][-][10unaoeb65pgqklckh1ijqhj51][info][application] $_GET = [
+    'r' => 'post/create'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-frontend' => 'bkti72t8ghlnl1tkinumnu60n3'
+    '_csrf-frontend' => 'c9a1f77983244832312d23c2de83bad44208e2103674b786d8cc0d9f4f7c8793a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"6cvI2pWRS9Ct4dTHwgMV_1iy3Wink1xb\";}'
+    'advanced-backend' => '10unaoeb65pgqklckh1ijqhj51'
+    '_csrf-backend' => 'e4bb5c1b5d4355ffdfb1c7717d1167dc60cb4337a24c7636b474cb415ac98c37a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xt5CAOO5k2ijLKwnoLznFMgegY0Q8BTW\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=post'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-frontend=bkti72t8ghlnl1tkinumnu60n3; _csrf-frontend=c9a1f77983244832312d23c2de83bad44208e2103674b786d8cc0d9f4f7c8793a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%226cvI2pWRS9Ct4dTHwgMV_1iy3Wink1xb%22%3B%7D; advanced-backend=10unaoeb65pgqklckh1ijqhj51; _csrf-backend=e4bb5c1b5d4355ffdfb1c7717d1167dc60cb4337a24c7636b474cb415ac98c37a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xt5CAOO5k2ijLKwnoLznFMgegY0Q8BTW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '47725'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fcreate'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post%2Fcreate'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480887661.533
+    'REQUEST_TIME' => 1480887661
+]
+2016-12-05 04:41:11 [127.0.0.1][-][10unaoeb65pgqklckh1ijqhj51][error][yii\web\HttpException:404] exception 'yii\web\HttpException' with message 'The requested Item could not be found.' in /home/acer/app/htdocs/yii2/mdm/backend/controllers/PostController.php:94
+Stack trace:
+#0 [internal function]: backend\controllers\PostController->actionUpdate('1')
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('post/update', Array)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2016-12-05 04:41:11 [127.0.0.1][-][10unaoeb65pgqklckh1ijqhj51][info][application] $_GET = [
+    'r' => 'post/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ\",2592000]\";}'
+    'advanced-frontend' => 'bkti72t8ghlnl1tkinumnu60n3'
+    '_csrf-frontend' => 'c9a1f77983244832312d23c2de83bad44208e2103674b786d8cc0d9f4f7c8793a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"6cvI2pWRS9Ct4dTHwgMV_1iy3Wink1xb\";}'
+    'advanced-backend' => '10unaoeb65pgqklckh1ijqhj51'
+    '_csrf-backend' => 'e4bb5c1b5d4355ffdfb1c7717d1167dc60cb4337a24c7636b474cb415ac98c37a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xt5CAOO5k2ijLKwnoLznFMgegY0Q8BTW\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=post'
+    'HTTP_COOKIE' => '_identity-backend=7183f1ca41266ae695f3004222914dd580fe1e802600aca40e4166133d49ed4da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22Pbq5tiH5kC4JL0ShOXWjS2a6vVPJzvWQ%22%2C2592000%5D%22%3B%7D; advanced-frontend=bkti72t8ghlnl1tkinumnu60n3; _csrf-frontend=c9a1f77983244832312d23c2de83bad44208e2103674b786d8cc0d9f4f7c8793a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%226cvI2pWRS9Ct4dTHwgMV_1iy3Wink1xb%22%3B%7D; advanced-backend=10unaoeb65pgqklckh1ijqhj51; _csrf-backend=e4bb5c1b5d4355ffdfb1c7717d1167dc60cb4337a24c7636b474cb415ac98c37a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xt5CAOO5k2ijLKwnoLznFMgegY0Q8BTW%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '47725'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fupdate&id=1'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=post%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480887671.16
+    'REQUEST_TIME' => 1480887671
+]
