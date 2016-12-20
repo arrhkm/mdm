@@ -1,0 +1,19 @@
+$this->createTable ('employee', [
+	'id'=>$this->primaryKey(),
+	'employee_number'=>$this->string(20)->notNull()->unique(),
+	'first_name'=>$this->string(255),
+	'midle_name'=>$this->string(255),
+'last_name'=>$this->string(255), 
+'nick_name'=>$this->string(255),
+]);
+
+//Period_year
+$this->createTable('period_year'[
+'id'=>$this->primaryKey(),
+'date_start'=>$this->date(),
+'date_end'=>$this->date(),
+'period_name'=>$this->string(255),
+'date_day'=>$this->integer(2),
+'date_month'=>$this->integer(2),
+'date_year'=>$this->integer(2),
+]);
