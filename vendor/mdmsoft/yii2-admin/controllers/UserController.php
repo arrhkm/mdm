@@ -32,21 +32,23 @@ class UserController extends Controller
     public function behaviors()
     {
         return [
-//            'access' => [
-//                'class' => AccessControl::className(),
-//                'rules' => [
-//                    [
-//                        'actions' => ['signup', 'reset-password', 'login', 'request-password-reset'],
-//                        'allow' => true,
-//                        'roles' => ['?'],
-//                    ],
-//                    [
-//                        'actions' => ['logout', 'change-password', 'index', 'view', 'delete', 'activate'],
-//                        'allow' => true,
-//                        'roles' => ['@'],
-//                    ],
-//                ],
-//            ],
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['signup', 'reset-password', 'login', 'request-password-reset'],
+                        'allow' => true,
+                        'roles' => ['?'],
+                    ],
+                    [
+                        'actions' => ['logout', 'change-password', 'index', 'changepassword', 'view', 'delete', 'activate','inactivate'],
+                        'allow' => true,
+                        //'roles' => ['@'],
+                        'roles' => ['admin'],
+                    ],
+
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -91,6 +93,9 @@ class UserController extends Controller
      */
     public function actionIndex()
     {
+        /*if (!Yii::$app->user->can('createPost')) {
+            throw new \yii\web\HttpException(404, 'The requested Item could not be found.');
+        }*/
         $searchModel = new UserSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -248,6 +253,21 @@ class UserController extends Controller
         $user = $this->findModel($id);
         if ($user->status == User::STATUS_INACTIVE) {
             $user->status = User::STATUS_ACTIVE;
+            if ($user->save()) {
+                return $this->goHome();
+            } else {
+                $errors = $user->firstErrors;
+                throw new UserException(reset($errors));
+            }
+        }
+        return $this->goHome();
+    }
+    public function actionInactivate($id)
+    {
+        /* @var $user User */
+        $user = $this->findModel($id);
+        if ($user->status == User::STATUS_ACTIVE) {
+            $user->status = User::STATUS_INACTIVE;
             if ($user->save()) {
                 return $this->goHome();
             } else {

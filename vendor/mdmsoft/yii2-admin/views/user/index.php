@@ -36,7 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             [
                 'class' => 'yii\grid\ActionColumn',
-                'template' => Helper::filterActionColumn(['view', 'activate', 'delete']),
+                'template' => Helper::filterActionColumn(['view', 'activate', 'inactivate', 'delete','changepassword']),
                 'buttons' => [
                     'activate' => function($url, $model) {
                         if ($model->status == 10) {
@@ -50,7 +50,33 @@ $this->params['breadcrumbs'][] = $this->title;
                             'data-pjax' => '0',
                         ];
                         return Html::a('<span class="glyphicon glyphicon-ok"></span>', $url, $options);
-                    }
+                    },
+
+                    'inactivate' => function($url, $model) {
+                        if ($model->status == 0) {
+                            return '';
+                        }
+                        $options = [
+                            'title' => Yii::t('rbac-admin', 'InActivate'),
+                            'aria-label' => Yii::t('rbac-admin', 'InActivate'),
+                            'data-confirm' => Yii::t('rbac-admin', 'Are you sure you want to inactivate this user?'),
+                            'data-method' => 'post',
+                            'data-pjax' => '0',
+                        ];
+                        return Html::a('<span class="glyphicon glyphicon-remove"></span>', $url, $options);
+                    },
+
+                    'changepassword'=>function($url, $model){
+                        /*$options = [
+                            'title' => Yii::t('rbac-admin', 'Activate'),
+                            'aria-label' => Yii::t('rbac-admin', 'Activate'),
+                            'data-confirm' => Yii::t('rbac-admin', 'Are you sure you want to activate this user?'),
+                            'data-method' => 'post',
+                            'data-pjax' => '0',
+                        ];*/
+                        return Html::a('<span class="glyphicon glyphicon-edit"></span>', $url, $options);
+                    },
+
                     ]
                 ],
             ],

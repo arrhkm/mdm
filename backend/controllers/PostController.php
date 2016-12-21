@@ -67,7 +67,7 @@ class PostController extends Controller
     {
         $model = new Post();
         
-        if (!Yii::$app->user->can('createPost')) {
+        if (!Yii::$app->user->can('admin')) {
             throw new \yii\web\HttpException(404, 'The requested Item could not be found.');
         }
         $model->author_id = yii::$app->user->id;
@@ -90,7 +90,7 @@ class PostController extends Controller
     {
         $model = $this->findModel($id);
 
-        if (!Yii::$app->user->can('updatePost')) {
+        if (!Yii::$app->user->can('manageArticles')) {
             throw new \yii\web\HttpException(404, 'The requested Item could not be found.');
         }
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
