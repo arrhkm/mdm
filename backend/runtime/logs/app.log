@@ -2581,3 +2581,809 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1480887671.16
     'REQUEST_TIME' => 1480887671
 ]
+2016-12-22 16:18:45 [127.0.0.1][3][qjj3dfs1ir97slv164b5n4mh47][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: admin/user/changepassword' in /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php:125
+Stack trace:
+#0 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('changepassword', Array)
+#1 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin/user/chan...', Array)
+#2 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /media/hkm/data/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /media/hkm/data/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2016-12-22 16:18:45 [127.0.0.1][3][qjj3dfs1ir97slv164b5n4mh47][info][application] $_GET = [
+    'r' => 'admin/user/changepassword'
+    'id' => '9'
+]
+
+$_COOKIE = [
+    'AffiliatedA' => '1'
+    'advanced-backend' => 'qjj3dfs1ir97slv164b5n4mh47'
+    '_csrf-backend' => '6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wl3hzM50__zec7vbeYs87bc5-R5RxJuf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser'
+    'HTTP_COOKIE' => 'AffiliatedA=1; advanced-backend=qjj3dfs1ir97slv164b5n4mh47; _csrf-backend=6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wl3hzM50__zec7vbeYs87bc5-R5RxJuf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/media/hkm/data/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '45498'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fchangepassword&id=9'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Fchangepassword&id=9'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482398325.864
+    'REQUEST_TIME' => 1482398325
+]
+2016-12-22 16:19:31 [127.0.0.1][4][24h9qhofl47k41co7ml00l5dp4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /media/hkm/data/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/controllers/UserController.php(69): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(152): mdm\admin\controllers\UserController->beforeAction(Object(yii\base\InlineAction))
+#8 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#9 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin/user', Array)
+#10 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /media/hkm/data/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2016-12-22 16:19:31 [127.0.0.1][4][24h9qhofl47k41co7ml00l5dp4][info][application] $_GET = [
+    'r' => 'admin/user'
+]
+
+$_COOKIE = [
+    'AffiliatedA' => '1'
+    'advanced-backend' => '24h9qhofl47k41co7ml00l5dp4'
+    '_csrf-backend' => '6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wl3hzM50__zec7vbeYs87bc5-R5RxJuf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin'
+    'HTTP_COOKIE' => 'AffiliatedA=1; advanced-backend=24h9qhofl47k41co7ml00l5dp4; _csrf-backend=6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wl3hzM50__zec7vbeYs87bc5-R5RxJuf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/media/hkm/data/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '45506'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482398371.068
+    'REQUEST_TIME' => 1482398371
+]
+2016-12-22 16:22:05 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\filters\VerbFilter::roles' in /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(521): yii\base\Object->__set('roles', Array)
+#1 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\filters\VerbFilter), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\\filters\\Ver...', Array, Array)
+#5 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\filters\\Ver...', Array, Array)
+#6 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(662): yii\BaseYii::createObject(Array)
+#7 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(646): yii\base\Component->attachBehaviorInternal('verbs', Array)
+#8 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(528): yii\base\Component->ensureBehaviors()
+#9 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#10 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#11 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#12 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#13 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin/assignmen...', Array)
+#14 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /media/hkm/data/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#16 {main}
+2016-12-22 16:22:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/assignment'
+]
+
+$_COOKIE = [
+    'AffiliatedA' => '1'
+    'advanced-backend' => '24h9qhofl47k41co7ml00l5dp4'
+    '_csrf-backend' => '6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wl3hzM50__zec7vbeYs87bc5-R5RxJuf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fpermission'
+    'HTTP_COOKIE' => 'AffiliatedA=1; advanced-backend=24h9qhofl47k41co7ml00l5dp4; _csrf-backend=6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wl3hzM50__zec7vbeYs87bc5-R5RxJuf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/media/hkm/data/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '45512'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fassignment'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fassignment'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482398525.898
+    'REQUEST_TIME' => 1482398525
+]
+2016-12-22 16:26:16 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'mdm\admin\controllers\AccessControll' not found' in /media/hkm/data/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/controllers/AssignmentController.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-12-22 16:26:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/assignment'
+]
+
+$_COOKIE = [
+    'AffiliatedA' => '1'
+    'advanced-backend' => '24h9qhofl47k41co7ml00l5dp4'
+    '_csrf-backend' => '6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wl3hzM50__zec7vbeYs87bc5-R5RxJuf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fpermission'
+    'HTTP_COOKIE' => 'AffiliatedA=1; advanced-backend=24h9qhofl47k41co7ml00l5dp4; _csrf-backend=6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wl3hzM50__zec7vbeYs87bc5-R5RxJuf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/media/hkm/data/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '45562'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fassignment'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fassignment'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482398776.729
+    'REQUEST_TIME' => 1482398776
+]
+2016-12-22 16:28:19 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'mdm\admin\controllers\AccessControl' not found' in /media/hkm/data/htdocs/yii2/mdm/vendor/mdmsoft/yii2-admin/controllers/AssignmentController.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-12-22 16:28:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/assignment'
+]
+
+$_COOKIE = [
+    'AffiliatedA' => '1'
+    'advanced-backend' => '24h9qhofl47k41co7ml00l5dp4'
+    '_csrf-backend' => '6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wl3hzM50__zec7vbeYs87bc5-R5RxJuf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fpermission'
+    'HTTP_COOKIE' => 'AffiliatedA=1; advanced-backend=24h9qhofl47k41co7ml00l5dp4; _csrf-backend=6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wl3hzM50__zec7vbeYs87bc5-R5RxJuf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/media/hkm/data/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '45566'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fassignment'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fassignment'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482398898.996
+    'REQUEST_TIME' => 1482398898
+]
+2016-12-22 16:29:35 [127.0.0.1][4][24h9qhofl47k41co7ml00l5dp4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#8 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin/assignmen...', Array)
+#9 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /media/hkm/data/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2016-12-22 16:29:35 [127.0.0.1][4][24h9qhofl47k41co7ml00l5dp4][info][application] $_GET = [
+    'r' => 'admin/assignment'
+]
+
+$_COOKIE = [
+    'AffiliatedA' => '1'
+    'advanced-backend' => '24h9qhofl47k41co7ml00l5dp4'
+    '_csrf-backend' => '6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wl3hzM50__zec7vbeYs87bc5-R5RxJuf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fpermission'
+    'HTTP_COOKIE' => 'AffiliatedA=1; advanced-backend=24h9qhofl47k41co7ml00l5dp4; _csrf-backend=6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wl3hzM50__zec7vbeYs87bc5-R5RxJuf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/media/hkm/data/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '45568'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fassignment'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fassignment'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482398975.771
+    'REQUEST_TIME' => 1482398975
+]
+2016-12-22 16:29:55 [127.0.0.1][3][fnsfjat005blm6p0g6jrl6ap82][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#8 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin', Array)
+#9 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /media/hkm/data/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2016-12-22 16:29:55 [127.0.0.1][3][fnsfjat005blm6p0g6jrl6ap82][info][application] $_GET = [
+    'r' => 'admin'
+]
+
+$_COOKIE = [
+    'AffiliatedA' => '1'
+    'advanced-backend' => 'fnsfjat005blm6p0g6jrl6ap82'
+    '_csrf-backend' => '6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wl3hzM50__zec7vbeYs87bc5-R5RxJuf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php'
+    'HTTP_COOKIE' => 'AffiliatedA=1; advanced-backend=fnsfjat005blm6p0g6jrl6ap82; _csrf-backend=6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wl3hzM50__zec7vbeYs87bc5-R5RxJuf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/media/hkm/data/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '45582'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482398995.402
+    'REQUEST_TIME' => 1482398995
+]
+2016-12-22 16:29:58 [127.0.0.1][3][fnsfjat005blm6p0g6jrl6ap82][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#8 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin', Array)
+#9 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /media/hkm/data/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2016-12-22 16:29:58 [127.0.0.1][3][fnsfjat005blm6p0g6jrl6ap82][info][application] $_GET = [
+    'r' => 'admin'
+]
+
+$_COOKIE = [
+    'AffiliatedA' => '1'
+    'advanced-backend' => 'fnsfjat005blm6p0g6jrl6ap82'
+    '_csrf-backend' => '6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wl3hzM50__zec7vbeYs87bc5-R5RxJuf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin'
+    'HTTP_COOKIE' => 'AffiliatedA=1; advanced-backend=fnsfjat005blm6p0g6jrl6ap82; _csrf-backend=6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wl3hzM50__zec7vbeYs87bc5-R5RxJuf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/media/hkm/data/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '45582'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482398998.503
+    'REQUEST_TIME' => 1482398998
+]
+2016-12-22 16:30:02 [127.0.0.1][3][fnsfjat005blm6p0g6jrl6ap82][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#8 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin', Array)
+#9 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /media/hkm/data/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2016-12-22 16:30:01 [127.0.0.1][3][fnsfjat005blm6p0g6jrl6ap82][info][application] $_GET = [
+    'r' => 'admin'
+]
+
+$_COOKIE = [
+    'AffiliatedA' => '1'
+    'advanced-backend' => 'fnsfjat005blm6p0g6jrl6ap82'
+    '_csrf-backend' => '6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wl3hzM50__zec7vbeYs87bc5-R5RxJuf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin'
+    'HTTP_COOKIE' => 'AffiliatedA=1; advanced-backend=fnsfjat005blm6p0g6jrl6ap82; _csrf-backend=6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wl3hzM50__zec7vbeYs87bc5-R5RxJuf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/media/hkm/data/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '45582'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482399001.984
+    'REQUEST_TIME' => 1482399001
+]
+2016-12-22 16:30:03 [127.0.0.1][3][fnsfjat005blm6p0g6jrl6ap82][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#8 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin', Array)
+#9 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /media/hkm/data/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2016-12-22 16:30:03 [127.0.0.1][3][fnsfjat005blm6p0g6jrl6ap82][info][application] $_GET = [
+    'r' => 'admin'
+]
+
+$_COOKIE = [
+    'AffiliatedA' => '1'
+    'advanced-backend' => 'fnsfjat005blm6p0g6jrl6ap82'
+    '_csrf-backend' => '6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wl3hzM50__zec7vbeYs87bc5-R5RxJuf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin'
+    'HTTP_COOKIE' => 'AffiliatedA=1; advanced-backend=fnsfjat005blm6p0g6jrl6ap82; _csrf-backend=6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wl3hzM50__zec7vbeYs87bc5-R5RxJuf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/media/hkm/data/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '45582'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482399003.386
+    'REQUEST_TIME' => 1482399003
+]
+2016-12-22 16:30:08 [127.0.0.1][3][fnsfjat005blm6p0g6jrl6ap82][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#8 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin', Array)
+#9 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /media/hkm/data/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2016-12-22 16:30:08 [127.0.0.1][3][fnsfjat005blm6p0g6jrl6ap82][info][application] $_GET = [
+    'r' => 'admin'
+]
+
+$_COOKIE = [
+    'AffiliatedA' => '1'
+    'advanced-backend' => 'fnsfjat005blm6p0g6jrl6ap82'
+    '_csrf-backend' => '6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wl3hzM50__zec7vbeYs87bc5-R5RxJuf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php'
+    'HTTP_COOKIE' => 'AffiliatedA=1; advanced-backend=fnsfjat005blm6p0g6jrl6ap82; _csrf-backend=6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wl3hzM50__zec7vbeYs87bc5-R5RxJuf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/media/hkm/data/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '45582'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482399008.56
+    'REQUEST_TIME' => 1482399008
+]
+2016-12-22 16:34:33 [127.0.0.1][3][fnsfjat005blm6p0g6jrl6ap82][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('view', Array)
+#8 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin/assignmen...', Array)
+#9 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /media/hkm/data/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2016-12-22 16:34:33 [127.0.0.1][3][fnsfjat005blm6p0g6jrl6ap82][info][application] $_GET = [
+    'r' => 'admin/assignment/view'
+    'id' => '3'
+]
+
+$_COOKIE = [
+    'AffiliatedA' => '1'
+    'advanced-backend' => 'fnsfjat005blm6p0g6jrl6ap82'
+    '_csrf-backend' => '6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wl3hzM50__zec7vbeYs87bc5-R5RxJuf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fassignment'
+    'HTTP_COOKIE' => 'AffiliatedA=1; advanced-backend=fnsfjat005blm6p0g6jrl6ap82; _csrf-backend=6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wl3hzM50__zec7vbeYs87bc5-R5RxJuf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/media/hkm/data/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '45634'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fassignment%2Fview&id=3'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fassignment%2Fview&id=3'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482399273.285
+    'REQUEST_TIME' => 1482399273
+]
+2016-12-22 16:34:48 [127.0.0.1][3][fnsfjat005blm6p0g6jrl6ap82][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('view', Array)
+#8 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin/assignmen...', Array)
+#9 /media/hkm/data/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /media/hkm/data/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2016-12-22 16:34:48 [127.0.0.1][3][fnsfjat005blm6p0g6jrl6ap82][info][application] $_GET = [
+    'r' => 'admin/assignment/view'
+    'id' => '3'
+]
+
+$_COOKIE = [
+    'AffiliatedA' => '1'
+    'advanced-backend' => 'fnsfjat005blm6p0g6jrl6ap82'
+    '_csrf-backend' => '6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wl3hzM50__zec7vbeYs87bc5-R5RxJuf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fassignment'
+    'HTTP_COOKIE' => 'AffiliatedA=1; advanced-backend=fnsfjat005blm6p0g6jrl6ap82; _csrf-backend=6ac4c4031f35021ed91d73801d29caa6442e6918bcba06ad9ea06be08d3430eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wl3hzM50__zec7vbeYs87bc5-R5RxJuf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/media/hkm/data/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/media/hkm/data/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '45634'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fassignment%2Fview&id=3'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fassignment%2Fview&id=3'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1482399288.451
+    'REQUEST_TIME' => 1482399288
+]

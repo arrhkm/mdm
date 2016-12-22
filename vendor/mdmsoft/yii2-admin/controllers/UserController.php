@@ -55,6 +55,7 @@ class UserController extends Controller
                     'delete' => ['post'],
                     'logout' => ['post'],
                     'activate' => ['post'],
+                    //'changepassword' => ['post'],
                 ],
             ],
         ];

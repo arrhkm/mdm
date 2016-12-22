@@ -33,6 +33,7 @@ $asset = yii\gii\GiiAsset::register($this);
                 ['label' => 'Home', 'url' => ['default/index']],
                 ['label' => 'Help', 'url' => 'http://www.yiiframework.com/doc-2.0/guide-tool-gii.html'],
                 ['label' => 'Application', 'url' => Yii::$app->homeUrl],
+                //['label' => ''
             ],
         ]);
         NavBar::end();
