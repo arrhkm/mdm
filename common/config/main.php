@@ -1,13 +1,17 @@
 <?php
 return [
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
+    
+    /*
     'modules' => [
     	'admin'=>[
     		'class' => 'mdm\admin\Module',
+            //'layout' => 'top-right', // it can be '@path/to/your/layout'.
     	]
-    ],
+    ],*/
     'components' => [
-    	'authManager'=>[
+    	/*
+        'authManager'=>[
         	'class'=> 'yii\rbac\DbManager',
         ],
         'as access' => [
@@ -23,7 +27,7 @@ return [
                 // otherwise you may not even take a first step.
             ]
         ],  
-        
+        */
     	//'user' => [
 	        //'class' => 'mdm\admin\models\User',
 	        //'identityClass' => 'mdm\admin\models\User',

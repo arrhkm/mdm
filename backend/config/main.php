@@ -15,12 +15,13 @@ return [
     'modules' => [
         'admin'=>[
             'class'=>'mdm\admin\Module',
-            'layout' => 'left-menu',
+            'layout' => 'right-menu',
             'mainLayout' => '@app/views/layouts/main.php',
             'controllerMap' => [
                 'assignment' => [
                     'class' => 'mdm\admin\controllers\AssignmentController',
                     //'userClassName' => 'mdm\admin\models\User', 
+                    'userClassName'=> 'mdm\admin\models\User',
                     'idField' => 'user_id',
                     'usernameField' => 'username',
                     //'fullnameField' => 'profile.full_name',
@@ -38,7 +39,13 @@ return [
         'authManager'=>[
             'class'=> 'yii\rbac\DbManager',
         ],
-        
+        'as access' => [
+            'class' => 'mdm\admin\components\AccessControl',
+            'allowActions' => [
+                'site/login', 
+                'site/error',
+            ]
+        ],
         'user' => [
             //'class' => 'mdm\admin\models\User',
             'identityClass' => 'mdm\admin\models\User',
