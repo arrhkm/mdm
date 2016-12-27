@@ -12,13 +12,14 @@ use yii\base\Model;
  * @author Misbahul D Munir <misbahuldmunir@gmail.com>
  * @since 1.0
  */
-class ChangePassword extends Model
+class ChangePasswordAdmin extends Model
 {
     public $oldPassword;
     public $newPassword;
     public $retypePassword;
     //tambahan
-    
+    public $id;
+    public $username;
 
     /**
      * @inheritdoc
@@ -26,8 +27,8 @@ class ChangePassword extends Model
     public function rules()
     {
         return [
-            [['oldPassword', 'newPassword', 'retypePassword'], 'required'],
-            [['oldPassword'], 'validatePassword'],
+            [['newPassword', 'retypePassword'], 'required'],
+            //[['oldPassword'], 'validatePassword'],
             [['newPassword'], 'string', 'min' => 6],
             [['retypePassword'], 'compare', 'compareAttribute' => 'newPassword'],
         ];
@@ -40,14 +41,19 @@ class ChangePassword extends Model
     public function validatePassword()
     {
         /* @var $user User */
+        
         $user = Yii::$app->user->identity;
+        
         if (!$user || !$user->validatePassword($this->oldPassword)) {
             $this->addError('oldPassword', 'Incorrect old password.');
         }
-        else if (!$user=='admin'){
+        
+        if (!$user=='admin'){
             $this->addError('', 'User bukan admin');
         }
     }
+
+
 
     /**
      * Change password.
@@ -65,6 +71,33 @@ class ChangePassword extends Model
                 return true;
             }
         }
+
+        return false;
+    }
+
+
+
+    public function changeAdmin($id)
+    {
+        
+        if ($this->validate()) {
+            /* @var $user User */
+        /*
+            $user = Yii::$app->user->identity;
+            $user->setPassword($this->newPassword);
+            $user->generateAuthKey();
+            if ($user->save()) {
+                return true;
+            }
+            */
+            $user = User::model()->findIdentity($id);
+            $user->setPassword($this->newPassword);
+            $user->generateAuthKey();
+            if ($user->save()) {
+                return true;
+            }
+        }
+
 
         return false;
     }

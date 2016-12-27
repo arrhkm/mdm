@@ -1,13 +1,9 @@
-# yii console commands
-/yii
-/yii_test
-/yii_test.bat
-
 # phpstorm project files
 .idea
 
 # netbeans project files
 nbproject
+/nbproject/private/
 
 # zend studio for eclipse project files
 .buildpath
@@ -18,7 +14,7 @@ nbproject
 Thumbs.db
 
 # composer vendor dir
-#/vendor
+/vendor
 
 # composer itself is not needed
 composer.phar
@@ -30,6 +26,3 @@ composer.phar
 phpunit.phar
 # local phpunit config
 /phpunit.xml
-
-# vagrant runtime
-/.vagrant

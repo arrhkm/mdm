@@ -7,7 +7,8 @@ use mdm\admin\models\form\Login;
 use mdm\admin\models\form\PasswordResetRequest;
 use mdm\admin\models\form\ResetPassword;
 use mdm\admin\models\form\Signup;
-use mdm\admin\models\form\ChangePassword;
+//use mdm\admin\models\form\ChangePassword;
+use mdm\admin\models\form\ChangePasswordAdmin;
 use mdm\admin\models\User;
 use mdm\admin\models\searchs\User as UserSearch;
 use yii\base\InvalidParamException;
@@ -18,6 +19,9 @@ use yii\filters\AccessControl;
 use yii\web\NotFoundHttpException;
 use yii\base\UserException;
 use yii\mail\BaseMailer;
+
+//Tambahan
+
 
 /**
  * User controller
@@ -229,14 +233,18 @@ class UserController extends Controller
      * Reset password
      * @return string
      */
-    public function actionChangePassword()
+    public function actionChangepassword()
     {
-        $model = new ChangePassword();
-        if ($model->load(Yii::$app->getRequest()->post()) && $model->change()) {
-            return $this->goHome();
+        $model = new ChangePasswordAdmin();
+        //if ($model->load(Yii::$app->getRequest()->post()) && $model->changeAdmin(4)) {
+        if ($model->load(Yii::$app->getRequest()->post()) && $model->changeAdmin($model->id)) {
+            //return $this->goHome();
+            $this->render('changepassword', [
+                'model' => $model,
+            ]);
         }
 
-        return $this->render('change-password', [
+        return $this->render('changepassword', [
                 'model' => $model,
         ]);
     }

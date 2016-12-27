@@ -32,7 +32,7 @@ use yii\jui\AutoComplit;
 
      <?= $form->field($model_user, 'username')->widget(\yii\jui\AutoComplete::classname(), [
                 'options' => ['class' => 'form-control', 'placeholder' => 'Enter Name/ID'],
-                'clientOptions' => ['source' => ['$item', 'Guyonan','macan ompong']],
+                'clientOptions' => ['source' => ['Guyonan','macan ompong']],
     ])?>
 
     
@@ -43,7 +43,7 @@ use yii\jui\AutoComplit;
     
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model_user->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model_user->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
