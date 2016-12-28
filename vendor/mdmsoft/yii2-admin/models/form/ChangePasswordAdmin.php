@@ -3,8 +3,9 @@
 namespace mdm\admin\models\form;
 
 use Yii;
-use mdm\admin\models\User;
+//use mdm\admin\models\User;
 use yii\base\Model;
+use app\models\User;
 
 /**
  * Description of ChangePassword
@@ -30,6 +31,7 @@ class ChangePasswordAdmin extends Model
             [['newPassword', 'retypePassword'], 'required'],
             //[['oldPassword'], 'validatePassword'],
             [['newPassword'], 'string', 'min' => 6],
+            [['id'], 'integer'],
             [['retypePassword'], 'compare', 'compareAttribute' => 'newPassword'],
         ];
     }
@@ -90,9 +92,13 @@ class ChangePasswordAdmin extends Model
                 return true;
             }
             */
-            $user = User::model()->findIdentity($id);
-            $user->setPassword($this->newPassword);
-            $user->generateAuthKey();
+            //$user = New User;
+            $user = User::find()->where(['id' => $id])->one();
+            //$user = $this->findByPk(4);
+            //$user = Yii::$app->user->identity;
+            //$user->setPassword($this->newPassword);
+            //$user->generateAuthKey();
+            $user->password_hash = $this->setPassword($this->newPassword);
             if ($user->save()) {
                 return true;
             }
@@ -100,5 +106,10 @@ class ChangePasswordAdmin extends Model
 
 
         return false;
+    }
+
+    public function setPassword($password)
+    {
+        return Yii::$app->security->generatePasswordHash($password);
     }
 }
