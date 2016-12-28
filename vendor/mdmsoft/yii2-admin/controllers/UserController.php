@@ -238,10 +238,13 @@ class UserController extends Controller
         $model = new ChangePasswordAdmin();
         //if ($model->load(Yii::$app->getRequest()->post()) && $model->changeAdmin(4)) {
         if ($model->load(Yii::$app->getRequest()->post()) && $model->changeAdmin($model->id)) {
-            //return $this->goHome();
+            return $this->goHome();
+            /*
             $this->render('changepassword', [
                 'model' => $model,
             ]);
+            */
+
         }
 
         return $this->render('changepassword', [

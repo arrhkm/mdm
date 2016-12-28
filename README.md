@@ -1,5 +1,12 @@
 Yii 2 Advanced Project Template
 ===============================
+<<<<<<< HEAD
+
+Master Hakam 27-12-2016 
+=======
+pengembangan Hakam 17-12-2016
+
+>>>>>>> f31425bccecf6c5ee5cee0ab19fd67310eae41f0
 
 Master Hakam 27-12-2016 
 

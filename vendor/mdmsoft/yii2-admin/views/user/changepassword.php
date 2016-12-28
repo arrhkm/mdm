@@ -12,11 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-signup">
     <h1><?= Html::encode($this->title) ?></h1>
-    <?php 
-       echo $model->id;
-       echo $model->username;
-       echo $_REQUEST['id'];
-    ?>
+    
 
     <p>Please fill out the following fields to change password:</p>
 
@@ -34,3 +30,12 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 </div>
+
+<?php 
+       echo "model->id ". $model->id;
+       echo "<br> model->username :".$model->username;
+       echo "<br> Request id :".$_REQUEST['id'];
+       echo "<br> New Password:".$model->newPassword;
+       echo "<br> RetypePassword :".$model->retypePassword;
+
+?>
