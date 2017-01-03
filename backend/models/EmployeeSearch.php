@@ -19,7 +19,7 @@ class EmployeeSearch extends Employee
     {
         return [
             [['id'], 'integer'],
-            [['employee_number', 'first_name', 'last_name', 'nick_name'], 'safe'],
+            [['employee_number', 'first_name', 'last_name', 'nick_name', 'email'], 'safe'],
         ];
     }
 
@@ -65,7 +65,8 @@ class EmployeeSearch extends Employee
         $query->andFilterWhere(['like', 'employee_number', $this->employee_number])
             ->andFilterWhere(['like', 'first_name', $this->first_name])
             ->andFilterWhere(['like', 'last_name', $this->last_name])
-            ->andFilterWhere(['like', 'nick_name', $this->nick_name]);
+            ->andFilterWhere(['like', 'nick_name', $this->nick_name])
+            ->andFilterWhere(['like', 'email', $this->email]);
 
         return $dataProvider;
     }

@@ -8,10 +8,7 @@ use app\models\EmployeeSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-// Tambahan 
-use yii\jui;
-use app\models\User;
-use yii\helpers\ArrayHelper;
+
 /**
  * EmployeeController implements the CRUD actions for Employee model.
  */
@@ -123,41 +120,5 @@ class EmployeeController extends Controller
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
-    }
-
-
-
-    // tambahan 
-
-    protected function findModelUser($id)
-    {
-        if (($model = User::findOne($id)) !== null) {
-            return $model;
-        } else {
-            throw new NotFoundHttpException('The requested page does not exist.');
-        }
-    }
-
-    public function actionAdduser($id)
-    {
-        //$model_emp = New Employee();
-        //$model_user = New User();
-        $model_emp=$this->findModel($id);
-
-        $model_user = new User();
-        //$items = User::findAll();
-        $item= ArrayHelper::map(User::find()->all(), 'id', 'username');
-
-        /*
-        if ($model->load(Yii::$app->request->post()) && $model_user->save()) {
-            return $this->redirect(['view', 'id' => $model_emp->id]);
-        } else {
-        */
-            return $this->render('adduser', [
-                'model_user' => $model_user,
-                'model_emp'=>$model_emp,
-                'item' =>$item,
-            ]);
-        //}
     }
 }

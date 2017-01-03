@@ -12,6 +12,7 @@ use Yii;
  * @property string $first_name
  * @property string $last_name
  * @property string $nick_name
+ * @property string $email
  *
  * @property Leave[] $leaves
  * @property LeaveEntitlement[] $leaveEntitlements
@@ -34,9 +35,11 @@ class Employee extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['employee_number'], 'required'],
+            [['employee_number', 'email'], 'required'],
             [['employee_number', 'first_name', 'last_name', 'nick_name'], 'string', 'max' => 255],
+            [['email'], 'string', 'max' => 225],
             [['employee_number'], 'unique'],
+            [['email'], 'unique'],
         ];
     }
 
@@ -51,6 +54,7 @@ class Employee extends \yii\db\ActiveRecord
             'first_name' => Yii::t('app', 'First Name'),
             'last_name' => Yii::t('app', 'Last Name'),
             'nick_name' => Yii::t('app', 'Nick Name'),
+            'email' => Yii::t('app', 'Email'),
         ];
     }
 

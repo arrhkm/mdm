@@ -29,14 +29,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'first_name',
             'last_name',
             'nick_name',
-            /*[
-                'class' => DataColumn::className(), // this line is optional
-                'attribute' => 'name',
-                'format' => 'text',
-                'label' => 'Name',
-            ],
-            */
-            
+            // 'email:email',
+
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
