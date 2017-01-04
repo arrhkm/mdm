@@ -13,6 +13,8 @@ class SignupForm extends Model
     public $username;
     public $email;
     public $password;
+   //tambahan
+    public $employee_id;
 
 
     /**
@@ -34,6 +36,10 @@ class SignupForm extends Model
 
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
+
+            ['employee_id', 'trim'],
+            ['employee_id', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This Id Employee has already been taken.'],
+            ['employee_id', 'number'],
         ];
     }
 
@@ -54,11 +60,6 @@ class SignupForm extends Model
         $user->setPassword($this->password);
         $user->generateAuthKey();
         
-        //add 3 lines
-        //$auth = Yii::$app->authManager;
-        //$authorRole = $auth->getRole('author');
-        //$auth->assign($authorRole, $user->getId());
-        //--end 3 lines ---
         return $user->save() ? $user : null;
     }
 }
