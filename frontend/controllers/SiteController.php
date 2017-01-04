@@ -13,6 +13,7 @@ use frontend\models\ResetPasswordForm;
 //use frontend\models\SignupForm;
 use frontend\models\SignupFormUser;
 use frontend\models\ContactForm;
+use frontend\models\UserRequestForm;
 
 /**
  * Site controller
@@ -27,7 +28,7 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout', 'signup'],
+                'only' => ['logout', 'signup', 'newuser'],
                 'rules' => [
                     [
                         'actions' => ['signup'],
@@ -39,6 +40,12 @@ class SiteController extends Controller
                         'allow' => true,
                         'roles' => ['@'],
                     ],
+                    [
+                        'actions' => ['newuser'],
+                        'allow' => true,
+                        'roles' => ['?'],
+                    ],
+                    
                 ],
             ],
             'verbs' => [
@@ -171,6 +178,7 @@ class SiteController extends Controller
     public function actionRequestPasswordReset()
     {
         $model = new PasswordResetRequestForm();
+        
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail()) {
                 Yii::$app->session->setFlash('success', 'Check your email for further instructions.');
@@ -185,6 +193,26 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+    public function actionNewuser()
+    {
+        $model = new UserRequestForm();
+        
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            if ($model->sendEmail()) {
+                Yii::$app->session->setFlash('success', 'Check your email for further instructions.');
+
+                return $this->goHome();
+            } else {
+                Yii::$app->session->setFlash('error', 'Sorry, we are unable to reset password for email provided.');
+            }
+        }
+
+        return $this->render('newuser', [
+            'model' => $model,
+        ]);
+    }
+    
 
     /**
      * Resets password.

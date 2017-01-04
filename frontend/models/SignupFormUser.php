@@ -17,19 +17,26 @@ class SignupFormUser extends SignupForm
         if (!$this->validate()) {
             return null;
         }
-        else {
-        $emp = Employee::find()->where(['email'=>$this->email])->One();
-        $emp_id = $emp->id;
-        $user = new User();
+        if (Employee::find()->where(['email'=>$this->email])->One()){     
+            
+
+                $emp = Employee::find()->where(['email'=>$this->email])->One();
+                $emp_id = $emp->id;
+                $user = new User();
+                
+                $user->username = $this->username;
+                $user->email = $this->email;
+                $user->setPassword($this->password);
+                $user->generateAuthKey();
+                $user->employee_id = $emp_id;
+                
+                return $user->save() ? $user : null;
+        } 
+            
+            Yii::$app->session->setFlash('error', 'ThGak validate.');
+                
         
-        $user->username = $this->username;
-        $user->email = $this->email;
-        $user->setPassword($this->password);
-        $user->generateAuthKey();
-        $user->employee_id = $emp_id;
-        
-        return $user->save() ? $user : null;
-    	}
+    	
     }
 
     public function findByEmail($email)
