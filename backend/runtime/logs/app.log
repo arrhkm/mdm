@@ -10920,3 +10920,1527 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1483480774.202
     'REQUEST_TIME' => 1483480774
 ]
+2017-01-05 05:14:41 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:14:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'employee/view'
+    'id' => '2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52955'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=employee%2Fview&id=2'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=employee%2Fview&id=2'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568081.276
+    'REQUEST_TIME' => 1483568081
+]
+2017-01-05 05:14:48 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:14:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'employee'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'm4907jmupoe1ns98q2vcqhsl27'
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=employee%2Fview&id=2'
+    'HTTP_COOKIE' => 'advanced-backend=m4907jmupoe1ns98q2vcqhsl27; _csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52957'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=employee'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=employee'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568087.994
+    'REQUEST_TIME' => 1483568087
+]
+2017-01-05 05:16:26 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:16:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'm4907jmupoe1ns98q2vcqhsl27'
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=employee'
+    'HTTP_COOKIE' => 'advanced-backend=m4907jmupoe1ns98q2vcqhsl27; _csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52966'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568186.052
+    'REQUEST_TIME' => 1483568186
+]
+2017-01-05 05:16:26 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:16:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/user/login'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'm4907jmupoe1ns98q2vcqhsl27'
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=employee'
+    'HTTP_COOKIE' => 'advanced-backend=m4907jmupoe1ns98q2vcqhsl27; _csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52967'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Flogin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568186.177
+    'REQUEST_TIME' => 1483568186
+]
+2017-01-05 05:16:38 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:16:37 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin/user/login'
+]
+
+$_POST = [
+    '_csrf-backend' => 'RFNsd25nLW8hYwsiOyNYLABgICcBFlUWMjtcAgwfdycdZQ04HhNIPQ=='
+    'Login' => [
+        'username' => 'admin'
+        'password' => 'admin1234'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'm4907jmupoe1ns98q2vcqhsl27'
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'HTTP_COOKIE' => 'advanced-backend=m4907jmupoe1ns98q2vcqhsl27; _csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'CONTENT_LENGTH' => '212'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52969'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Flogin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568197.561
+    'REQUEST_TIME' => 1483568197
+]
+2017-01-05 05:16:38 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:16:38 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Flogin'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52970'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568198.786
+    'REQUEST_TIME' => 1483568198
+]
+2017-01-05 05:16:41 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:16:41 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin/user'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52970'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568201.613
+    'REQUEST_TIME' => 1483568201
+]
+2017-01-05 05:16:52 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:16:52 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin/user/delete'
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf-backend' => 'MnM0NE1vYThXQ1NhGCsUe3ZAeGQiHhlBRBsEQS8XO3BrRVV7PRsEag=='
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'CONTENT_LENGTH' => '74'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52971'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fdelete&id=2'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Fdelete&id=2'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568212.654
+    'REQUEST_TIME' => 1483568212
+]
+2017-01-05 05:16:52 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:16:52 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin/user/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52972'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Findex'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Findex'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568212.765
+    'REQUEST_TIME' => 1483568212
+]
+2017-01-05 05:20:03 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:20:03 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'employee'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Findex'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52973'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=employee'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=employee'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568403.632
+    'REQUEST_TIME' => 1483568403
+]
+2017-01-05 05:20:07 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:20:07 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'employee/create'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=employee'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52974'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=employee%2Fcreate'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=employee%2Fcreate'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568407.286
+    'REQUEST_TIME' => 1483568407
+]
+2017-01-05 05:20:46 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:20:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'employee/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'OWJDWWRPSkJcUiQMMQs/AX1RDwkLPjI7TwpzLAY3EApgVCIWFDsvEA=='
+    'Employee' => [
+        'employee_number' => 'S09077'
+        'first_name' => 'Faris Al ZOnk'
+        'last_name' => ''
+        'nick_name' => 'Faris'
+        'email' => 'faris@lintech.co.id'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=employee%2Fcreate'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'CONTENT_LENGTH' => '249'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52975'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=employee%2Fcreate'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=employee%2Fcreate'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568446.578
+    'REQUEST_TIME' => 1483568446
+]
+2017-01-05 05:20:46 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:20:46 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'employee/view'
+    'id' => '3'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=employee%2Fcreate'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52976'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=employee%2Fview&id=3'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=employee%2Fview&id=3'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568446.67
+    'REQUEST_TIME' => 1483568446
+]
+2017-01-05 05:21:00 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:21:00 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'employee/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=employee%2Fview&id=3'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52977'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=employee%2Findex'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=employee%2Findex'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568460.715
+    'REQUEST_TIME' => 1483568460
+]
+2017-01-05 05:21:54 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:21:54 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=employee%2Findex'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52981'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568514.07
+    'REQUEST_TIME' => 1483568514
+]
+2017-01-05 05:21:56 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:21:55 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin/user'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52982'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568515.946
+    'REQUEST_TIME' => 1483568515
+]
+2017-01-05 05:22:03 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:22:03 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin/user/delete'
+    'id' => '4'
+]
+
+$_POST = [
+    '_csrf-backend' => 'XzdDWHRBZmw6ByQNIQUTLxsEDwgbMB4VKV9zLRY5PCQGASIXBDUDPg=='
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'CONTENT_LENGTH' => '74'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52983'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fdelete&id=4'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Fdelete&id=4'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568523.498
+    'REQUEST_TIME' => 1483568523
+]
+2017-01-05 05:22:03 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:22:03 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin/user/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '52984'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Findex'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Findex'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483568523.608
+    'REQUEST_TIME' => 1483568523
+]
+2017-01-05 05:33:26 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:33:25 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin/user'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Findex'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '53020'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483569205.967
+    'REQUEST_TIME' => 1483569205
+]
+2017-01-05 05:33:30 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:33:30 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin/user/delete'
+    'id' => '8'
+]
+
+$_POST = [
+    '_csrf-backend' => 'cWhlX2I1ZXYUWAIKN3EQNTVbKQ8NRB0PBwBVKgBNPz4oXgQQEkEAJA=='
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'CONTENT_LENGTH' => '74'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '53021'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fdelete&id=8'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Fdelete&id=8'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483569210.597
+    'REQUEST_TIME' => 1483569210
+]
+2017-01-05 05:33:30 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 05:33:30 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin/user/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '53022'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Findex'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Findex'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483569210.709
+    'REQUEST_TIME' => 1483569210
+]
+2017-01-05 06:02:14 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 06:02:14 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin/user'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Findex'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '53061'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483570934.631
+    'REQUEST_TIME' => 1483570934
+]
+2017-01-05 06:09:52 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 06:09:52 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin/user/delete'
+    'id' => '9'
+]
+
+$_POST = [
+    '_csrf-backend' => 'NmdveTEwbWJTVwgsZHQYIXJUIyleQRUbQA9fDFNINypvUQ42QUQIMA=='
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'CONTENT_LENGTH' => '74'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '53062'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fdelete&id=9'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Fdelete&id=9'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483571392.067
+    'REQUEST_TIME' => 1483571392
+]
+2017-01-05 06:09:52 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 1784 of 15040 bytes' 
+
+in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/home/acer/app/...', 88, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(88): unserialize('a:50:{s:13:"586...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-01-05 06:09:52 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin/user/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR\";}'
+    'advanced-backend' => 'uqon4nev011haglcd616tpsve2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/index.php?r=admin'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_USER_AGENT' => 'Opera/9.80 (X11; Linux i686; Edition Linux Mint) Presto/2.12.388 Version/12.16'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=admin%2Fuser'
+    'HTTP_COOKIE' => '_csrf-backend=f959322e10870267cf35a41be1fee4ba78892098a63f39d6daed6b1f13c09b8ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e0gUUDuCD3LPoqxyvh0ubxZHY6aOpteR%22%3B%7D; advanced-backend=uqon4nev011haglcd616tpsve2'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '53063'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Findex'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=admin%2Fuser%2Findex'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483571392.178
+    'REQUEST_TIME' => 1483571392
+]

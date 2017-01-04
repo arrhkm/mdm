@@ -20,9 +20,19 @@ class UserRequestForm extends Model
 	public function rules()
 	{
 		return [
-			['email', 'trim'],
+			/*['email', 'trim'],
 			['email', 'required'],
-			['email', 'email'],
+			['email', 'email'],*/
+
+               ['email', 'trim'],
+               ['email', 'required'],
+               ['email', 'email'],
+               ['email', 'string', 'max' => 255],
+               [
+                    'email', 'unique', 
+                    'targetClass' => '\common\models\User', 
+                    'message' => 'This email address has already been taken.'
+               ],
                ['username', 'trim'],
                ['username','required'],
 			//['email', 'exist'],
@@ -70,15 +80,10 @@ class UserRequestForm extends Model
      			)
      			->setFrom([Yii::$app->params['supportEmail']=> Yii::$app->name .'robot'])
      			->setTo($this->email)
-     			->setSubject('Password new for new User '. Yii::$app->name)
+     			->setSubject('Password for new user '. Yii::$app->name)
      			->send();
      	}
-          Yii::$app->session->setFlash('error', 'User Sudah teregister.');
+          Yii::$app->session->setFlash('error', 'User register has already taken.');
      }
-
 }
-
-
-
-
 ?>

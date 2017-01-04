@@ -8,6 +8,7 @@ use common\models\Employee;
 use common\models\User;
 use yii\db\ActiveQuery;
 use yii\base\NotSupportedException;
+
 use yii\base\ErrorException;
 
 class SignupFormUser extends SignupForm
@@ -31,12 +32,8 @@ class SignupFormUser extends SignupForm
                 $user->employee_id = $emp_id;
                 
                 return $user->save() ? $user : null;
-        } 
-            
-            Yii::$app->session->setFlash('error', 'ThGak validate.');
-                
-        
-    	
+        }             
+        Yii::$app->session->setFlash('error', 'This  Id Employee has already been taken .');      
     }
 
     public function findByEmail($email)

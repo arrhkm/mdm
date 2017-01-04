@@ -68,9 +68,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
                     'changepassword'=>function($url, $model){
                         $options = [
-                            'title' => Yii::t('rbac-admin', 'changePassword'),
-                            'aria-label' => Yii::t('rbac-admin', 'changePassword'),
-                            'data-confirm' => Yii::t('rbac-admin', 'Are you sure you want to change Password this user?'),
+                            'title' => Yii::t('rbac-admin', 'Activate'),
+                            'aria-label' => Yii::t('rbac-admin', 'Activate'),
+                            'data-confirm' => Yii::t('rbac-admin', 'Are you sure you want to change password  this user?'),
                             'data-method' => 'post',
                             'data-pjax' => '0',
                         ];
