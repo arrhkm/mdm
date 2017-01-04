@@ -37,10 +37,10 @@ class SignupFormUser extends SignupForm
 
 	public function signup()
     {
-        if (!(Employee::find()->where(['email'=>$this->email])->One()) && !$this->validate())
+        if (!Employee::find()->where(['email'=>$this->email])->One())
         {
         	//throw new NotSupportedException('"signup" is not implemented.');        
-        	//Yii::$app->session->setFlash('error', 'There was no Employee registered with this email.');
+        	Yii::$app->session->setFlash('error', 'There was no Employee registered with this email.');
             return null;
             if (!$this->validate())
             {
