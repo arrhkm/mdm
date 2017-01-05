@@ -10,6 +10,8 @@ use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
 
+
+
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -28,20 +30,36 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'PT. Hakam Talenta',        
+        'brandLabel' => Html::img('@web/image/logo.png', ['alt'=>Yii::$app->name]),        
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
+            //'class'=> 'navbar-nav navbar-right',
         ],
     ]);
     $menuItems = [
+       
         ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
+        //['label' => 'About', 'url' => ['/site/about']],
+        //['label' => 'Contact', 'url' => ['/site/contact']],
+        
+        ['label' => 'My Info', 'url' => ['#'], 'items'=>
+            [
+                ['label'=>'Payroll', 'url'=>['#']],
+                '<li class="divider"></li>',
+                ['label'=>'User', 'url'=>['#']],
+                '<li class="divider"></li>',
+                ['label'=>'Personal Details', 'url'=>['employee/ownuser']],            
+            ]
+           
+        ],
+        ['label' => 'Leave', 'url' => ['#']],
+        ['label' => 'Time', 'url' => ['#']],
+        ['label' => 'Performance', 'url' => ['#']],
     ];
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => 'Signup2', 'url' => ['/site/newuser']];
+        //$menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
+        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/newuser']];
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
         $menuItems[] = '<li>'
@@ -52,6 +70,7 @@ AppAsset::register($this);
             )
             . Html::endForm()
             . '</li>';
+
     }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
@@ -60,6 +79,7 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
+    <!-- div class="container-fluid" -->
     <div class="container">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
