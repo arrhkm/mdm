@@ -31,8 +31,11 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         //'brandLabel' => Html::img('@web/logo.jpg', ['alt'=>Yii::$app->name]),
-        'brandLabel'=> Html::img('@web/images/logo.jpg', ['alt'=>'Hallo Bos']), 
-        //'brandOptions'=>['class'=>'myclass'],      
+        'brandLabel'=> Html::img('@web/img/logo2.jpg', ['alt'=>'Hallo Bos', 
+            //'class'=>'img-responsive', 
+            'height'=>'34px', 'witdh'=>'50px'
+            ]), 
+        'brandOptions'=>['class'=>'img-responsive'],      
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
