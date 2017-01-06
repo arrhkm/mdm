@@ -30,11 +30,13 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Html::img('@web/image/logo.png', ['alt'=>Yii::$app->name]),        
+        //'brandLabel' => Html::img('@web/logo.jpg', ['alt'=>Yii::$app->name]),
+        'brandLabel'=> Html::img('@web/images/logo.jpg', ['alt'=>'Hallo Bos']), 
+        //'brandOptions'=>['class'=>'myclass'],      
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
-            //'class'=> 'navbar-nav navbar-right',
+            //'class'=> 'navbar-nav navbar-fixed-top',
         ],
     ]);
     $menuItems = [
