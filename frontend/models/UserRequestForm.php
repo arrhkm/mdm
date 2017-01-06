@@ -20,31 +20,7 @@ class UserRequestForm extends Model
 	public function rules()
 	{
 		return [
-<<<<<<< HEAD
-               /*
-			['email', 'trim'],
-=======
-			/*['email', 'trim'],
->>>>>>> f96469128831e45ee5b5b299a80dd22cdc95de11
-			['email', 'required'],
-			['email', 'email'],*/
-
-               ['email', 'trim'],
-               ['email', 'required'],
-               ['email', 'email'],
-               ['email', 'string', 'max' => 255],
-               [
-                    'email', 'unique', 
-                    'targetClass' => '\common\models\User', 
-                    'message' => 'This email address has already been taken.'
-               ],
-               ['username', 'trim'],
-               ['username','required'],
-			['email', 'exist'],
-				'targetClass'=> '\common\models\User', 
-				'filter'=>['status'=>User::STATUS_ACTIVE],
-				'message'=>'There is no user with such email'
-               */
+              
                ['username', 'trim'],
                ['username', 'required'],
                ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
