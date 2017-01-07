@@ -17,13 +17,13 @@ class ShoppingCart extends Component
 		$this->loadItems();
 		if (array_key_exists($id, $this->items)) {
 			$this->_items[$id]['amount'] += $amount;
-			//$this->_items[$id]['quantity'] += $quantity;
+			
 
 		} else {
 			$this->_items[$id]=[
 				'id'=>$id,
 				'amount'=>$amount,
-				'quantity'=>$quantity,
+				
 
 			];
 		}

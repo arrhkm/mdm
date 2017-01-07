@@ -14,7 +14,6 @@ $this->params['breadcrumbs'][] = $this->title;
 	<?php $form = ActiveForm::begin(['id'=>'contact-form']);?>
 		<?= $form->field($model, 'productId')?>
 		<?= $form->field($model, 'amount')?>
-		<?= $form->field($model, 'quantity')?>
 		<div class="form-group">
 			<?= Html::submitButton('add', ['class'=>'btn-primary'])?>
 		</div>

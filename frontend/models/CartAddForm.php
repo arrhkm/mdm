@@ -14,7 +14,7 @@ class CartAddForm extends Model
 	{
 		return [
 			[['productId', 'amount'], 'required'],
-			[['amount', 'quantity'], 'integer', 'min'=>1],
+			[['amount'], 'integer', 'min'=>1],
 		];
 	}
 	

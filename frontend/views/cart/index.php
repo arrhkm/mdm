@@ -22,7 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
 		['class'=> SerialColumn::className()],
 		'id:text:ProductId',
 		'amount:text:Amount',
-		'quantity:text:quantity',
+		
 		[
 			'class'=>ActionColumn::className(),
 			'template'=>'{delete}',
