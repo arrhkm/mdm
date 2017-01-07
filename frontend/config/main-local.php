@@ -6,6 +6,11 @@ $config = [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'MwLAern9Ev3HhmDb4h0_TBJMX7H3V6MG',
         ],
+        'cart'=>[
+            'class'=>'common\components\cart\ShoppingCart',
+            'sessionKey'=>'primary-cart',
+
+        ],
     ],
 ];
 
