@@ -9,7 +9,7 @@ use yii\web\BadRequestHttpException;
 /* @var $this yii\web\View */
 /* @var $model common\models\Employee */
 
-$this->title = $model->first_name;
+$this->title = $model->employee_number;
 //$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Employees'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -28,7 +28,20 @@ $this->params['breadcrumbs'][] = $this->title;
         ]) ?>
 
         */?>
+        <?= Html::a(Yii::t('app', 'Upload Image'), ['upload', 'id'=>$model->id], ['class' => 'btn btn-success']) ?>
     </p>
+
+    <div class="col-md-12">
+        <div class="col-md-4">        
+        </div>
+        <div class="col-md-4">
+            <img src= <?= 'data:image/jpeg;base64,'.base64_encode($model['employee_picture'])?> class="center-block img-circle img-thumbnail img-responsive">                     
+        </div>
+        <div class="col-md-4"></div>
+    
+    </div>
+    <h1><p class="text-center"> <?= Html::encode($model->first_name) ?></p></h1>
+   
 
     <?= DetailView::widget([
         'model' => $model,

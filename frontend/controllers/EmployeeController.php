@@ -12,6 +12,7 @@ use yii\filters\VerbFilter;
 use app\models\User;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
+use yii\web\UploadedFile;
 
 
 /**
@@ -137,6 +138,31 @@ class EmployeeController extends Controller
                 'model' => $model,
             ]);
         }
+    }
+
+    public function actionUpload($id)
+    {
+        $model = $this->findModel($id);
+
+        if ($model->load(Yii::$app->request->post())) {
+
+            $model->employee_picture = UploadedFile::getInstance($model, 'employee_picture');
+            $model->employee_picture=file_get_contents($model->employee_picture->tempName);
+            if ($model->save())
+            {
+                return $this->redirect(['ownuser']);
+            } else{
+                return $this->render('upload', [
+                'model' => $model,
+                //'id'=> $model->id,
+            ]);
+            }
+        } else {
+            return $this->render('upload', [
+                'model' => $model,
+            ]);
+        }
+    
     }
 
     /**

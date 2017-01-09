@@ -31,7 +31,7 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         //'brandLabel' => Html::img('@web/logo.jpg', ['alt'=>Yii::$app->name]),
-        'brandLabel'=> Html::img('@web/img/logo.png', ['alt'=>'Hallo Bos', 
+        'brandLabel'=> Html::img('@web/img/logo2.png', ['alt'=>'Hallo Bos', 
             //'class'=>'img-responsive', 
             'height'=>'34px', 'witdh'=>'50px'
             ]), 

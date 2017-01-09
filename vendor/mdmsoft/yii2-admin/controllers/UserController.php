@@ -235,17 +235,12 @@ class UserController extends Controller
      */
     public function actionChangepassword()
     {
-        $model = new ChangePasswordAdmin();
-        //if ($model->load(Yii::$app->getRequest()->post()) && $model->changeAdmin(4)) {
+        $model = new ChangePasswordAdmin();        
         if ($model->load(Yii::$app->getRequest()->post()) && $model->changeAdmin($model->id)) {
-            return $this->goHome();
-            /*
-            $this->render('changepassword', [
-                'model' => $model,
-            ]);
-            */
-
+            return $this->goHome();           
         }
+     
+        Yii::$app->getSession()->setFlash('error', 'New password was not saved.');
 
         return $this->render('changepassword', [
                 'model' => $model,

@@ -9,6 +9,8 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
+use yii\web\UploadedFile;
+
 /**
  * EmployeeController implements the CRUD actions for Employee model.
  */
@@ -72,6 +74,23 @@ class EmployeeController extends Controller
                 'model' => $model,
             ]);
         }
+    }
+
+    public function actionUpload($id)
+    {
+        $model = Employee::findOne(['id'=>$id]);
+        if ($model->load(Yii::$app->request->post())) {
+            $model->employee_picture = UploadedFile::getInstance($model, 'employee_picture');
+            $model->employee_picture=file_get_contents($model->employee_picture->tempName);
+            $model->save();
+
+            return $this->redirect(['index']);
+
+        }
+        return $this->render('upload', [
+                'model' => $model,
+            ]);
+    
     }
 
     /**

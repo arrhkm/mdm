@@ -3,7 +3,6 @@
 namespace app\models;
 
 use Yii;
-use yii\web\UploadedFile;
 
 /**
  * This is the model class for table "employee".
@@ -14,7 +13,6 @@ use yii\web\UploadedFile;
  * @property string $last_name
  * @property string $nick_name
  * @property string $email
- * @property resource $employee_picture
  *
  * @property Leave[] $leaves
  * @property LeaveEntitlement[] $leaveEntitlements
@@ -38,7 +36,6 @@ class Employee extends \yii\db\ActiveRecord
     {
         return [
             [['employee_number', 'email'], 'required'],
-            [['employee_picture'], 'string'],
             [['employee_number', 'first_name', 'last_name', 'nick_name'], 'string', 'max' => 255],
             [['email'], 'string', 'max' => 225],
             [['employee_number'], 'unique'],
@@ -58,7 +55,6 @@ class Employee extends \yii\db\ActiveRecord
             'last_name' => Yii::t('app', 'Last Name'),
             'nick_name' => Yii::t('app', 'Nick Name'),
             'email' => Yii::t('app', 'Email'),
-            'employee_picture' => Yii::t('app', 'Employee Picture'),
         ];
     }
 
