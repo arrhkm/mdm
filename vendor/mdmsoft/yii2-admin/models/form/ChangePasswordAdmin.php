@@ -85,8 +85,10 @@ class ChangePasswordAdmin extends Model
         if ($this->validate()) {
             /* @var $user User */
         
-            $user = User::findOne(['id' => $id]);
+            //$user = User::findOne(['id' => $id]);
+            $user = Yii::$app->user->findIdentity($id);
             if ($user){
+                
                 return true;
             }
             else {
