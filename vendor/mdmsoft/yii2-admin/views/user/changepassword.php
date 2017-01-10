@@ -33,9 +33,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <?php 
        echo "model->id ". $model->id;
-       echo "<br> model->username :".$model->username;
+       //echo "<br> model->username :".$model->username;
        echo "<br> Request id :".$_REQUEST['id'];
        echo "<br> New Password:".$model->newPassword;
        echo "<br> RetypePassword :".$model->retypePassword;
+       //echo "<br> RetypePassword :".$model->password_hash;
 
 ?>

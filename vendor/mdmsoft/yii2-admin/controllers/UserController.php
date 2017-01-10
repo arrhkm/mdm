@@ -237,9 +237,17 @@ class UserController extends Controller
     {
         $model = new ChangePasswordAdmin();        
         if ($model->load(Yii::$app->getRequest()->post()) && $model->changeAdmin($model->id)) {
-            return $this->goHome();           
+            $user2 = User::findOne(['id'=>$model->id]);
+            $user2->password_hash = Yii::$app->security->generatePasswordHash($model->newPassword);
+            $user2->save();
+            
+            Yii::$app->getSession()->setFlash('success', 'Lolos disave.');
+            /*return $this->render('changepassword', [
+                'model' => $model,
+            ]);*/  
+            return $this->goHome();         
         }
-     
+
         Yii::$app->getSession()->setFlash('error', 'New password was not saved.');
 
         return $this->render('changepassword', [

@@ -3,9 +3,10 @@
 namespace mdm\admin\models\form;
 
 use Yii;
-//use mdm\admin\models\User;
+use mdm\admin\models\User;
 use yii\base\Model;
-use common\models\User;
+use yii\web\IdentityInterface;
+//use common\models\User;
 
 /**
  * Description of ChangePassword
@@ -20,7 +21,7 @@ class ChangePasswordAdmin extends Model
     public $retypePassword;
     //tambahan
     public $id;
-    public $username;
+
 
     /**
      * @inheritdoc
@@ -77,34 +78,13 @@ class ChangePasswordAdmin extends Model
         return false;
     }
 
-
-
     public function changeAdmin($id)
     {
         
         if ($this->validate()) {
             /* @var $user User */
-        
-            //$user = User::findOne(['id' => $id]);
-            $user = Yii::$app->user->findIdentity($id);
-            if ($user){
-                
-                return true;
-            }
-            else {
-                return false;
-            }
-
-            /*$user->password_hash = $this->setPassword($this->newPassword);
-            if ($user->save()) {
-                return true;
-            }
-            else {
-                $this->addError('', 'Password tidak tersimpan');
-            }*/
+            return User::findOne(['id'=>$id]);           
         }
-
-
         return false;
     }
 
