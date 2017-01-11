@@ -106,15 +106,19 @@ class PeriodyearController extends Controller
         return $this->redirect(['index']);
     }
 
-    public function actionDelete2()
+    public function actionMultipleDelete()
     {
-        if (isset($_REQUEST['selection']))
+        //$pk = Yii::$app->request->post('row_id');
+        $pk = Yii::$app->request->get('row_id');
+        foreach ($pk as $key => $value) 
         {
-            $this->findModel($id)->delete();
+            //$sql = "DELETE FROM detilfaktor WHERE id = $value";
+            //$query = Yii::$app->db->createCommand($sql)->execute();
+            $this->findModel($value)->delete();
+        }
 
         return $this->redirect(['index']);
-            
-        }
+
     }
 
     /**
