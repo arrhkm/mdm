@@ -16152,3 +16152,861 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1484225651.153
     'REQUEST_TIME' => 1484225651
 ]
+2017-01-12 21:14:44 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "hotel/multiple-delete".' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('hotel/multiple-...', Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-01-12 21:14:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'hotel/multiple-delete'
+]
+
+$_POST = [
+    'row_id' => [
+        0 => '1'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'h4rl72kov8q26if4ear04859n3'
+    '_csrf-backend' => '76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg\";}'
+    'advanced-frontend' => 'oncujfjtv8rtkel1hev2s4pid1'
+    '_csrf-frontend' => '503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VzFfbW91RVouaB0nKSYoahJkMR86DSwDYXAyPxVEAxk4ADpZFio2PQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=periodyear'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'advanced-backend=h4rl72kov8q26if4ear04859n3; _csrf-backend=76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg%22%3B%7D; advanced-frontend=oncujfjtv8rtkel1hev2s4pid1; _csrf-frontend=503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '46828'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=hotel/multiple-delete'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=hotel/multiple-delete'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484230484.922
+    'REQUEST_TIME' => 1484230484
+]
+2017-01-12 21:14:47 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "hotel/multiple-delete".' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('hotel/multiple-...', Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-01-12 21:14:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'hotel/multiple-delete'
+]
+
+$_POST = [
+    'row_id' => [
+        0 => '1'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'h4rl72kov8q26if4ear04859n3'
+    '_csrf-backend' => '76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg\";}'
+    'advanced-frontend' => 'oncujfjtv8rtkel1hev2s4pid1'
+    '_csrf-frontend' => '503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VzFfbW91RVouaB0nKSYoahJkMR86DSwDYXAyPxVEAxk4ADpZFio2PQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=periodyear'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'advanced-backend=h4rl72kov8q26if4ear04859n3; _csrf-backend=76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg%22%3B%7D; advanced-frontend=oncujfjtv8rtkel1hev2s4pid1; _csrf-frontend=503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '46828'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=hotel/multiple-delete'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=hotel/multiple-delete'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484230487.408
+    'REQUEST_TIME' => 1484230487
+]
+2017-01-12 21:14:47 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "hotel/multiple-delete".' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('hotel/multiple-...', Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-01-12 21:14:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'hotel/multiple-delete'
+]
+
+$_POST = [
+    'row_id' => [
+        0 => '1'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'h4rl72kov8q26if4ear04859n3'
+    '_csrf-backend' => '76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg\";}'
+    'advanced-frontend' => 'oncujfjtv8rtkel1hev2s4pid1'
+    '_csrf-frontend' => '503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VzFfbW91RVouaB0nKSYoahJkMR86DSwDYXAyPxVEAxk4ADpZFio2PQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=periodyear'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'advanced-backend=h4rl72kov8q26if4ear04859n3; _csrf-backend=76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg%22%3B%7D; advanced-frontend=oncujfjtv8rtkel1hev2s4pid1; _csrf-frontend=503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '46828'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=hotel/multiple-delete'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=hotel/multiple-delete'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484230487.565
+    'REQUEST_TIME' => 1484230487
+]
+2017-01-12 21:14:47 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "hotel/multiple-delete".' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('hotel/multiple-...', Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-01-12 21:14:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'hotel/multiple-delete'
+]
+
+$_POST = [
+    'row_id' => [
+        0 => '1'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'h4rl72kov8q26if4ear04859n3'
+    '_csrf-backend' => '76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg\";}'
+    'advanced-frontend' => 'oncujfjtv8rtkel1hev2s4pid1'
+    '_csrf-frontend' => '503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VzFfbW91RVouaB0nKSYoahJkMR86DSwDYXAyPxVEAxk4ADpZFio2PQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=periodyear'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'advanced-backend=h4rl72kov8q26if4ear04859n3; _csrf-backend=76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg%22%3B%7D; advanced-frontend=oncujfjtv8rtkel1hev2s4pid1; _csrf-frontend=503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '46828'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=hotel/multiple-delete'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=hotel/multiple-delete'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484230487.762
+    'REQUEST_TIME' => 1484230487
+]
+2017-01-12 21:14:49 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "hotel/multiple-delete".' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('hotel/multiple-...', Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-01-12 21:14:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'hotel/multiple-delete'
+]
+
+$_POST = [
+    'row_id' => [
+        0 => '1'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'h4rl72kov8q26if4ear04859n3'
+    '_csrf-backend' => '76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg\";}'
+    'advanced-frontend' => 'oncujfjtv8rtkel1hev2s4pid1'
+    '_csrf-frontend' => '503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VzFfbW91RVouaB0nKSYoahJkMR86DSwDYXAyPxVEAxk4ADpZFio2PQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=periodyear'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'advanced-backend=h4rl72kov8q26if4ear04859n3; _csrf-backend=76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg%22%3B%7D; advanced-frontend=oncujfjtv8rtkel1hev2s4pid1; _csrf-frontend=503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '46828'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=hotel/multiple-delete'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=hotel/multiple-delete'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484230489.019
+    'REQUEST_TIME' => 1484230489
+]
+2017-01-12 21:14:49 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "hotel/multiple-delete".' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('hotel/multiple-...', Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-01-12 21:14:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'hotel/multiple-delete'
+]
+
+$_POST = [
+    'row_id' => [
+        0 => '1'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'h4rl72kov8q26if4ear04859n3'
+    '_csrf-backend' => '76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg\";}'
+    'advanced-frontend' => 'oncujfjtv8rtkel1hev2s4pid1'
+    '_csrf-frontend' => '503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'VzFfbW91RVouaB0nKSYoahJkMR86DSwDYXAyPxVEAxk4ADpZFio2PQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=periodyear'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'advanced-backend=h4rl72kov8q26if4ear04859n3; _csrf-backend=76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg%22%3B%7D; advanced-frontend=oncujfjtv8rtkel1hev2s4pid1; _csrf-frontend=503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '46828'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=hotel/multiple-delete'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=hotel/multiple-delete'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484230489.217
+    'REQUEST_TIME' => 1484230489
+]
+2017-01-12 21:15:33 [127.0.0.1][1][h4rl72kov8q26if4ear04859n3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: periodyear/delete2' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php:125
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('delete2', Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('periodyear/dele...', Array)
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-01-12 21:15:33 [127.0.0.1][1][h4rl72kov8q26if4ear04859n3][info][application] $_GET = [
+    'r' => 'periodyear/delete2'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'h4rl72kov8q26if4ear04859n3'
+    '_csrf-backend' => '76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg\";}'
+    'advanced-frontend' => 'oncujfjtv8rtkel1hev2s4pid1'
+    '_csrf-frontend' => '503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=periodyear%2Findex'
+    'HTTP_COOKIE' => 'advanced-backend=h4rl72kov8q26if4ear04859n3; _csrf-backend=76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg%22%3B%7D; advanced-frontend=oncujfjtv8rtkel1hev2s4pid1; _csrf-frontend=503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '46834'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=periodyear%2Fdelete2'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=periodyear%2Fdelete2'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484230533.046
+    'REQUEST_TIME' => 1484230533
+]
+2017-01-12 21:24:35 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\DataColumn::0' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(521): yii\base\Object->__set('0', Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\grid\DataColumn), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\grid\DataCo...', Array, Array)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\grid\DataCo...', Array, Array)
+#6 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/grid/GridView.php(531): yii\BaseYii::createObject(Array)
+#7 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/grid/GridView.php(275): yii\grid\GridView->initColumns()
+#8 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php(107): yii\grid\GridView->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#11 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\grid\GridVi...', Array, Array)
+#12 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\grid\GridVi...', Array, Array)
+#13 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Widget.php(101): yii\BaseYii::createObject(Array)
+#14 /home/acer/app/htdocs/yii2/mdm/backend/views/periodyear/index.php(79): yii\base\Widget::widget(Array)
+#15 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/acer/app/...')
+#16 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/acer/app/...', Array)
+#17 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/home/acer/app/...', Array, Object(backend\controllers\PeriodyearController))
+#18 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\PeriodyearController))
+#19 /home/acer/app/htdocs/yii2/mdm/backend/controllers/PeriodyearController.php(44): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\PeriodyearController->actionIndex()
+#21 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#22 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#23 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#24 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('periodyear/inde...', Array)
+#25 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#27 {main}
+2017-01-12 21:24:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'periodyear/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'h4rl72kov8q26if4ear04859n3'
+    '_csrf-backend' => '76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg\";}'
+    'advanced-frontend' => 'oncujfjtv8rtkel1hev2s4pid1'
+    '_csrf-frontend' => '503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=periodyear%2Fview&id=2'
+    'HTTP_COOKIE' => 'advanced-backend=h4rl72kov8q26if4ear04859n3; _csrf-backend=76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg%22%3B%7D; advanced-frontend=oncujfjtv8rtkel1hev2s4pid1; _csrf-frontend=503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '46859'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=periodyear%2Findex'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=periodyear%2Findex'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484231075.442
+    'REQUEST_TIME' => 1484231075
+]
+2017-01-12 21:25:10 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\CheckboxColumn::id' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(521): yii\base\Object->__set('id', 'grid')
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\grid\CheckboxColumn), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\grid\Checkb...', Array, Array)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\grid\Checkb...', Array, Array)
+#6 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/grid/GridView.php(531): yii\BaseYii::createObject(Array)
+#7 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/grid/GridView.php(275): yii\grid\GridView->initColumns()
+#8 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php(107): yii\grid\GridView->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#11 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\grid\GridVi...', Array, Array)
+#12 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\grid\GridVi...', Array, Array)
+#13 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Widget.php(101): yii\BaseYii::createObject(Array)
+#14 /home/acer/app/htdocs/yii2/mdm/backend/views/periodyear/index.php(80): yii\base\Widget::widget(Array)
+#15 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/acer/app/...')
+#16 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/acer/app/...', Array)
+#17 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/home/acer/app/...', Array, Object(backend\controllers\PeriodyearController))
+#18 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\PeriodyearController))
+#19 /home/acer/app/htdocs/yii2/mdm/backend/controllers/PeriodyearController.php(44): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\PeriodyearController->actionIndex()
+#21 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#22 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#23 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#24 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('periodyear/inde...', Array)
+#25 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#27 {main}
+2017-01-12 21:25:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'periodyear/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'h4rl72kov8q26if4ear04859n3'
+    '_csrf-backend' => '76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg\";}'
+    'advanced-frontend' => 'oncujfjtv8rtkel1hev2s4pid1'
+    '_csrf-frontend' => '503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=periodyear%2Fview&id=2'
+    'HTTP_COOKIE' => 'advanced-backend=h4rl72kov8q26if4ear04859n3; _csrf-backend=76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg%22%3B%7D; advanced-frontend=oncujfjtv8rtkel1hev2s4pid1; _csrf-frontend=503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '46863'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=periodyear%2Findex'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=periodyear%2Findex'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484231110.536
+    'REQUEST_TIME' => 1484231110
+]
+2017-01-12 21:26:15 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\DataColumn::0' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(521): yii\base\Object->__set('0', Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\grid\DataColumn), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\grid\DataCo...', Array, Array)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\grid\DataCo...', Array, Array)
+#6 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/grid/GridView.php(531): yii\BaseYii::createObject(Array)
+#7 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/grid/GridView.php(275): yii\grid\GridView->initColumns()
+#8 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php(107): yii\grid\GridView->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#11 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\grid\GridVi...', Array, Array)
+#12 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\grid\GridVi...', Array, Array)
+#13 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Widget.php(101): yii\BaseYii::createObject(Array)
+#14 /home/acer/app/htdocs/yii2/mdm/backend/views/periodyear/index.php(80): yii\base\Widget::widget(Array)
+#15 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/acer/app/...')
+#16 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/acer/app/...', Array)
+#17 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/home/acer/app/...', Array, Object(backend\controllers\PeriodyearController))
+#18 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\PeriodyearController))
+#19 /home/acer/app/htdocs/yii2/mdm/backend/controllers/PeriodyearController.php(44): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\PeriodyearController->actionIndex()
+#21 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#22 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#23 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#24 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('periodyear/inde...', Array)
+#25 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#27 {main}
+2017-01-12 21:26:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'periodyear/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'h4rl72kov8q26if4ear04859n3'
+    '_csrf-backend' => '76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg\";}'
+    'advanced-frontend' => 'oncujfjtv8rtkel1hev2s4pid1'
+    '_csrf-frontend' => '503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=periodyear%2Fview&id=2'
+    'HTTP_COOKIE' => 'advanced-backend=h4rl72kov8q26if4ear04859n3; _csrf-backend=76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg%22%3B%7D; advanced-frontend=oncujfjtv8rtkel1hev2s4pid1; _csrf-frontend=503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '46868'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=periodyear%2Findex'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=periodyear%2Findex'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484231175.508
+    'REQUEST_TIME' => 1484231175
+]
+2017-01-12 21:28:44 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\CheckboxColumn::id' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(521): yii\base\Object->__set('id', 'grid')
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\grid\CheckboxColumn), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\grid\Checkb...', Array, Array)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\grid\Checkb...', Array, Array)
+#6 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/grid/GridView.php(531): yii\BaseYii::createObject(Array)
+#7 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/grid/GridView.php(275): yii\grid\GridView->initColumns()
+#8 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php(107): yii\grid\GridView->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#11 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\grid\GridVi...', Array, Array)
+#12 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\grid\GridVi...', Array, Array)
+#13 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Widget.php(101): yii\BaseYii::createObject(Array)
+#14 /home/acer/app/htdocs/yii2/mdm/backend/views/periodyear/index.php(81): yii\base\Widget::widget(Array)
+#15 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/acer/app/...')
+#16 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/acer/app/...', Array)
+#17 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/home/acer/app/...', Array, Object(backend\controllers\PeriodyearController))
+#18 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\PeriodyearController))
+#19 /home/acer/app/htdocs/yii2/mdm/backend/controllers/PeriodyearController.php(44): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\PeriodyearController->actionIndex()
+#21 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#22 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#23 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#24 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('periodyear/inde...', Array)
+#25 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#27 {main}
+2017-01-12 21:28:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'periodyear/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'h4rl72kov8q26if4ear04859n3'
+    '_csrf-backend' => '76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg\";}'
+    'advanced-frontend' => 'oncujfjtv8rtkel1hev2s4pid1'
+    '_csrf-frontend' => '503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=periodyear%2Fview&id=2'
+    'HTTP_COOKIE' => 'advanced-backend=h4rl72kov8q26if4ear04859n3; _csrf-backend=76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg%22%3B%7D; advanced-frontend=oncujfjtv8rtkel1hev2s4pid1; _csrf-frontend=503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '46882'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=periodyear%2Findex'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=periodyear%2Findex'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484231324.428
+    'REQUEST_TIME' => 1484231324
+]
+2017-01-12 21:33:35 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\CheckboxColumn::id' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(521): yii\base\Object->__set('id', 'grid')
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\grid\CheckboxColumn), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\grid\Checkb...', Array, Array)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\grid\Checkb...', Array, Array)
+#6 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/grid/GridView.php(531): yii\BaseYii::createObject(Array)
+#7 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/grid/GridView.php(275): yii\grid\GridView->initColumns()
+#8 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Object.php(107): yii\grid\GridView->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#11 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('yii\grid\GridVi...', Array, Array)
+#12 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\grid\GridVi...', Array, Array)
+#13 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Widget.php(101): yii\BaseYii::createObject(Array)
+#14 /home/acer/app/htdocs/yii2/mdm/backend/views/periodyear/index.php(81): yii\base\Widget::widget(Array)
+#15 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/acer/app/...')
+#16 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/acer/app/...', Array)
+#17 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/home/acer/app/...', Array, Object(backend\controllers\PeriodyearController))
+#18 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\PeriodyearController))
+#19 /home/acer/app/htdocs/yii2/mdm/backend/controllers/PeriodyearController.php(44): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\PeriodyearController->actionIndex()
+#21 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#22 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#23 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#24 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('periodyear/inde...', Array)
+#25 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#27 {main}
+2017-01-12 21:33:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'periodyear/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'h4rl72kov8q26if4ear04859n3'
+    '_csrf-backend' => '76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg\";}'
+    'advanced-frontend' => 'oncujfjtv8rtkel1hev2s4pid1'
+    '_csrf-frontend' => '503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=periodyear%2Fview&id=2'
+    'HTTP_COOKIE' => 'advanced-backend=h4rl72kov8q26if4ear04859n3; _csrf-backend=76fcfed52ca98b351cba23afe0d74016370cb7b086d80781be1b89244fcbeb30a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yYBJFSm0EUnrUxiY6AmRz1FCo1e4y_sg%22%3B%7D; advanced-frontend=oncujfjtv8rtkel1hev2s4pid1; _csrf-frontend=503c18e17b5bce83ed24f9f023186f9b8facf1200494d1548dc84d6f22bab992a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22hSr_6YT4w81tyrEyjDRQepJGCuWyUrIC%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '46927'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=periodyear%2Findex'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=periodyear%2Findex'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484231615.871
+    'REQUEST_TIME' => 1484231615
+]

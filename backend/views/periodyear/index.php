@@ -50,19 +50,23 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
 <?php Pjax::begin(); ?>    <?= GridView::widget([
+        'id'=>'grid',
         'dataProvider' => $dataProvider,
         //'options' => ['id'=>'hkm-grid'],
         //'containerOptions'=> ['class'=>'hkm-container'],
         'filterModel' => $searchModel,
         'columns' => [
             [
+                //'id'=>'grid',
                 'class' => 'yii\grid\CheckboxColumn',
+
+
                 //'checkboxOptions' => function($data) {  return ['value' => $data->id]},
                 'checkboxOptions' => function ($model, $key, $index, $column) {
                     return ['value' => $model->id];
                 },
                 //'cssClass' => 'ini-yii-grid',
-                
+                //'headerOptions'=>['id', 'start_date'],
             ],
             
             'id',
