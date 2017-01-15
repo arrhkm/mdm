@@ -53,7 +53,7 @@ AppAsset::register($this);
             [
                 ['label'=>'Payroll', 'url'=>['#']],
                 '<li class="divider"></li>',
-                ['label'=>'User', 'url'=>['#']],
+                ['label'=>'User', 'url'=>['site/changepassword']],
                 '<li class="divider"></li>',
                 ['label'=>'Personal Details', 'url'=>['employee/ownuser']],            
             ]

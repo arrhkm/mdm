@@ -35,7 +35,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-md-4">        
         </div>
         <div class="col-md-4">
-            <img src= <?= 'data:image/jpg;base64,'.base64_encode($model['employee_picture'])?> class="center-block img-circle img-thumbnail img-responsive">                     
+            <img src= <?= 'data:image/jpg;base64,'.base64_encode($model['employee_picture'])?> class="center-block img-circle img-thumbnail img-responsive" height="200px" width="200px">                     
         </div>
         <div class="col-md-4"></div>
     
