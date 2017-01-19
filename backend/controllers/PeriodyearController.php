@@ -53,9 +53,11 @@ class PeriodyearController extends Controller
     {
         return $this->render('view', [
             'model' => $this->findModel($id),
+            'hari_next'=>$this->dateNext($this->findModel($id)->date_start),
         ]);
     }
 
+    
     /**
      * Creates a new PeriodYear model.
      * If creation is successful, the browser will be redirected to the 'view' page.
@@ -65,7 +67,14 @@ class PeriodyearController extends Controller
     {
         $model = new PeriodYear();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        //if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())){
+            $model->date_end = $this->dateNext($model->date_start);
+            $model->name_period = $this->datePeriodName($model->date_start);
+            $model->date_day = $this->dateDay($model->date_start);
+            $model->date_month = $this->dateMonth($model->date_start);
+            $model->date_year = $this->dateYear($model->date_start);
+            $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -84,7 +93,14 @@ class PeriodyearController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        //if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())){
+            $model->date_end = $this->dateNext($model->date_start);
+            $model->name_period = $this->datePeriodName($model->date_start);
+            $model->date_day = $this->dateDay($model->date_start);
+            $model->date_month = $this->dateMonth($model->date_start);
+            $model->date_year = $this->dateYear($model->date_start);
+            $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
@@ -109,7 +125,7 @@ class PeriodyearController extends Controller
     public function actionMultipleDelete()
     {
         //$pk = Yii::$app->request->post('row_id');
-        $pk = Yii::$app->request->get('row_id');
+        $pk = Yii::$app->request->post('row_id');
         foreach ($pk as $key => $value) 
         {
             //$sql = "DELETE FROM detilfaktor WHERE id = $value";
@@ -136,4 +152,30 @@ class PeriodyearController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+    private function dateNext($date_now)
+    {
+        $date1 = strtotime('+1 years',strtotime($date_now));
+        return date('Y-m-d', strtotime('-1 days', $date1));
+    }
+
+    private function datePeriodName($date_now)
+    {
+        $var1 = strtotime($date_now);
+        return date('F Y', strtotime($var1));
+    }
+
+    private function dateDay($date_now){        
+        return date('d', strtotime($date_now));
+    }
+
+    private function dateMonth($date_now){
+        return date('m', strtotime($date_now));
+    }
+
+    private function dateYear($date_now){
+        return date('Y', strtotime($date_now));
+    }
+
+
 }
