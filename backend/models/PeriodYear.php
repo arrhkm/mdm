@@ -32,6 +32,7 @@ class PeriodYear extends \yii\db\ActiveRecord
     {
         return [
             [['date_start'], 'unique', 'message'=>'Data redudance'],
+            [['name_period'], 'unique', 'message'=>'Nama Period redundance'],
             [['date_start'], 'required', 'message'=>'Data canot be empty'],
             // ['date_start', 'unique', 'message' => 'Please imput not redundandace data.'],
             [['date_end'], 'safe'],

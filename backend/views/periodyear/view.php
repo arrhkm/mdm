@@ -37,7 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'date_year',
             [
                 'label' => 'Owner',
-                'value' => date('d', strtotime($model->date_start)),
+                'value' => date('F Y', strtotime($model->date_start)),
             ]
         ],
     ]) ?>

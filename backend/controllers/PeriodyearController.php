@@ -68,15 +68,25 @@ class PeriodyearController extends Controller
         $model = new PeriodYear();
 
         //if ($model->load(Yii::$app->request->post()) && $model->save()) {
-        if ($model->load(Yii::$app->request->post())){
+        if ($model->load(Yii::$app->request->post()) && $model->validate()){
             $model->date_end = $this->dateNext($model->date_start);
             $model->name_period = $this->datePeriodName($model->date_start);
             $model->date_day = $this->dateDay($model->date_start);
             $model->date_month = $this->dateMonth($model->date_start);
             $model->date_year = $this->dateYear($model->date_start);
-            $model->save();
-            return $this->redirect(['view', 'id' => $model->id]);
+            
+            if ($model->validate()){
+                $model->save();
+                return $this->redirect(['view', 'id' => $model->id]);
+            } else {
+                yii::$app->session->setFlash('error', 'Period name cenaot redundance');
+                return $this->render('create', [
+                    'model' => $model,
+                ]);
+            }
+            
         } else {
+            
             return $this->render('create', [
                 'model' => $model,
             ]);
@@ -94,15 +104,25 @@ class PeriodyearController extends Controller
         $model = $this->findModel($id);
 
         //if ($model->load(Yii::$app->request->post()) && $model->save()) {
-        if ($model->load(Yii::$app->request->post())){
+        if ($model->load(Yii::$app->request->post()) && $model->validate()){
             $model->date_end = $this->dateNext($model->date_start);
             $model->name_period = $this->datePeriodName($model->date_start);
             $model->date_day = $this->dateDay($model->date_start);
             $model->date_month = $this->dateMonth($model->date_start);
             $model->date_year = $this->dateYear($model->date_start);
-            $model->save();
-            return $this->redirect(['view', 'id' => $model->id]);
+            if ($model->validate()){
+                $model->save();
+            
+                return $this->redirect(['view', 'id' => $model->id]);
+            } else {
+                yii::$app->session->setFlash('error', 'period name canot redundance.');
+                return $this->render('update', ['model'=>$model]);
+            }
+
+            
+            
         } else {
+            //Yii::$app->session->setFlash('error', 'Ada yang tidak valid');
             return $this->render('update', [
                 'model' => $model,
             ]);
@@ -161,8 +181,7 @@ class PeriodyearController extends Controller
 
     private function datePeriodName($date_now)
     {
-        $var1 = strtotime($date_now);
-        return date('F Y', strtotime($var1));
+        return date('F Y', strtotime($date_now));
     }
 
     private function dateDay($date_now){        
