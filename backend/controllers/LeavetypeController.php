@@ -3,18 +3,16 @@
 namespace backend\controllers;
 
 use Yii;
-use app\models\LeaveEntitlement;
-use app\models\LeaveEntitlementSearch;
+use app\models\LeaveType;
+use app\models\LeaveTypeSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
-use app\models\Employee;
-
 /**
- * LeaveentitlementController implements the CRUD actions for LeaveEntitlement model.
+ * LeavetypeController implements the CRUD actions for LeaveType model.
  */
-class LeaveentitlementController extends Controller
+class LeavetypeController extends Controller
 {
     /**
      * @inheritdoc
@@ -32,12 +30,12 @@ class LeaveentitlementController extends Controller
     }
 
     /**
-     * Lists all LeaveEntitlement models.
+     * Lists all LeaveType models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new LeaveEntitlementSearch();
+        $searchModel = new LeaveTypeSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -47,8 +45,8 @@ class LeaveentitlementController extends Controller
     }
 
     /**
-     * Displays a single LeaveEntitlement model.
-     * @param integer $id
+     * Displays a single LeaveType model.
+     * @param string $id
      * @return mixed
      */
     public function actionView($id)
@@ -59,28 +57,27 @@ class LeaveentitlementController extends Controller
     }
 
     /**
-     * Creates a new LeaveEntitlement model.
+     * Creates a new LeaveType model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new LeaveEntitlement();
+        $model = new LeaveType();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
-                'data'=> Employee::findAll(),
             ]);
         }
     }
 
     /**
-     * Updates an existing LeaveEntitlement model.
+     * Updates an existing LeaveType model.
      * If update is successful, the browser will be redirected to the 'view' page.
-     * @param integer $id
+     * @param string $id
      * @return mixed
      */
     public function actionUpdate($id)
@@ -97,9 +94,9 @@ class LeaveentitlementController extends Controller
     }
 
     /**
-     * Deletes an existing LeaveEntitlement model.
+     * Deletes an existing LeaveType model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
-     * @param integer $id
+     * @param string $id
      * @return mixed
      */
     public function actionDelete($id)
@@ -110,15 +107,15 @@ class LeaveentitlementController extends Controller
     }
 
     /**
-     * Finds the LeaveEntitlement model based on its primary key value.
+     * Finds the LeaveType model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
-     * @param integer $id
-     * @return LeaveEntitlement the loaded model
+     * @param string $id
+     * @return LeaveType the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = LeaveEntitlement::findOne($id)) !== null) {
+        if (($model = LeaveType::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

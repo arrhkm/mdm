@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use kartik\widgets\Select2;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\LeaveEntitlement */
@@ -31,7 +32,17 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'createed_by_name')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'employee_id')->textInput() ?>
-
+    <?php
+        echo Select2::widget([
+            'model' => $model,
+            'attribute' => 'employee_id',
+            'data' => $data->first_name,
+            'options' => ['placeholder' => 'Select a employee ...'],
+            'pluginOptions' => [
+                'allowClear' => true
+            ],
+        ]);
+    ?>
     <?= $form->field($model, 'leave_type_id')->textInput() ?>
 
     <?= $form->field($model, 'user_id')->textInput() ?>

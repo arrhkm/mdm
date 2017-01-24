@@ -17010,3 +17010,238 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1484231615.871
     'REQUEST_TIME' => 1484231615
 ]
+2017-01-23 22:23:28 [127.0.0.1][-][pe16e8j083abirmnfk4laiqmp3][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The 'label' option is required.' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-bootstrap/Nav.php:165
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-bootstrap/Nav.php(147): yii\bootstrap\Nav->renderItem(Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2-bootstrap/Nav.php(134): yii\bootstrap\Nav->renderItems()
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Widget.php(102): yii\bootstrap\Nav->run()
+#3 /home/acer/app/htdocs/yii2/mdm/backend/views/layouts/main.php(73): yii\base\Widget::widget(Array)
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/acer/app/...')
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/acer/app/...', Array)
+#6 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/home/acer/app/...', Array, Object(backend\controllers\PeriodyearController))
+#7 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="per...')
+#8 /home/acer/app/htdocs/yii2/mdm/backend/controllers/PeriodyearController.php(44): yii\base\Controller->render('index', Array)
+#9 [internal function]: backend\controllers\PeriodyearController->actionIndex()
+#10 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#13 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('periodyear', Array)
+#14 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#16 {main}
+2017-01-23 22:23:28 [127.0.0.1][-][pe16e8j083abirmnfk4laiqmp3][info][application] $_GET = [
+    'r' => 'periodyear'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'pe16e8j083abirmnfk4laiqmp3'
+    '_csrf-backend' => '82d35b349e01e4f9ef4134ca55d29db47d990bca0b3349cc407b6cf73ac129d1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"A0RK9JmNzGyI4aK9d4ls4Al9TMr5-NWY\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2/mdm/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=leaveentitlement%2Fcreate'
+    'HTTP_COOKIE' => 'advanced-backend=pe16e8j083abirmnfk4laiqmp3; _csrf-backend=82d35b349e01e4f9ef4134ca55d29db47d990bca0b3349cc407b6cf73ac129d1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22A0RK9JmNzGyI4aK9d4ls4Al9TMr5-NWY%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '47787'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=periodyear'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=periodyear'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485185008.475
+    'REQUEST_TIME' => 1485185008
+]
+2017-01-24 00:16:47 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'yii\models\Employee' not found' in /home/acer/app/htdocs/yii2/mdm/backend/controllers/LeaveentitlementController.php:75
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-01-24 00:16:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'leaveentitlement/create'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'pe16e8j083abirmnfk4laiqmp3'
+    '_csrf-backend' => '82d35b349e01e4f9ef4134ca55d29db47d990bca0b3349cc407b6cf73ac129d1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"A0RK9JmNzGyI4aK9d4ls4Al9TMr5-NWY\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=leaveentitlement'
+    'HTTP_COOKIE' => 'advanced-backend=pe16e8j083abirmnfk4laiqmp3; _csrf-backend=82d35b349e01e4f9ef4134ca55d29db47d990bca0b3349cc407b6cf73ac129d1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22A0RK9JmNzGyI4aK9d4ls4Al9TMr5-NWY%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '47919'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=leaveentitlement%2Fcreate'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=leaveentitlement%2Fcreate'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485191806.991
+    'REQUEST_TIME' => 1485191806
+]
+2017-01-24 00:17:54 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\db\BaseActiveRecord::findAll(), called in /home/acer/app/htdocs/yii2/mdm/backend/controllers/LeaveentitlementController.php on line 75 and defined' in /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/BaseActiveRecord.php:114
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/db/BaseActiveRecord.php(114): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', '/home/acer/app/...', 114, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/backend/controllers/LeaveentitlementController.php(75): yii\db\BaseActiveRecord::findAll()
+#2 [internal function]: backend\controllers\LeaveentitlementController->actionCreate()
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#6 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('leaveentitlemen...', Array)
+#7 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2017-01-24 00:17:54 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'leaveentitlement/create'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'pe16e8j083abirmnfk4laiqmp3'
+    '_csrf-backend' => '82d35b349e01e4f9ef4134ca55d29db47d990bca0b3349cc407b6cf73ac129d1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"A0RK9JmNzGyI4aK9d4ls4Al9TMr5-NWY\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=leaveentitlement'
+    'HTTP_COOKIE' => 'advanced-backend=pe16e8j083abirmnfk4laiqmp3; _csrf-backend=82d35b349e01e4f9ef4134ca55d29db47d990bca0b3349cc407b6cf73ac129d1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22A0RK9JmNzGyI4aK9d4ls4Al9TMr5-NWY%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '47920'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=leaveentitlement%2Fcreate'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=leaveentitlement%2Fcreate'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485191874.179
+    'REQUEST_TIME' => 1485191874
+]
+2017-01-24 00:28:43 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/acer/app/htdocs/yii2/mdm/backend/views/leaveentitlement/_form.php:39
+Stack trace:
+#0 /home/acer/app/htdocs/yii2/mdm/backend/views/leaveentitlement/_form.php(39): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/acer/app/...', 39, Array)
+#1 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/acer/app/...')
+#2 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/acer/app/...', Array)
+#3 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/home/acer/app/...', Array, NULL)
+#4 /home/acer/app/htdocs/yii2/mdm/backend/views/leaveentitlement/create.php(20): yii\base\View->render('_form', Array)
+#5 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(326): require('/home/acer/app/...')
+#6 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/acer/app/...', Array)
+#7 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/home/acer/app/...', Array, Object(backend\controllers\LeaveentitlementController))
+#8 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('create', Array, Object(backend\controllers\LeaveentitlementController))
+#9 /home/acer/app/htdocs/yii2/mdm/backend/controllers/LeaveentitlementController.php(76): yii\base\Controller->render('create', Array)
+#10 [internal function]: backend\controllers\LeaveentitlementController->actionCreate()
+#11 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#13 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#14 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('leaveentitlemen...', Array)
+#15 /home/acer/app/htdocs/yii2/mdm/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/acer/app/htdocs/yii2/mdm/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-01-24 00:28:43 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'leaveentitlement/create'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'pe16e8j083abirmnfk4laiqmp3'
+    '_csrf-backend' => '82d35b349e01e4f9ef4134ca55d29db47d990bca0b3349cc407b6cf73ac129d1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"A0RK9JmNzGyI4aK9d4ls4Al9TMr5-NWY\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2/mdm/backend/web/index.php?r=leaveentitlement'
+    'HTTP_COOKIE' => 'advanced-backend=pe16e8j083abirmnfk4laiqmp3; _csrf-backend=82d35b349e01e4f9ef4134ca55d29db47d990bca0b3349cc407b6cf73ac129d1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22A0RK9JmNzGyI4aK9d4ls4Al9TMr5-NWY%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/acer/app/htdocs/'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/home/acer/app/htdocs/yii2/mdm/backend/web/index.php'
+    'REMOTE_PORT' => '48005'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=leaveentitlement%2Fcreate'
+    'REQUEST_URI' => '/yii2/mdm/backend/web/index.php?r=leaveentitlement%2Fcreate'
+    'SCRIPT_NAME' => '/yii2/mdm/backend/web/index.php'
+    'PHP_SELF' => '/yii2/mdm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485192523.648
+    'REQUEST_TIME' => 1485192523
+]

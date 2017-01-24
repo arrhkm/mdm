@@ -38,7 +38,16 @@ AppAsset::register($this);
         ['label' => 'Home', 'url' => ['/site/index']],
         ['label'=>'Post','url'=>['/post/']],
         ['label'=>'Period Year','url'=>['/periodyear/']],
-        ['label'=>'Employee','url'=>['/employee/']],
+        ['label'=>'Employee','url'=>['/employee/'], 'items'=>
+            [
+                ['label'=>'Leave Entitlement', 'url'=>['/leaveentitlement/']],
+            ],
+        ],
+        ['label'=>'HRM', 'url'=>['#'], 'items'=>
+            [
+                ['label'=>'Leave Type', 'url'=>['/leavetype/']],
+            ]
+        ],
         ['label'=>'Admin','url'=>['/admin/']],
         ['label' => 'gii', 'url' => ['/gii/']],
     ];
