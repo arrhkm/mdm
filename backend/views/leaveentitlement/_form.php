@@ -31,19 +31,28 @@ use kartik\widgets\Select2;
 
     <?= $form->field($model, 'createed_by_name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'employee_id')->textInput() ?>
+    <?php //= $form->field($model, 'employee_id')->textInput() ?>
     <?php
-        echo Select2::widget([
-            'model' => $model,
-            'attribute' => 'employee_id',
-            'data' => $data->first_name,
-            'options' => ['placeholder' => 'Select a employee ...'],
+        
+        echo $form->field($model, 'employee_id')->widget(Select2::Classname(), [
+            //'model' => $model,
+            //'attribute' => 'employee_id',
+            'data' => $data,
+            'options' => ['prompt' => 'Select a Employee ...',],
             'pluginOptions' => [
-                'allowClear' => true
+                'allowClear' => true,
             ],
         ]);
     ?>
-    <?= $form->field($model, 'leave_type_id')->textInput() ?>
+    <?php //= $form->field($model, 'leave_type_id')->textInput() ?>
+    <?= $form->field($model, 'leave_type_id')->widget(Select2::Classname(), [
+            'data'=>$dtLeaveType,
+            'options'=>['placeholder'=>'Select a Leave Type ...',],
+            'pluginOptions'=>[
+                'allowClear'=>true,
+            ],
+        ]);
+    ?>
 
     <?= $form->field($model, 'user_id')->textInput() ?>
 
@@ -54,3 +63,7 @@ use kartik\widgets\Select2;
     <?php ActiveForm::end(); ?>
 
 </div>
+<?php 
+/*foreach ($data as $datas){
+    echo $datas['id']." - ".$datas['first_name']."<br>";
+}*/
