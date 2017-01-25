@@ -10,6 +10,9 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 use app\models\Employee;
+use app\models\LeaveType;
+//use yii\db\Query;
+use yii\helpers\ArrayHelper;
 
 /**
  * LeaveentitlementController implements the CRUD actions for LeaveEntitlement model.
@@ -70,9 +73,17 @@ class LeaveentitlementController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
+            //$dataQuaery = New Query;
+            //$dataQuaery->select('id')->from('employee');
+            //$rows = $dataQuaery->all();
+            $data = arrayHelper::map(Employee::find()->all(), 'id', 'first_name');
+            $dtLeaveType = arrayHelper::map(LeaveType::find()->all(), 'id', 'name_type');
             return $this->render('create', [
                 'model' => $model,
-                'data'=> Employee::findAll(),
+                //'data'=> Employee::find()->select('id', 'first_name')->asArray()->all(),
+                //'data'=>$rows,
+                'data'=>$data,
+                'dtLeaveType'=>$dtLeaveType,
             ]);
         }
     }
