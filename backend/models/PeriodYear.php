@@ -57,5 +57,23 @@ class PeriodYear extends \yii\db\ActiveRecord
         ];
     }
 
+    public function beforeSave($insert)
+    {
+        parent::beforeSave($insert);
+        if ($this->isNewRecord)
+        {
+            $last = $this->find()->select(['id'])->orderBy(['(id)'=>SORT_DESC])->limit(1)->one();
+            if($last)
+            {
+                $NEW_ID = (int)$last->id+1;
+            }
+            else {
+                $NEW_ID= 1;
+            }
+            $this->id= $NEW_ID;
+        }
+        return true;
+    }
+
     
 }
