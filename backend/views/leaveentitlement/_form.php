@@ -54,7 +54,7 @@ use kartik\widgets\Select2;
         ]);
     ?>
 
-    <?= $form->field($model, 'user_id')->textInput() ?>
+    <?= $form->field($model, 'user_id')->hiddenInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
@@ -63,7 +63,3 @@ use kartik\widgets\Select2;
     <?php ActiveForm::end(); ?>
 
 </div>
-<?php 
-/*foreach ($data as $datas){
-    echo $datas['id']." - ".$datas['first_name']."<br>";
-}*/

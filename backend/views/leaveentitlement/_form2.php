@@ -13,7 +13,7 @@ use kartik\widgets\Select2;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?php //= $form->field($model, 'id')->textInput() ?>
+    <?= $form->field($model, 'multiple_insert')->checkbox(['checked'=>'checked']) ?>
 
     <?= $form->field($model, 'no_of_days')->textInput(['maxlength' => true]) ?>
 
@@ -28,6 +28,7 @@ use kartik\widgets\Select2;
     <?php //= $form->field($model, 'note')->textInput(['maxlength' => true]) ?>
 
     <?php //= $form->field($model, 'deleted')->textInput() ?>
+    <?= $form->field($model, 'user_id')->hiddenInput(['value'=>yii::$app->user->identity->id]) ?>
 
     <?= $form->field($model, 'createed_by_name')->textInput(['maxlength' => true, 'value'=>Yii::$app->user->identity->username, 'disabled'=>true]) ?>
 
@@ -53,8 +54,6 @@ use kartik\widgets\Select2;
             ],
         ]);
     ?>
-
-    <?php //= $form->field($model, 'user_id')->textInput() ?>
     <?= $form->field($model, 'period_year')->widget(select2::Classname(),[
             //'data'=>['period1'=>'period1', 'period2'=>'period2'],
             'data'=>$periodYear,
@@ -70,7 +69,3 @@ use kartik\widgets\Select2;
     <?php ActiveForm::end(); ?>
 
 </div>
-<?php 
-/*foreach ($data as $datas){
-    echo $datas['id']." - ".$datas['first_name']."<br>";
-}*/

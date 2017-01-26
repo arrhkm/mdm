@@ -14,6 +14,8 @@ use app\models\LeaveType;
 //use yii\db\Query;
 use yii\helpers\ArrayHelper;
 use app\models\PeriodYear;
+use yii\filters\AccessControl;
+use app\models\User;
 
 /**
  * LeaveentitlementController implements the CRUD actions for LeaveEntitlement model.
@@ -26,6 +28,28 @@ class LeaveentitlementController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['login', 'error'],
+                        'allow' => true,
+                    ],
+                    [
+                        'actions' => [
+                            'logout', 
+                            'index', 
+                            'create',
+                            'view',
+                            'update',
+                            'createh1',
+                            'delete',
+                        ],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -75,12 +99,14 @@ class LeaveentitlementController extends Controller
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             
-            $data = arrayHelper::map(Employee::find()->all(), 'id', 'first_name');
+            $employee = arrayHelper::map(Employee::find()->all(), 'id', 'first_name');
             $dtLeaveType = arrayHelper::map(LeaveType::find()->all(), 'id', 'name_type');
+            $periodYear = arrayHelper::map(PeriodYear::find()->all(), 'name_period', 'name_period');
             return $this->render('create', [
                 'model' => $model,               
-                'data'=>$data,
+                'employee'=>$employee,
                 'dtLeaveType'=>$dtLeaveType,
+                'periodYear'=>$periodYear, 
             ]);
         }
     }
@@ -88,8 +114,48 @@ class LeaveentitlementController extends Controller
     public function actionCreateh1()
     {
         $model = new LeaveEntitlement(['scenario'=>LeaveEntitlement::SCENARIO_INSERT]);
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        /*if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
+        } */
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            $period = split('to', $model->period_year); 
+            $user = User::find()->where(['employee_id'=>$model->employee_id])->one();
+            $model->user_id = $user->id;
+            //$redudanceEntitlement = LeaveEntitlement::find(['from_date'=>$period[0], 'to_date'=>$period[1], 'employee_id'=>$model->employee_id])->one();
+            $redudanceEntitlement = LeaveEntitlement::find()
+            ->where(['employee_id'=>$model->employee_id, 'from_date'=>$period[0], 'to_date'=>$period[1], 'leave_type_id'=>$model->leave_type_id])
+            ->count();
+            if ($redudanceEntitlement >= 1){
+                yii::$app->session->setFlash('error', 'Leave Entitlement for this user wash entry');
+                $employee = arrayHelper::map(Employee::find()->all(), 'id', 'first_name');
+                $dtLeaveType = arrayHelper::map(LeaveType::find()->all(), 'id', 'name_type');
+                $periodYear = arrayHelper::map(PeriodYear::find()->all(), 'name_period', 'name_period');
+                return $this->render('createh1', [
+                    'model' => $model,               
+                    'employee'=>$employee,
+                    'dtLeaveType'=>$dtLeaveType,
+                    'periodYear'=>$periodYear,
+                ]);
+
+            }
+
+            $model->from_date = $period[0];
+            $model->to_date = $period[1];
+            if ($model->save())
+            {
+                return $this->redirect(['view', 'id' => $model->id]);   
+            }
+            $employee = arrayHelper::map(Employee::find()->all(), 'id', 'first_name');
+            $dtLeaveType = arrayHelper::map(LeaveType::find()->all(), 'id', 'name_type');
+            $periodYear = arrayHelper::map(PeriodYear::find()->all(), 'name_period', 'name_period');
+            return $this->render('createh1', [
+                'model' => $model,               
+                'employee'=>$employee,
+                'dtLeaveType'=>$dtLeaveType,
+                'periodYear'=>$periodYear,
+                //'period'=>$period,
+            ]);
+
         } else {
             
             $employee = arrayHelper::map(Employee::find()->all(), 'id', 'first_name');
@@ -114,7 +180,6 @@ class LeaveentitlementController extends Controller
     {
         $model = $this->findModel($id);
 
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -124,7 +189,7 @@ class LeaveentitlementController extends Controller
             return $this->render('update', [
                 'model' => $model,
                 'employee'=>$employee,
-                'periodYear'=>$periodYear,
+                'dtLeaveType'=>$dtLeaveType,
 
             ]);
         }

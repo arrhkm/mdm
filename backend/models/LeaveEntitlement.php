@@ -37,6 +37,7 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
     const SCENARIO_1='default';
     const SCENARIO_INSERT = 'insert';
     public $period_year;//tambahan
+    public $multiple_insert;
 
     public static function tableName()
     {
@@ -55,6 +56,7 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
                 'employee_id', 
                 'no_of_days', 
                 'leave_type_id',
+                'user_id',
                 'period_year',//tambahan
 
             ],
@@ -68,6 +70,7 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
     {
         return [
             [['no_of_days', 'days_used'], 'number'],
+            [['no_of_days'], 'required', 'on'=>self::SCENARIO_INSERT],
             [['from_date', 'to_date', 'credited_date'], 'safe'],
             [['deleted', 'employee_id', 'leave_type_id', 'user_id'], 'integer'],
             [['employee_id', 'leave_type_id'], 'required',],
@@ -77,6 +80,7 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
             [['employee_id'], 'exist', 'skipOnError' => true, 'targetClass' => Employee::className(), 'targetAttribute' => ['employee_id' => 'id']],
             [['leave_type_id'], 'exist', 'skipOnError' => true, 'targetClass' => LeaveType::className(), 'targetAttribute' => ['leave_type_id' => 'id']],
             [['period_year'], 'required', 'on'=>self::SCENARIO_INSERT],
+            [['multiple_insert'], 'boolean'],
         ];
     }
 
@@ -98,6 +102,7 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
             'employee_id' => Yii::t('app', 'Employee ID'),
             'leave_type_id' => Yii::t('app', 'Leave Type ID'),
             'user_id' => Yii::t('app', 'User ID'),
+            'multiple_insert' => Yii::t('app', 'For insert leave entitlement all employee, click here'),
         ];
     }
 
@@ -132,11 +137,24 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
     {
         return $this->hasMany(LeaveHasLeaveEntitlement::className(), ['leave_entitlement_id' => 'id']);
     }
+    
 
-    /*
-    private function beforeSave()
+    public function beforeSave($insert)
     {
-
+        parent::beforeSave($insert);
+        if ($this->isNewRecord)
+        {
+            $last = $this->find()->select(['id'])->orderBy(['(id)'=>SORT_DESC])->limit(1)->one();
+            if($last)
+            {
+                $NEW_ID = (int)$last->id+1;
+            }
+            else {
+                $NEW_ID= 1;
+            }
+            $this->id= $NEW_ID;
+        }
+        return true;
     }
-    */
+    
 }

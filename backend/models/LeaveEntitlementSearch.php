@@ -7,6 +7,9 @@ use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\models\LeaveEntitlement;
 
+use yii\db\Query;
+
+
 /**
  * LeaveEntitlementSearch represents the model behind the search form about `app\models\LeaveEntitlement`.
  */
@@ -15,6 +18,7 @@ class LeaveEntitlementSearch extends LeaveEntitlement
     /**
      * @inheritdoc
      */
+    //public $first_name;
     public function rules()
     {
         return [
@@ -42,7 +46,13 @@ class LeaveEntitlementSearch extends LeaveEntitlement
      */
     public function search($params)
     {
-        $query = LeaveEntitlement::find();
+       
+        //$query = LeaveEntitlement::find()->join(['INNER JOIN', 'employee', 'employee.id=leave_entitlement.employee_id',]);
+        $queryhkm = New Query;
+        $query = $queryhkm->select('leave_entitlement.*, employee.first_name, leave_type.name_type')
+        ->from('leave_entitlement')
+        ->join('INNER JOIN', 'employee', 'employee.id= leave_entitlement.employee_id')
+        ->join('INNER JOIN', 'leave_type', 'leave_type.id=leave_entitlement.leave_type_id');
 
         // add conditions that should always apply here
 
