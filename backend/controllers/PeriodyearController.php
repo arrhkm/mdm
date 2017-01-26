@@ -181,7 +181,9 @@ class PeriodyearController extends Controller
 
     private function datePeriodName($date_now)
     {
-        return date('F Y', strtotime($date_now));
+        $next = $this->dateNext($date_now);
+        //return date('F Y', strtotime($date_now));
+        return $date_now.' to '.$next;
     }
 
     private function dateDay($date_now){        

@@ -17,19 +17,19 @@ use kartik\widgets\Select2;
 
     <?= $form->field($model, 'no_of_days')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'days_used')->textInput(['maxlength' => true]) ?>
+    <?php //= $form->field($model, 'days_used')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'from_date')->textInput() ?>
+    <?php //= $form->field($model, 'from_date')->textInput() ?>
 
-    <?= $form->field($model, 'to_date')->textInput() ?>
+    <?php //= $form->field($model, 'to_date')->textInput() ?>
 
-    <?= $form->field($model, 'credited_date')->textInput() ?>
+    <?php // = $form->field($model, 'credited_date')->textInput() ?>
 
-    <?= $form->field($model, 'note')->textInput(['maxlength' => true]) ?>
+    <?php //= $form->field($model, 'note')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'deleted')->textInput() ?>
+    <?php //= $form->field($model, 'deleted')->textInput() ?>
 
-    <?= $form->field($model, 'createed_by_name')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'createed_by_name')->textInput(['maxlength' => true, 'value'=>Yii::$app->user->identity->username, 'disabled'=>true]) ?>
 
     <?php //= $form->field($model, 'employee_id')->textInput() ?>
     <?php
@@ -38,7 +38,7 @@ use kartik\widgets\Select2;
             //'model' => $model,
             //'attribute' => 'employee_id',
             'data' => $employee,
-            'options' => ['prompt' => 'Select a Employee ...',],
+            'options' => ['placeholder' => 'Select a Employee ...',],
             'pluginOptions' => [
                 'allowClear' => true,
             ],
@@ -54,8 +54,15 @@ use kartik\widgets\Select2;
         ]);
     ?>
 
-    <?= $form->field($model, 'user_id')->textInput() ?>
-
+    <?php //= $form->field($model, 'user_id')->textInput() ?>
+    <?= $form->field($model, 'period_year')->widget(select2::Classname(),[
+            //'data'=>['period1'=>'period1', 'period2'=>'period2'],
+            'data'=>$periodYear,
+            'options'=>['placeholder'=>'Select a period',],
+            'pluginOptions'=>[
+                'allowClear'=>true,
+            ],
+    ])?>
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>

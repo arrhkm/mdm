@@ -17,12 +17,12 @@ use Yii;
  * @property integer $deleted
  * @property string $createed_by_name
  * @property integer $employee_id
- * @property string $leave_type_id
+ * @property integer $leave_type_id
  * @property integer $user_id
  *
- * @property User $user
  * @property Employee $employee
  * @property LeaveType $leaveType
+ * @property User $user
  * @property LeaveHasLeaveEntitlement[] $leaveHasLeaveEntitlements
  */
 class LeaveEntitlement extends \yii\db\ActiveRecord
@@ -30,35 +30,9 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
-
-    /**
-    * penambahan scenario 
-    */
-    const SCENARIO_1='default';
-    const SCENARIO_INSERT = 'insert';
-    public $period_year;//tambahan
-
     public static function tableName()
     {
         return 'leave_entitlement';
-    }
-
-    public function scenarios()
-    {
-        return [
-            self::SCENARIO_1=>[
-                'no_of_days', 'days_used', 'from_date', 'to_date',
-                'deleted', 'employee_id', 'leave_type_id', 'note', 
-                'createed_by_name', 'user_id'
-            ],
-            self::SCENARIO_INSERT=>[
-                'employee_id', 
-                'no_of_days', 
-                'leave_type_id',
-                'period_year',//tambahan
-
-            ],
-        ];
     }
 
     /**
@@ -67,16 +41,15 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['id', 'employee_id', 'leave_type_id', 'user_id'], 'required'],
+            [['id', 'deleted', 'employee_id', 'leave_type_id', 'user_id'], 'integer'],
             [['no_of_days', 'days_used'], 'number'],
             [['from_date', 'to_date', 'credited_date'], 'safe'],
-            [['deleted', 'employee_id', 'leave_type_id', 'user_id'], 'integer'],
-            [['employee_id', 'leave_type_id'], 'required',],
             [['note'], 'string', 'max' => 225],
             [['createed_by_name'], 'string', 'max' => 45],
-            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
             [['employee_id'], 'exist', 'skipOnError' => true, 'targetClass' => Employee::className(), 'targetAttribute' => ['employee_id' => 'id']],
             [['leave_type_id'], 'exist', 'skipOnError' => true, 'targetClass' => LeaveType::className(), 'targetAttribute' => ['leave_type_id' => 'id']],
-            [['period_year'], 'required', 'on'=>self::SCENARIO_INSERT],
+            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
 
@@ -104,14 +77,6 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getUser()
-    {
-        return $this->hasOne(User::className(), ['id' => 'user_id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
     public function getEmployee()
     {
         return $this->hasOne(Employee::className(), ['id' => 'employee_id']);
@@ -128,15 +93,16 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
+    public function getUser()
+    {
+        return $this->hasOne(User::className(), ['id' => 'user_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
     public function getLeaveHasLeaveEntitlements()
     {
         return $this->hasMany(LeaveHasLeaveEntitlement::className(), ['leave_entitlement_id' => 'id']);
     }
-
-    /*
-    private function beforeSave()
-    {
-
-    }
-    */
 }
