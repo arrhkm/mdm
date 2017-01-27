@@ -18,13 +18,15 @@ class LeaveEntitlementSearch extends LeaveEntitlement
     /**
      * @inheritdoc
      */
-    //public $first_name;
+    public $first_name;
+    public $name_type; 
+
     public function rules()
     {
         return [
             [['id', 'deleted', 'employee_id', 'leave_type_id', 'user_id'], 'integer'],
             [['no_of_days', 'days_used'], 'number'],
-            [['from_date', 'to_date', 'credited_date', 'note', 'createed_by_name'], 'safe'],
+            [['from_date', 'to_date', 'credited_date', 'note', 'createed_by_name', 'first_name', 'name_type',], 'safe'],
         ];
     }
 
@@ -83,7 +85,9 @@ class LeaveEntitlementSearch extends LeaveEntitlement
         ]);
 
         $query->andFilterWhere(['like', 'note', $this->note])
-            ->andFilterWhere(['like', 'createed_by_name', $this->createed_by_name]);
+            ->andFilterWhere(['like', 'createed_by_name', $this->createed_by_name])
+            ->andFilterWhere(['like', 'first_name', $this->first_name])
+            ->andFilterWhere(['like', 'name_type', $this->name_type]);
 
         return $dataProvider;
     }

@@ -16,9 +16,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a(Yii::t('app', 'Create Leave Entitlement'), ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
-     <p>
+        <?= Html::a(Yii::t('app', 'Create Leave Entitlement'), ['create'], ['class' => 'btn btn-success'])?>
+    
         <?= Html::a(Yii::t('app', 'Create Leave Entitlement2'), ['createh1'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
@@ -27,7 +26,8 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            //'id',
+            'first_name',
             'no_of_days',
             'days_used',
             'from_date',
@@ -37,10 +37,10 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'deleted',
             'createed_by_name',
             //'employee_id',
-            'leave_type_id',
+            //'leave_type_id',
             'name_type', 
-            'user_id',
-            'first_name',
+            //'user_id',
+            
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
