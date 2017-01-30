@@ -153,12 +153,16 @@ class LeaveentitlementController extends Controller
                 'employee'=>$employee,
                 'dtLeaveType'=>$dtLeaveType,
                 'periodYear'=>$periodYear,
-                //'period'=>$period,
+                
             ]);
 
         } else {
             
-            $employee = arrayHelper::map(Employee::find()->all(), 'id', 'first_name');
+            $employee = arrayHelper::map(Employee::find()
+                ->select('employee.*')
+                ->innerjoin('user')
+                ->where(['is not','user.employee_id', Null])
+                ->all(), 'id', 'first_name');
             $dtLeaveType = arrayHelper::map(LeaveType::find()->all(), 'id', 'name_type');
             $periodYear = arrayHelper::map(PeriodYear::find()->all(), 'name_period', 'name_period');
             return $this->render('createh1', [
