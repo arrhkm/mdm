@@ -8,7 +8,7 @@ use yii\data\ActiveDataProvider;
 use app\models\LeaveEntitlement;
 
 use yii\db\Query;
-
+//use app\models\LeaveType;
 
 /**
  * LeaveEntitlementSearch represents the model behind the search form about `app\models\LeaveEntitlement`.
@@ -50,12 +50,19 @@ class LeaveEntitlementSearch extends LeaveEntitlement
     {
        
         //$query = LeaveEntitlement::find()->join(['INNER JOIN', 'employee', 'employee.id=leave_entitlement.employee_id',]);
-        $queryhkm = New Query;
+       /* $queryhkm = New Query;
         $query = $queryhkm->select('leave_entitlement.*, employee.first_name, leave_type.name_type')
         ->from('leave_entitlement')
         ->join('INNER JOIN', 'employee', 'employee.id= leave_entitlement.employee_id')
         ->join('INNER JOIN', 'leave_type', 'leave_type.id=leave_entitlement.leave_type_id');
-
+        */
+        $query = LeaveEntitlement::find()
+                ->select('a.*, b.first_name')
+                ->from('leave_entitlement a')
+                ->innerJoinWith('employee b', 'b.id = a.employee_id');
+                //->joinWith('LeaveType');
+                //->innerJoinWith('leave_type c', 'c.id = a.leave_type_id');
+        
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([

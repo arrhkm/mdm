@@ -27,6 +27,8 @@ use Yii;
  */
 class LeaveEntitlement extends \yii\db\ActiveRecord
 {
+    public $first_name;
+    public $name_type;
     /**
      * @inheritdoc
      */

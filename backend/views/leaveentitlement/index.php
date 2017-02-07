@@ -38,7 +38,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'createed_by_name',
             //'employee_id',
             //'leave_type_id',
-            'name_type', 
+            'name_type',
+            [
+                'attribute'=>'leave_type_id',        
+                //'class' => 'yii\grid\DataColumn',
+                'value'=>'name_type',
+                
+            ],
             //'user_id',
             
 
