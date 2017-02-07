@@ -11,8 +11,8 @@ class m170201_074504_approval extends Migration
             'id'=>$this->primaryKey(11),
             'approval_name'=>$this->string(45),
             'level'=>$this->smallInteger(6)->notNull()->unique(),
-            'employee_id'=>$this->integer(11),
-            'location_id'=>$this->smallInteger(),
+            'employee_id'=>$this->integer(11)->notNull()->unique(),
+            'location_id'=>$this->integer(11)->notNull(),
         ]);
         // add index 
         $this->createIndex('idx-approval-employee_id', 'approval', 'employee_id');
@@ -24,17 +24,21 @@ class m170201_074504_approval extends Migration
             'approval', 
             'employee_id', 
             'employee', 
-            'id', 
+            'id',
+            'CASCADE',
             'CASCADE'
         );
         
         $this->addForeignKey(
-            'fk_approval_location1', 
+            'fk_approval_location_id1', 
             'approval', 
             'location_id', 
             'location', 
-            'id'
+            'id', 
+            'CASCADE',
+            'CASCADE'
         );
+    
         
         
 

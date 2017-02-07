@@ -38,6 +38,11 @@ AppAsset::register($this);
         ['label' => 'Home', 'url' => ['/site/index']],
         ['label'=>'Post','url'=>['/post/']],
         ['label'=>'Period Year','url'=>['/periodyear/']],
+        ['label'=>'Setting','url'=>['#'], 'items'=>
+            [
+                ['label'=>'Location', 'url'=>['/location/']],
+            ]
+        ],
         ['label'=>'Leave','url'=>['#'], 'items'=>
             [
                 ['label'=>'Leave Entitlement', 'url'=>['/leaveentitlement/']],
@@ -48,6 +53,7 @@ AppAsset::register($this);
         ['label'=>'Employee','url'=>['/employee/'],],
         ['label'=>'Admin','url'=>['/admin/']],
         ['label' => 'gii', 'url' => ['/gii/']],
+
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] =

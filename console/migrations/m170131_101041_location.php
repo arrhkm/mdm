@@ -7,8 +7,8 @@ class m170131_101041_location extends Migration
     public function up()
     {
         $this->createTable('location', [
-            'id'=>$this->primaryKey(),
-            'location_name'=>$this->string(),
+            'id'=>$this->primaryKey(11),
+            'location_name'=>$this->string(45),
         ]);
     }
 
