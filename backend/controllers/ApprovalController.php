@@ -13,6 +13,9 @@ use yii\helpers\ArrayHelper;
 use app\models\Employee;
 use app\models\Location;
 
+use app\models\EmployeeHasApprovalSearch;
+use app\models\EmployeeHasApproval;
+
 /**
  * ApprovalController implements the CRUD actions for Approval model.
  */
@@ -55,8 +58,12 @@ class ApprovalController extends Controller
      */
     public function actionView($id)
     {
+        $searchModel = New EmployeeHasApprovalSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $id);
         return $this->render('view', [
             'model' => $this->findModel($id),
+            'searchModel'=>$searchModel,
+            'dataProvider'=>$dataProvider,
         ]);
     }
 
@@ -132,6 +139,11 @@ class ApprovalController extends Controller
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
+    }
+    
+    public function actionAddemployeeapprove()
+    {
+        
     }
 
     /**

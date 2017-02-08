@@ -44,9 +44,21 @@ $this->params['breadcrumbs'][] = $this->title;
                 },
             ],
             //'employee_id',
-            'first_name',
+            //'first_name',
+            [
+                'attribute'=>'first_name',
+                'value'=>function($model){
+                    return $model->employee->first_name;
+                }
+            ],
             //'location_id',
-            'location_name',
+            //'location_name',
+            [
+                'attribute'=>'location_name',
+                'value'=>function($model){
+                    return $model->location->location_name;
+                }
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

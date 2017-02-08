@@ -8,7 +8,7 @@ use yii\data\ActiveDataProvider;
 use app\models\LeaveEntitlement;
 
 use yii\db\Query;
-//use app\models\LeaveType;
+use app\models\LeaveType;
 
 /**
  * LeaveEntitlementSearch represents the model behind the search form about `app\models\LeaveEntitlement`.
@@ -18,15 +18,20 @@ class LeaveEntitlementSearch extends LeaveEntitlement
     /**
      * @inheritdoc
      */
-    public $first_name;
-    public $name_type; 
+    //public $first_name;
+    //public $name_type; 
 
     public function rules()
     {
         return [
             [['id', 'deleted', 'employee_id', 'leave_type_id', 'user_id'], 'integer'],
             [['no_of_days', 'days_used'], 'number'],
-            [['from_date', 'to_date', 'credited_date', 'note', 'createed_by_name', 'first_name', 'name_type',], 'safe'],
+            [['from_date', 'to_date', 'credited_date', 'note', 
+                'createed_by_name', 'first_name', 'name_type',
+               
+             ], 
+             'safe'
+            ],
         ];
     }
 
@@ -49,19 +54,14 @@ class LeaveEntitlementSearch extends LeaveEntitlement
     public function search($params)
     {
        
-        //$query = LeaveEntitlement::find()->join(['INNER JOIN', 'employee', 'employee.id=leave_entitlement.employee_id',]);
-       /* $queryhkm = New Query;
-        $query = $queryhkm->select('leave_entitlement.*, employee.first_name, leave_type.name_type')
-        ->from('leave_entitlement')
-        ->join('INNER JOIN', 'employee', 'employee.id= leave_entitlement.employee_id')
-        ->join('INNER JOIN', 'leave_type', 'leave_type.id=leave_entitlement.leave_type_id');
-        */
-        $query = LeaveEntitlement::find()
-                ->select('a.*, b.first_name')
-                ->from('leave_entitlement a')
-                ->innerJoinWith('employee b', 'b.id = a.employee_id');
-                //->joinWith('LeaveType');
-                //->innerJoinWith('leave_type c', 'c.id = a.leave_type_id');
+        //$query = LeaveEntitlement::find();        
+        
+        $query = LeaveEntitlement::find()->with('leaveType', 'employee')// untuk mengabil fungsi relasi
+                //->select('a.*, b.first_name, c.name_type')
+                ->from('leave_entitlement a')              
+                ->innerJoin('employee b', 'b.id = a.employee_id')//untuk fungsi searching query 
+                ->innerJoin('leave_type c', 'c.id=a.leave_type_id');//untuk fungsi searching query 
+                
         
         // add conditions that should always apply here
 

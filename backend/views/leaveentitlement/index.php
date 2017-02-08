@@ -27,7 +27,22 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'first_name',
+            [
+                'attribute'=>'employee_number',                    
+                'value'=>function($model){
+                    return $model->employee->employee_number;
+        
+                },
+                
+            ],
+            [
+                'attribute'=>'first_name',                    
+                'value'=>function($model){
+                    return $model->employee->first_name;
+        
+                },
+                
+            ],
             'no_of_days',
             'days_used',
             'from_date',
@@ -37,14 +52,16 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'deleted',
             'createed_by_name',
             //'employee_id',
-            //'leave_type_id',
-            'name_type',
+            //'leave_type_id',          
             [
-                'attribute'=>'leave_type_id',        
-                //'class' => 'yii\grid\DataColumn',
-                'value'=>'name_type',
+                'attribute'=>'name_type',                    
+                'value'=>function($model){
+                    return $model->leaveType->name_type;
+        
+                },
                 
             ],
+            
             //'user_id',
             
 
