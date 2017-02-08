@@ -9,6 +9,7 @@ use yii\grid\GridView;
 //add form in this file
 use yii\widgets\ActiveForm;
 use kartik\widgets\Select2;
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Approval */
@@ -66,28 +67,15 @@ $this->params['breadcrumbs'][] = $this->title;
     ?>
     
     <div class="add-employee-form">
-
+        <p> <h3>Add Employee to Approval</h3> </p>
     <?php $form = ActiveForm::begin(); ?>
     
-    <?= $form->field($model2, 'approval_name')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model2, 'approval_id')->textInput(['maxlength' => true, 'value'=>$model->id, 'disabled'=>true]) ?>
     
-    <?= $form->field($model, 'level')->widget(Select2::Classname(),[
-        'data'=>$dt_level,
-        'options'=>['placeholder'=>'Select Level ...'],
-        'pluginOptions'=>['allowClear'=>true,],
-    ])?>
-    
-    <?= $form->field($model, 'employee_id')->widget(Select2::Classname(),[
-       'data'=>$employee,
-       'options' => ['placeholder' => 'Select a Employee ...',],
-       'pluginOptions' => [
-            'allowClear' => true,
-       ],
-    ])?>
+   
 
-
-    <?= $form->field($model, 'location_id')->widget(Select2::Classname(),[
-        'data'=>$location,
+    <?= $form->field($model2, 'employee_id')->widget(Select2::Classname(),[
+        'data'=>$dt_employee,
         'options' => ['placeholder' => 'Select a Location ...',],
         'pluginOptions' => [
             'allowClear' => true,
@@ -96,7 +84,7 @@ $this->params['breadcrumbs'][] = $this->title;
     ]) ?>
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model2->isNewRecord ? Yii::t('app', '+') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
@@ -108,13 +96,39 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'approval_id',
-            'employee_id',
+            //'approval_id',
             //'employee_id',
-            //'first_name',
+            //'employee_id',
+            [
+                'attribute'=>'employee_number',
+                'value'=>function($data){
+                    return $data->employee->employee_number;
+                }
+            ],
+            [
+                'attribute'=>'first_name',
+                'value'=>function($dataModel2){
+                    return $dataModel2->employee->first_name;
+                }
+            ],
             
 
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ActionColumn',
+                'buttons'=>[
+                    'delete' => function ($url, $model2, $key) {
+                        $options=[
+                            'title'=>Yii::t('yii', 'Delete in frontend'),
+                            'arial-label'=>Yii::t('yii', 'Delete'),
+                            'data-pjax'=>'0',
+                        ];
+                        //$url= \yii\helpers\Url::toRoute(['approval/delete2', 'employe_id'=>$key['employee_id'],'approval_id'=>$key['approval_id']]);
+                        //return Html::a('delete', $url) : '';
+                        $url = url::to(['approval/delete2', 'employee_id' =>$key['employee_id'], 'approval_id'=>$key['approval_id']]);
+                        return Html::a('<span class="glyphicon glyphicon-remove"></span>', $url, $options);
+                    },
+                ],
+                'template'=>'{delete}',
+            ],
         ],
     ]); ?>
 

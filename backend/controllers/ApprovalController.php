@@ -15,12 +15,16 @@ use app\models\Location;
 
 use app\models\EmployeeHasApprovalSearch;
 use app\models\EmployeeHasApproval;
+use yii\db\ActiveQuery;
 
 /**
  * ApprovalController implements the CRUD actions for Approval model.
  */
 class ApprovalController extends Controller
 {
+    
+   public $approval_id; 
+   public $employee_id;
     /**
      * @inheritdoc
      */
@@ -60,10 +64,27 @@ class ApprovalController extends Controller
     {
         $searchModel = New EmployeeHasApprovalSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $id);
+        
+        //add new EmployeeHasApproval
+        $model2 = new EmployeeHasApproval();
+        $model2->approval_id = $id;
+        $dt_employee = ArrayHelper::map(
+            Employee::find()
+                ->leftJoin('employee_has_approval b', 'b.employee_id = employee.id')
+                ->andWhere('b.employee_id is Null')
+                ->all()
+            , 'id', 'first_name'
+        );
+        
+        if ($model2->load(yii::$app->request->post()) && $model2->validate() && $model2->save()){
+            return $this->redirect(['view', 'id'=>$id]);
+        }
         return $this->render('view', [
             'model' => $this->findModel($id),
             'searchModel'=>$searchModel,
             'dataProvider'=>$dataProvider,
+            'model2'=>$model2,
+            'dt_employee'=>$dt_employee,
         ]);
     }
 
@@ -141,9 +162,18 @@ class ApprovalController extends Controller
         return $this->redirect(['index']);
     }
     
-    public function actionAddemployeeapprove()
+    public function actionDelete2($employee_id, $approval_id)
     {
-        
+        //$approval_id = 1;
+        //$employee_id = 7;
+        //$model2 = New EmployeeHasApproval();
+        $model2= EmployeeHasApproval::findOne(['employee_id'=>$employee_id, 'approval_id'=>$approval_id]);
+        $model2->approval_id = $approval_id;
+        $model2->employee_id = $employee_id;
+        //$model2->delete();
+        if($model2->delete()){
+            return $this->redirect(['view', 'id'=>$approval_id]);
+        }
     }
 
     /**
