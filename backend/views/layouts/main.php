@@ -47,9 +47,9 @@ AppAsset::register($this);
         ],
         ['label'=>'Leave','url'=>['#'], 'items'=>
             [
-                ['label'=>'Leave Entitlement', 'url'=>['/leaveentitlement/']],
-           
+                ['label'=>'Leave Entitlement', 'url'=>['/leaveentitlement/']],           
                 ['label'=>'Leave Type', 'url'=>['/leavetype/']],
+                ['label'=>'COba Form', 'url'=>['/leaveentitlement/coba']],
             ]
         ],
         

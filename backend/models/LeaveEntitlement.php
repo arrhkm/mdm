@@ -58,7 +58,8 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
                 'employee_id', 
                 'no_of_days', 
                 'leave_type_id',
-                'user_id',
+                'user_id',  
+                //'createed_by_name',
                 'period_year',//tambahan
 
             ],

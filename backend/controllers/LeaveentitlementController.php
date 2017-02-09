@@ -17,6 +17,8 @@ use app\models\PeriodYear;
 use yii\filters\AccessControl;
 use app\models\User;
 
+use app\models\CobaForm;//Buta model test CobaForm 
+
 /**
  * LeaveentitlementController implements the CRUD actions for LeaveEntitlement model.
  */
@@ -38,12 +40,14 @@ class LeaveentitlementController extends Controller
                     [
                         'actions' => [
                             'logout', 
+                            
                             'index', 
                             'create',
                             'view',
                             'update',
                             'createh1',
                             'delete',
+                            'coba',
                         ],
                         'allow' => true,
                         'roles' => ['@'],
@@ -114,64 +118,35 @@ class LeaveentitlementController extends Controller
     public function actionCreateh1()
     {
         $model = new LeaveEntitlement(['scenario'=>LeaveEntitlement::SCENARIO_INSERT]);
-        /*if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } */
+        
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             $period = split('to', $model->period_year); 
-            $user = User::find()->where(['employee_id'=>$model->employee_id])->one();
-            $model->user_id = $user->id;
-            //$redudanceEntitlement = LeaveEntitlement::find(['from_date'=>$period[0], 'to_date'=>$period[1], 'employee_id'=>$model->employee_id])->one();
-            $redudanceEntitlement = LeaveEntitlement::find()
-            ->where(['employee_id'=>$model->employee_id, 'from_date'=>$period[0], 'to_date'=>$period[1], 'leave_type_id'=>$model->leave_type_id])
-            ->count();
-            if ($redudanceEntitlement >= 1){
-                yii::$app->session->setFlash('error', 'Leave Entitlement for this user wash entry');
-                $employee = arrayHelper::map(Employee::find()->all(), 'id', 'first_name');
-                $dtLeaveType = arrayHelper::map(LeaveType::find()->all(), 'id', 'name_type');
-                $periodYear = arrayHelper::map(PeriodYear::find()->all(), 'name_period', 'name_period');
-                return $this->render('createh1', [
-                    'model' => $model,               
-                    'employee'=>$employee,
-                    'dtLeaveType'=>$dtLeaveType,
-                    'periodYear'=>$periodYear,
-                ]);
-
-            }
-
-            $model->from_date = $period[0];
-            $model->to_date = $period[1];
-            if ($model->save())
-            {
-                return $this->redirect(['view', 'id' => $model->id]);   
-            }
-            $employee = arrayHelper::map(Employee::find()->all(), 'id', 'first_name');
-            $dtLeaveType = arrayHelper::map(LeaveType::find()->all(), 'id', 'name_type');
-            $periodYear = arrayHelper::map(PeriodYear::find()->all(), 'name_period', 'name_period');
-            return $this->render('createh1', [
-                'model' => $model,               
-                'employee'=>$employee,
-                'dtLeaveType'=>$dtLeaveType,
-                'periodYear'=>$periodYear,
-                
-            ]);
-
-        } else {
+            $user = $this->userEmployeeFind($model->employee_id);
             
-            $employee = arrayHelper::map(Employee::find()
-                ->select('employee.*')
-                ->innerjoin('user')
-                ->where(['is not','user.employee_id', Null])
-                ->all(), 'id', 'first_name');
-            $dtLeaveType = arrayHelper::map(LeaveType::find()->all(), 'id', 'name_type');
-            $periodYear = arrayHelper::map(PeriodYear::find()->all(), 'name_period', 'name_period');
-            return $this->render('createh1', [
-                'model' => $model,               
-                'employee'=>$employee,
-                'dtLeaveType'=>$dtLeaveType,
-                'periodYear'=>$periodYear,
-            ]);
-        }
+            $model->user_id = $user->id;
+            
+            if (!($this->isRedundanceEntitlement($period[0], $period[1], $model->employee_id, $model->leave_type_id)))
+            {
+                $model->from_date = $period[0];
+                $model->to_date = $period[1];
+                $model->createed_by_name = Yii::$app->user->identity->username;
+                if ($model->save())
+                {
+                    return $this->redirect(['view', 'id' => $model->id]);   
+                }
+            }            
+            yii::$app->session->setFlash('error', 'Leave Entitlement for this user already input');
+
+        }             
+        $dtLeaveType = arrayHelper::map(LeaveType::find()->all(), 'id', 'name_type');
+        $periodYear = arrayHelper::map(PeriodYear::find()->all(), 'name_period', 'name_period');
+        return $this->render('createh1', [
+            'model' => $model,               
+            'employee'=> $this->listEmployee(),//$employee,
+            'dtLeaveType'=>$dtLeaveType,
+            'periodYear'=>$periodYear,
+        ]);
+        
     }
 
     /**
@@ -183,7 +158,7 @@ class LeaveentitlementController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
+        $model->createed_by_name = Yii::$app->user->identity->username;
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -211,6 +186,23 @@ class LeaveentitlementController extends Controller
 
         return $this->redirect(['index']);
     }
+    
+    public function actionCoba()
+    {
+        $model = new CobaForm();
+        if($model->load(Yii::$app->request->post()) && $model->validate())
+        {
+            
+            $this->render('coba', [
+                'model'=> $model,
+            ]);
+        
+        }
+        //$model->id = Yii::$app->request->post(['id']);
+        return $this->render('coba', [
+                'model'=> $model,
+            ]);
+    }
 
     /**
      * Finds the LeaveEntitlement model based on its primary key value.
@@ -225,6 +217,32 @@ class LeaveentitlementController extends Controller
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
+        }
+    }
+    
+    protected function userEmployeeFind($employee_id){
+        if (($user = User::find()->where(['employee_id'=>$employee_id])->one()) !== null){
+            return $user;
+        } else {
+            throw new NotFoundHttpException('User canot be found is does not exist.');
+        }
+    }
+    
+    protected function listEmployee(){
+        return $list_emp = arrayHelper::map(Employee::find()
+                ->from('employee a')                
+                ->innerJoin('user b', 'a.id = b.employee_id')
+                ->all(), 'id', 'first_name');
+        
+    }
+    
+    protected function isRedundanceEntitlement($start_date, $end_date, $employee_id, $leave_type_id){
+        if (($redudanceEntitlement = LeaveEntitlement::find()               
+                ->where(['employee_id' => $employee_id, 'from_date' => $start_date, 'to_date' => $end_date, 'leave_type_id' => $leave_type_id])
+                ->count()) >= 1) {
+            return true;
+        } else {
+            return false;
         }
     }
 }

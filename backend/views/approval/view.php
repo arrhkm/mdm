@@ -14,7 +14,7 @@ use yii\helpers\Url;
 /* @var $this yii\web\View */
 /* @var $model app\models\Approval */
 
-$this->title = $model->id;
+$this->title = 'Approval'.' '.$model->approval_name;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Approvals'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

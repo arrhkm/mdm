@@ -30,7 +30,7 @@ use kartik\widgets\Select2;
     <?php //= $form->field($model, 'deleted')->textInput() ?>
     <?= $form->field($model, 'user_id')->hiddenInput(['value'=>yii::$app->user->identity->id]) ?>
 
-    <?= $form->field($model, 'createed_by_name')->textInput(['maxlength' => true, 'value'=>Yii::$app->user->identity->username, 'disabled'=>true]) ?>
+    <?= $form->field($model, 'createed_by_name')->textInput(['maxlength' => true, 'value'=>Yii::$app->user->identity->username, 'disabled'=>false]) ?>
 
     <?php //= $form->field($model, 'employee_id')->textInput() ?>
     <?php
