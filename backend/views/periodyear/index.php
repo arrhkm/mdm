@@ -25,7 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
     'method' => 'post',
     'action' => ['PeriodyearController/delete3'],
 ]); */?>
-
+    
 <?php 
 
     $this->registerJs(' 
@@ -48,17 +48,29 @@ $this->params['breadcrumbs'][] = $this->title;
 
 ?>
 
+<?php
+$js =<<<JS
+   function multipledelete() {
+        window.location.href="<?php echo Url::to(['periodyear/multipledelete']); ?>"
+   }       
+JS;
 
-<?php Pjax::begin(); ?>    <?= GridView::widget([
-        'id'=>'grid',
+   $this->registerJs($js);
+?>
+    
+    
+
+<?php Pjax::begin(); ?>    
+    <?= GridView::widget([
+        'id'=>'hkm',
         'dataProvider' => $dataProvider,
         //'options' => ['id'=>'hkm-grid'],
         //'containerOptions'=> ['class'=>'hkm-container'],
         'filterModel' => $searchModel,
         'columns' => [
             [
-                //'id'=>'grid',
                 'class' => 'yii\grid\CheckboxColumn',
+                //'multiple'=>false,
 
 
                 //'checkboxOptions' => function($data) {  return ['value' => $data->id]},
@@ -80,6 +92,18 @@ $this->params['breadcrumbs'][] = $this->title;
 
         ],
     ]); ?>
-    <input type="button" class="btn btn-info" value="Multiple Delete" id="MyButton" onclick="">
+    
+    
+    <input type="button" class="btn btn-info" value="Multiple Delete" id="MyButton" onclick="multipledelete()">
 <?php Pjax::end(); ?></div>
-<?php //$form = ActiveForm::end();?>
+
+<?= Html::a('label', ['/periodyear/multipledelete'], ['class'=>'btn btn-primary']) ?>
+
+<?= Html::button("<span class='glyphicon glyphicon-plus' aria-hidden='true'></span>",
+                    ['class'=>'kv-action-btn',
+                        'onclick'=>"window.location.href = '" . \Yii::$app->urlManager->createUrl(['/multipledelete','id'=>'xx']) . "';",
+                        'data-toggle'=>'tooltip',
+                        'title'=>Yii::t('app', 'Create New Record'),
+                    ]
+                
+);?>

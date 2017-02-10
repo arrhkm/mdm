@@ -1,4 +1,4 @@
-<?php (
+<?php 
 namespace common\cart;
 
 use common\cart\storage\StorageInterface;

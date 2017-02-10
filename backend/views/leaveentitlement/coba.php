@@ -13,8 +13,9 @@ use kartik\widgets\Select2;
    
     <?= $form->field($model, 'username')->textInput() ?>
     <?= $form->field($model, 'password')->textInput() ?>
-    <?= $form->field($model, 'hcb')->checkBox(['value'=>'Active'])?>
-
+    <?php //= $form->field($model, 'hcb')->checkBox(['value'=>'Active'])?>
+    <?php //echo $form->field($model,'hcb')->checkBox(['value' => 'Y', 'uncheckValue'=>'N']); ?>
+    <?php echo $form->field($model, 'hcb')->checkboxList(['a' => 'Item A', 'b' => 'Item B', 'c' => 'Item C']);?>
     <div class="form-group">
         <div class="col-lg-offset-1 col-lg-11">
             <?= Html::submitButton('Login', ['class' => 'btn btn-primary']) ?>
