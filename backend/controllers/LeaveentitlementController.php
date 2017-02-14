@@ -118,6 +118,9 @@ class LeaveentitlementController extends Controller
     public function actionCreateh1()
     {
         $model = new LeaveEntitlement(['scenario'=>LeaveEntitlement::SCENARIO_INSERT]);
+        $employee2 = Employee::find()->from('employee a')                
+                ->innerJoin('user b', 'a.id = b.employee_id')
+                ->all();
         
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             $period = split('to', $model->period_year); 
@@ -125,6 +128,8 @@ class LeaveentitlementController extends Controller
             
             $model->user_id = $user->id;
             
+            /*
+            // Jika tidak ditemukan data yang redundance pada periode, employee_id dan leave_type_id nya maka
             if (!($this->isRedundanceEntitlement($period[0], $period[1], $model->employee_id, $model->leave_type_id)))
             {
                 $model->from_date = $period[0];
@@ -134,10 +139,44 @@ class LeaveentitlementController extends Controller
                 {
                     return $this->redirect(['view', 'id' => $model->id]);   
                 }
-            }            
+            }
+            // jika ditemukan maka cetak session ini di layar tampilan
             yii::$app->session->setFlash('error', 'Leave Entitlement for this user already input');
-
-        }             
+            */
+            if ($model->multiple_insert ==true){
+                yii::$app->session->setFlash('sucess', 'multiple insert ada');
+                $dtLeaveType = arrayHelper::map(LeaveType::find()->all(), 'id', 'name_type');
+                $periodYear = arrayHelper::map(PeriodYear::find()->all(), 'name_period', 'name_period');
+                //$query= Yii::$app->db->createCommand()
+                //foreach($employee as $data_emp){
+                    
+                //}
+                $sql= "INSERT INTO leave_entaitlement employee_id, "
+                        . "no_of_days, "
+                        . "leave_type_id, "
+                        . "user_id, "
+                        . "from_date, "
+                        . "to_date,"
+                        . "created_by_name"
+                        . "values $employee_id, "
+                        . "$model->no_of_days, "
+                        . "$model->leave_type_id,"
+                        . "$model->user_id, "
+                        . "'$period[0]', '$period[1]', "
+                        . "'Yii::$app->user->identity->username'";
+                
+                return $this->render('createh1', [
+                    'model' => $model,               
+                    'employee'=> $this->listEmployee(),//$employee,
+                    'dtLeaveType'=>$dtLeaveType,
+                    'periodYear'=>$periodYear,
+                    'employee2'=>$employee2,
+                ]);
+            }
+            yii::$app->session->setFlash('error', 'multiple insert tdk terdeteksi');
+        }
+        
+        
         $dtLeaveType = arrayHelper::map(LeaveType::find()->all(), 'id', 'name_type');
         $periodYear = arrayHelper::map(PeriodYear::find()->all(), 'name_period', 'name_period');
         return $this->render('createh1', [
@@ -145,6 +184,7 @@ class LeaveentitlementController extends Controller
             'employee'=> $this->listEmployee(),//$employee,
             'dtLeaveType'=>$dtLeaveType,
             'periodYear'=>$periodYear,
+            'employee2'=>$employee2,
         ]);
         
     }
@@ -190,17 +230,24 @@ class LeaveentitlementController extends Controller
     public function actionCoba()
     {
         $model = new CobaForm();
-        if($model->load(Yii::$app->request->post()) && $model->validate())
+        /*if($model->load(Yii::$app->request->post()) && $model->validate())
         {
             
             $this->render('coba', [
                 'model'=> $model,
             ]);
         
-        }
-        //$model->id = Yii::$app->request->post(['id']);
+        }*/
+       //$username = Yii::$app->request->post(['username']);
+       //$password = Yii::$app->request->post('password');
+       //$cb = Yii::$app->request->post('cb');
+       $model->load(Yii::$app->request->post());
         return $this->render('coba', [
                 'model'=> $model,
+                //'username'=>$username,
+                //'password'=>$password,
+                //'cb'=>$cb,
+                
             ]);
     }
 

@@ -29,6 +29,7 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
 {
     public $first_name;
     public $name_type;
+    public $all_employee;
     /**
      * @inheritdoc
      */
@@ -61,6 +62,7 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
                 'user_id',  
                 //'createed_by_name',
                 'period_year',//tambahan
+                'multiple_insert', 'all_employee',
 
             ],
         ];
@@ -72,7 +74,7 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['no_of_days', 'days_used'], 'number'],
+            [['no_of_days', 'days_used', 'all_employee'], 'number'],
             [['no_of_days'], 'required', 'on'=>self::SCENARIO_INSERT],
             [['from_date', 'to_date', 'credited_date'], 'safe'],
             [['deleted', 'employee_id', 'leave_type_id', 'user_id'], 'integer'],
@@ -83,7 +85,7 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
             [['employee_id'], 'exist', 'skipOnError' => true, 'targetClass' => Employee::className(), 'targetAttribute' => ['employee_id' => 'id']],
             [['leave_type_id'], 'exist', 'skipOnError' => true, 'targetClass' => LeaveType::className(), 'targetAttribute' => ['leave_type_id' => 'id']],
             [['period_year'], 'required', 'on'=>self::SCENARIO_INSERT],
-            [['multiple_insert'], 'boolean'],
+            [['multiple_insert', 'all_employee'], 'boolean'],
         ];
     }
 

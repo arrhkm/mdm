@@ -10,12 +10,16 @@ class CobaForm extends Model
     public $username;
     public $password;
     public $hcb;
+    public $cb_list;
+    public $cb;
     
     public function rules()
     {
         return [
             [['username','password'], 'required'],
-            ['password', 'string', 'max' => 64],
+            [['password'], 'string', 'max' => 64],
+            [['cb', 'hcb'], 'integer'],
+            
 
         ];
     }

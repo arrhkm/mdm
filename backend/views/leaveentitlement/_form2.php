@@ -13,7 +13,7 @@ use kartik\widgets\Select2;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'multiple_insert')->checkbox(['checked'=>'checked']) ?>
+    <?= $form->field($model, 'multiple_insert')->checkbox(['value'=>true]) ?>
 
     <?= $form->field($model, 'no_of_days')->textInput(['maxlength' => true]) ?>
 
@@ -69,3 +69,10 @@ use kartik\widgets\Select2;
     <?php ActiveForm::end(); ?>
 
 </div>
+<?php 
+
+    echo "ada ".$model->multiple_insert;
+    //foreach ($employee2 as $value){
+    //   print $value;
+    //}
+?>
