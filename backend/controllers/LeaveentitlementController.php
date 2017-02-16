@@ -48,6 +48,7 @@ class LeaveentitlementController extends Controller
                             'createh1',
                             'delete',
                             'coba',
+                            'insertall'
                         ],
                         'allow' => true,
                         'roles' => ['@'],
@@ -128,7 +129,7 @@ class LeaveentitlementController extends Controller
             
             $model->user_id = $user->id;
             
-            /*
+            
             // Jika tidak ditemukan data yang redundance pada periode, employee_id dan leave_type_id nya maka
             if (!($this->isRedundanceEntitlement($period[0], $period[1], $model->employee_id, $model->leave_type_id)))
             {
@@ -142,38 +143,8 @@ class LeaveentitlementController extends Controller
             }
             // jika ditemukan maka cetak session ini di layar tampilan
             yii::$app->session->setFlash('error', 'Leave Entitlement for this user already input');
-            */
-            if ($model->multiple_insert ==true){
-                yii::$app->session->setFlash('sucess', 'multiple insert ada');
-                $dtLeaveType = arrayHelper::map(LeaveType::find()->all(), 'id', 'name_type');
-                $periodYear = arrayHelper::map(PeriodYear::find()->all(), 'name_period', 'name_period');
-                //$query= Yii::$app->db->createCommand()
-                //foreach($employee as $data_emp){
-                    
-                //}
-                $sql= "INSERT INTO leave_entaitlement employee_id, "
-                        . "no_of_days, "
-                        . "leave_type_id, "
-                        . "user_id, "
-                        . "from_date, "
-                        . "to_date,"
-                        . "created_by_name"
-                        . "values $employee_id, "
-                        . "$model->no_of_days, "
-                        . "$model->leave_type_id,"
-                        . "$model->user_id, "
-                        . "'$period[0]', '$period[1]', "
-                        . "'Yii::$app->user->identity->username'";
-                
-                return $this->render('createh1', [
-                    'model' => $model,               
-                    'employee'=> $this->listEmployee(),//$employee,
-                    'dtLeaveType'=>$dtLeaveType,
-                    'periodYear'=>$periodYear,
-                    'employee2'=>$employee2,
-                ]);
-            }
-            yii::$app->session->setFlash('error', 'multiple insert tdk terdeteksi');
+            
+            
         }
         
         
@@ -184,9 +155,62 @@ class LeaveentitlementController extends Controller
             'employee'=> $this->listEmployee(),//$employee,
             'dtLeaveType'=>$dtLeaveType,
             'periodYear'=>$periodYear,
-            'employee2'=>$employee2,
+            'employee2'=>$this->getAllEmployee(),
         ]);
         
+    }
+    
+    public function actionInsertall(){
+        $model = New LeaveEntitlement(['scenario'=> LeaveEntitlement::SCENARIO_INSERT_ALL]);
+         
+        
+        $user = $this->userEmployeeFind($model->employee_id);
+        
+        $dtLeaveType = arrayHelper::map(LeaveType::find()->all(), 'id', 'name_type');
+        $periodYear = arrayHelper::map(PeriodYear::find()->all(), 'name_period', 'name_period');
+        $dt_employee = $this->getAllEmployee();
+        
+        
+        if ($model->load(Yii::$app->request->post()) && $model->validate()){
+            $period = split('to', $model->period_year); 
+            $model->user_id = $user->id;
+            $username = Yii::$app->user->identity->username;
+            $sqlmax = "SELECT MAX(id) as max_id from leave_entitlement";
+            $max_id = Yii::$app->db->createCommand($sqlmax)->queryOne();
+            $maxid = $max_id['max_id'];
+            
+            foreach ($dt_employee as $value){
+                $maxid++;
+                $sql= "REPLACE INTO leave_entitlement ("
+                        ." id, "
+                        . "employee_id, "
+                        . "no_of_days, "
+                        . "leave_type_id, "
+                        . "user_id, "
+                        . "from_date, "
+                        . "to_date,"
+                        . "createed_by_name"
+                        . ") values ("
+                        . "$maxid, "
+                        . "$value[id], "
+                        . "$model->no_of_days, "
+                        . "$model->leave_type_id,"
+                        . "$model->user_id, "
+                        . "'$period[0]', '$period[1]', "
+                        . "'$username')";
+                
+                Yii::$app->db->createCommand($sql)->execute();
+            }
+            return $this->redirect(['index']);
+            
+            
+        }
+        return $this->render('insertall', [
+            'model'=>$model,
+            'dtLeaveType'=>$dtLeaveType,
+            'periodYear'=>$periodYear,
+            'employee'=>$this->listEmployee(),
+        ]);
     }
 
     /**
@@ -283,6 +307,14 @@ class LeaveentitlementController extends Controller
         
     }
     
+    protected  function getAllEmployee(){
+        return Employee::find()
+                ->from('employee a')                
+                ->innerJoin('user b', 'a.id = b.employee_id')
+                ->all();
+    }
+
+
     protected function isRedundanceEntitlement($start_date, $end_date, $employee_id, $leave_type_id){
         if (($redudanceEntitlement = LeaveEntitlement::find()               
                 ->where(['employee_id' => $employee_id, 'from_date' => $start_date, 'to_date' => $end_date, 'leave_type_id' => $leave_type_id])

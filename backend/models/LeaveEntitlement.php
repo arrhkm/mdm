@@ -39,6 +39,7 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
     */
     const SCENARIO_1='default';
     const SCENARIO_INSERT = 'insert';
+    const SCENARIO_INSERT_ALL = 'insert_all';
     public $period_year;//tambahan
     public $multiple_insert;
 
@@ -65,6 +66,14 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
                 'multiple_insert', 'all_employee',
 
             ],
+            self::SCENARIO_INSERT_ALL=>[           
+                //'employee_id',
+                'no_of_days', 
+                'leave_type_id',
+                'user_id',                  
+                'period_year',//tambahan
+                'multiple_insert', 'all_employee',
+            ]
         ];
     }
 
@@ -82,7 +91,7 @@ class LeaveEntitlement extends \yii\db\ActiveRecord
             [['note'], 'string', 'max' => 225],
             [['createed_by_name'], 'string', 'max' => 45],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
-            [['employee_id'], 'exist', 'skipOnError' => true, 'targetClass' => Employee::className(), 'targetAttribute' => ['employee_id' => 'id']],
+            [['employee_id'], 'exist', 'skipOnError' => true, 'targetClass' => Employee::className(), 'targetAttribute' => ['employee_id' => 'id'], 'on'=>self::SCENARIO_INSERT,'on'=>self::SCENARIO_1 ],
             [['leave_type_id'], 'exist', 'skipOnError' => true, 'targetClass' => LeaveType::className(), 'targetAttribute' => ['leave_type_id' => 'id']],
             [['period_year'], 'required', 'on'=>self::SCENARIO_INSERT],
             [['multiple_insert', 'all_employee'], 'boolean'],

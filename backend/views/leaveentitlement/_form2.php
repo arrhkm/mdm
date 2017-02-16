@@ -16,18 +16,7 @@ use kartik\widgets\Select2;
     <?= $form->field($model, 'multiple_insert')->checkbox(['value'=>true]) ?>
 
     <?= $form->field($model, 'no_of_days')->textInput(['maxlength' => true]) ?>
-
-    <?php //= $form->field($model, 'days_used')->textInput(['maxlength' => true]) ?>
-
-    <?php //= $form->field($model, 'from_date')->textInput() ?>
-
-    <?php //= $form->field($model, 'to_date')->textInput() ?>
-
-    <?php // = $form->field($model, 'credited_date')->textInput() ?>
-
-    <?php //= $form->field($model, 'note')->textInput(['maxlength' => true]) ?>
-
-    <?php //= $form->field($model, 'deleted')->textInput() ?>
+    
     <?= $form->field($model, 'user_id')->hiddenInput(['value'=>yii::$app->user->identity->id]) ?>
 
     <?= $form->field($model, 'createed_by_name')->textInput(['maxlength' => true, 'value'=>Yii::$app->user->identity->username, 'disabled'=>false]) ?>
@@ -64,6 +53,7 @@ use kartik\widgets\Select2;
     ])?>
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?php //= Html::button(Yii::t('leaveentitlement/index'), ['class' => 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
@@ -72,7 +62,7 @@ use kartik\widgets\Select2;
 <?php 
 
     echo "ada ".$model->multiple_insert;
-    //foreach ($employee2 as $value){
-    //   print $value;
-    //}
+    foreach ($employee2 as $value){
+       print $value['id'];
+    }
 ?>

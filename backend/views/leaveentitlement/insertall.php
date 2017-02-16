@@ -3,49 +3,35 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use kartik\widgets\Select2;
+use yii\bootstrap\Modal;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\LeaveEntitlement */
 /* @var $form yii\widgets\ActiveForm */
+$this->title = Yii::t('app', 'Create Leave Entitlement');
+
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Leave Entitlements'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = 'Insert entitlement for all Employee';
+
 ?>
 
 <div class="leave-entitlement-form">
+    <?php /* Modal::begin([
+        'header' => '<h2>Hello world</h2>',
+        'toggleButton' => ['label' => 'click me'],
+    ])0 */;?>
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'multiple_insert')->checkbox(['value'=>true]) ?>
+    <?php //= $form->field($model, 'multiple_insert')->checkbox(['value'=>true]) ?>
 
     <?= $form->field($model, 'no_of_days')->textInput(['maxlength' => true]) ?>
-
-    <?php //= $form->field($model, 'days_used')->textInput(['maxlength' => true]) ?>
-
-    <?php //= $form->field($model, 'from_date')->textInput() ?>
-
-    <?php //= $form->field($model, 'to_date')->textInput() ?>
-
-    <?php // = $form->field($model, 'credited_date')->textInput() ?>
-
-    <?php //= $form->field($model, 'note')->textInput(['maxlength' => true]) ?>
-
-    <?php //= $form->field($model, 'deleted')->textInput() ?>
+    
     <?= $form->field($model, 'user_id')->hiddenInput(['value'=>yii::$app->user->identity->id]) ?>
 
     <?= $form->field($model, 'createed_by_name')->textInput(['maxlength' => true, 'value'=>Yii::$app->user->identity->username, 'disabled'=>false]) ?>
 
-    <?php //= $form->field($model, 'employee_id')->textInput() ?>
-    <?php
-        
-        echo $form->field($model, 'employee_id')->widget(Select2::Classname(), [
-            //'model' => $model,
-            //'attribute' => 'employee_id',
-            'data' => $employee,
-            'options' => ['placeholder' => 'Select a Employee ...',],
-            'pluginOptions' => [
-                'allowClear' => true,
-            ],
-        ]);
-    ?>
-    <?php //= $form->field($model, 'leave_type_id')->textInput() ?>
+    
     <?= $form->field($model, 'leave_type_id')->widget(Select2::Classname(), [
             'data'=>$dtLeaveType,
             'options'=>['placeholder'=>'Select a Leave Type ...',],
@@ -67,12 +53,6 @@ use kartik\widgets\Select2;
     </div>
 
     <?php ActiveForm::end(); ?>
+    <?php /* Modal::end();*/?>
 
 </div>
-<?php 
-
-    echo "ada ".$model->multiple_insert;
-    //foreach ($employee2 as $value){
-    //   print $value;
-    //}
-?>
