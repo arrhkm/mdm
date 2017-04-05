@@ -49,8 +49,10 @@ AppAsset::register($this);
             [
                 ['label'=>'Leave Entitlement', 'url'=>['/leaveentitlement/']],           
                 ['label'=>'Leave Type', 'url'=>['/leavetype/']],
-                ['label'=>'COba Form', 'url'=>['/leaveentitlement/coba']],
+                //['label'=>'COba Form', 'url'=>['/leaveentitlement/coba']],
                 ['label'=>'insert ALl employee', 'url'=>['/leaveentitlement/insertall']],
+                ['label'=>'Leave', 'url'=>['/leave/']],
+                ['label'=>'Leave Request', 'url'=>['/leaverequest/']],
             ]
         ],
         
