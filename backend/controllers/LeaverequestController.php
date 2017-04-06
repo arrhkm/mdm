@@ -78,6 +78,7 @@ class LeaverequestController extends Controller
                 'model' => $model,
                 'employee'=>$employee,
                 'leave_type'=>$leave_type,
+               
             ]);
         }
     }

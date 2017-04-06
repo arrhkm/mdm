@@ -3,6 +3,9 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
+use kartik\widgets\Select2;
+
+
 /* @var $this yii\web\View */
 /* @var $model app\models\Leave */
 /* @var $form yii\widgets\ActiveForm */
@@ -25,20 +28,30 @@ use yii\widgets\ActiveForm;
             
     ?>
 
-    <?= $form->field($model, 'lenght_days')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'lenght_days')->hiddenInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'lenght_hours')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'lenght_hours')->hiddenInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'start_time')->textInput() ?>
+    <?= $form->field($model, 'start_time')->hiddenInput() ?>
 
-    <?= $form->field($model, 'end_time')->textInput() ?>
+    <?= $form->field($model, 'end_time')->hiddenInput() ?>
 
-    <?= $form->field($model, 'leave_request_id')->textInput() ?>
+    <?php //= $form->field($model, 'leave_request_id')->textInput() ?>
+    <?= $form->field($model, 'leave_request_id')->widget(kartik\widgets\Select2::className(),[
+        'data'=>$leave_request,
+        'options'=>['placeholder'=>'Select Request id ...'],
+    ])?>
+    <?php //= $form->field($model, 'leave_type_id')->textInput() ?>
+    <?= $form->field($model, 'leave_type_id')->widget(kartik\widgets\Select2::className(),[
+            'data'=>$leave_type,
+            'options'=>['placeholder'=>'Select ....'],
+    ])?>
 
-    <?= $form->field($model, 'leave_type_id')->textInput() ?>
-
-    <?= $form->field($model, 'employee_id')->textInput() ?>
-
+    <?php //= $form->field($model, 'employee_id')->textInput() ?>
+    <?= $form->field($model, 'employee_id')->widget(kartik\select2\Select2::className(),[
+        'data'=>$employee,
+        'options'=>['placeholder'=>'select ....'],
+    ])?>
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>

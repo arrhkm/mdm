@@ -75,4 +75,19 @@ class LeaveSearch extends Leave
 
         return $dataProvider;
     }
+    public function search2($employee_id)
+    {
+        $query = Leave::find();
+        $dataProvider = new ActiveDataProvider([
+           'query'=>$query, 
+        ]);
+        //$this->load($params);
+        if (!$this->validate()){
+            return $dataProvider;
+        }
+        $query->andFilterWhere([
+            'employee_id'=>$employee_id,
+        ]);
+        return $dataProvider;
+    }
 }

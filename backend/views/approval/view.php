@@ -123,7 +123,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         ];
                         //$url= \yii\helpers\Url::toRoute(['approval/delete2', 'employe_id'=>$key['employee_id'],'approval_id'=>$key['approval_id']]);
                         //return Html::a('delete', $url) : '';
-                        $url = url::to(['approval/delete2', 'employee_id' =>$key['employee_id'], 'approval_id'=>$key['approval_id']]);
+                        $url = url::to(['approval/delete2', 'id'=>$key['employee_id'], 'approval_id'=>$key['approval_id']]);
                         return Html::a('<span class="glyphicon glyphicon-remove"></span>', $url, $options);
                     },
                 ],

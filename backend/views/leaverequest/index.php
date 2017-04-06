@@ -44,29 +44,24 @@ $this->params['breadcrumbs'][] = $this->title;
                 }
             ],
 
-            ['class' => 'yii\grid\ActionColumn',
-                'template'=>'{view} {update} {delete} {create}',
+            ['class' => 'yii\grid\ActionColumn',                
                 'buttons'=>[                    
                     'create' => function ($url, $model, $key) {
-                        $url = url::to(['leave/create', 'leave_request_id'=>$key['id'],'employee_id' =>$key['employee_id'], 'leave_type_id'=>$key['leave_type_id']]);
-                        
-                                //$url, 
-                                
-                               // [
-                               //     'title' => Yii::t('yii', '/leave/create'),
-                               // ]);
-                        //return Html::a('<span class="glyphicon glyphicon-plus"></span>', 
-                        return Html::a('<span class="glyphicon glyphicon-plus"></span>', $url);
-            
-                    }
-                    /*'delete' => function ($url, $model2, $key) {
                         $options=[
-                            'title'=>Yii::t('yii', 'Delete in frontend'),
-                            'arial-label'=>Yii::t('yii', 'Delete'),
+                            'title'=>Yii::t('yii', 'Create a leave'),
+                            'arial-label'=>Yii::t('yii', 'Create'),
                             'data-pjax'=>'0',
-                        ];
-                    }*/
-                ] 
+                        ];                        
+                        $url = url::to([
+                            'leave/create2', 
+                            'employee_id'=>$model->employee_id, 
+                            'leave_request_id'=>$model->id,
+                            'leave_type_id'=>$model->leave_type_id,
+                        ]);
+                        return Html::a('<span class="glyphicon glyphicon-plus"></span>', $url, $options);
+                    },                    
+                ],
+                'template'=>'{view} {update} {delete} {create}',
             ],
         ],
     ]); ?>

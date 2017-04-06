@@ -27,12 +27,30 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'date',
             'lenght_days',
-            'lenght_hours',
-            'start_time',
-            // 'end_time',
-            // 'leave_request_id',
-            // 'leave_type_id',
-            // 'employee_id',
+            //'lenght_hours',
+            //'start_time',
+            //'end_time',
+            //'leave_request_id',
+            [
+                'attribute'=>'leave_request_id',
+                'value'=>function($model){
+                    return $model->leave_request_id;
+                }
+            ],
+            //'leave_type_id',
+            [
+                'attribute'=>'leave_type_id',
+                'value'=>function($model) {
+                    return $model->leaveType->name_type;
+                }    
+            ],
+            //'employee_id',
+            [
+                'attribute'=>'employee_id',
+                'value'=>function($model){
+                    return $model->employee_id." - ".$model->employee->first_name;
+                }
+            ],
             // 'status',
 
             ['class' => 'yii\grid\ActionColumn'],
