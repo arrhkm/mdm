@@ -148,7 +148,7 @@ class LeaveentitlementController extends Controller
         }
         
         
-        $dtLeaveType = arrayHelper::map(LeaveType::find()->all(), 'id', 'name_type');
+        $dtLeaveType = arrayHelper::map(LeaveType::find()->where(['exclude_in_reports_if_no_entitlement'=>0])->all(), 'id', 'name_type');
         $periodYear = arrayHelper::map(PeriodYear::find()->all(), 'name_period', 'name_period');
         return $this->render('createh1', [
             'model' => $model,               

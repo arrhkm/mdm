@@ -33,6 +33,7 @@ class LeaveType extends \yii\db\ActiveRecord
     {
         return [
             [['deleted', 'exclude_in_reports_if_no_entitlement'], 'integer'],
+            [['exclude_in_reports_if_no_entitlement', 'deleted'], 'default', 'value'=>0],
             [['name_type'], 'string', 'max' => 45],
         ];
     }
