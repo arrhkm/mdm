@@ -20,7 +20,7 @@ class m170203_040055_employee_has_approval extends Migration
                 'employee_has_approval', 
                 'employee_id', 
                 'employee', 
-                'id',
+                'id',               
                 'CASCADE', 
                 'CASCADE'
         );
