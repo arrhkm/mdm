@@ -2,11 +2,11 @@
 
 use yii\db\Migration;
 
-class m170504_133522_engineatt extends Migration
+class m170505_075458_engineatt extends Migration
 {
     public function up()
     {
-        $this->createTable('enggineatt', [
+         $this->createTable('engineatt', [
             'id'=>$this->primaryKey(11),
             'pin'=>$this->integer(11)->notNull(),
             'dateatt'=>$this->dateTime(),
@@ -17,7 +17,7 @@ class m170504_133522_engineatt extends Migration
 
     public function down()
     {
-        echo "m170504_133522_engineatt cannot be reverted.\n";
+        echo "m170505_075458_engineatt cannot be reverted.\n";
 
         return false;
     }

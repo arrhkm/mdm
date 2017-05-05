@@ -59,6 +59,9 @@ AppAsset::register($this);
         ['label'=>'Employee','url'=>['/employee/'],],
         ['label'=>'Admin','url'=>['/admin/'],],
         ['label' => 'gii', 'url' => ['/gii/']],
+        ['label' => 'Download Att', 'url' =>'#', 'items'=>[
+            ['label'=>'Download engineAtt', 'url'=>['/download/engineatt/']],
+        ]],
 
     ];
     if (Yii::$app->user->isGuest) {
