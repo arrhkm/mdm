@@ -7,6 +7,7 @@ use app\models\Engineatt;
 use app\models\Card;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
+use yii\helpers\ArrayHelper;
 
 class DownloadController extends \yii\web\Controller
 {
@@ -54,11 +55,13 @@ class DownloadController extends \yii\web\Controller
                         //;";
                         //$connect= yii::app()->db;
                         //$connect->createCommand($query)->query();
-                        $dt_array[]=[
-                            'pin'=>$PIN,
-                            'datetime'=>$DateTime,
-                            'vaerified'=>$Verified,
-                            'status'=>$Status,
+                        $dt_array[
+                            [
+                                'pin'=>$PIN,
+                                'datetime'=>$DateTime,
+                                'vaerified'=>$Verified,
+                                'status'=>$Status,
+                            ]
                         ];
                         /*$dt_array[$a]['PIN']=$PIN;
                         $dt_array[$a]['DateTime']=$DateTime;
@@ -70,10 +73,10 @@ class DownloadController extends \yii\web\Controller
                 }
 
         }
+        $list_data = ArrayHelper::getValue($dt_array, 'pin.datetime');
 
-
-        $this->render('index',[
-            'dt_array'=>$dt_array, 
+        return $this->render('engineatt',[
+            'dt_array'=>$list_data, 
             //'hakam'=>$hakam
         ]);
         
